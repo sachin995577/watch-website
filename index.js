@@ -1667,6 +1667,373 @@ document.addEventListener("DOMContentLoaded", function () {
 // MOST RREVIEW LINK END
 
 
+// TOP BRAND CAROUSEL START
+
+/* =========================================
+   TOP BRAND CAROUSEL JS
+========================================= */
+
+const brandTrack = document.getElementById("brandTrack");
+const brandNext = document.getElementById("brandNext");
+const brandPrev = document.getElementById("brandPrev");
+
+const brandSlides = document.querySelectorAll(".brand-slide");
+
+let brandIndex = 0;
+
+
+/* =========================================
+   GET NUMBER OF VISIBLE IMAGES
+========================================= */
+
+function getBrandVisibleSlides() {
+
+    if (window.innerWidth <= 767) {
+        return 1;
+    }
+
+    if (window.innerWidth <= 1199) {
+        return 2;
+    }
+
+    return 3;
+}
+
+
+/* =========================================
+   UPDATE SLIDER
+========================================= */
+
+function updateBrandSlider() {
+
+    const visibleSlides = getBrandVisibleSlides();
+
+    const maxIndex = brandSlides.length - visibleSlides;
+
+    if (brandIndex > maxIndex) {
+        brandIndex = maxIndex;
+    }
+
+    if (brandIndex < 0) {
+        brandIndex = 0;
+    }
+
+    const slideWidth = 100 / visibleSlides;
+
+    brandTrack.style.transform =
+        `translateX(-${brandIndex * slideWidth}%)`;
+}
+
+
+/* =========================================
+   NEXT BUTTON
+========================================= */
+
+brandNext.addEventListener("click", function () {
+
+    const visibleSlides = getBrandVisibleSlides();
+
+    const maxIndex = brandSlides.length - visibleSlides;
+
+    if (brandIndex < maxIndex) {
+
+        brandIndex++;
+
+    } else {
+
+        brandIndex = 0;
+
+    }
+
+    updateBrandSlider();
+
+});
+
+
+/* =========================================
+   PREVIOUS BUTTON
+========================================= */
+
+brandPrev.addEventListener("click", function () {
+
+    const visibleSlides = getBrandVisibleSlides();
+
+    const maxIndex = brandSlides.length - visibleSlides;
+
+    if (brandIndex > 0) {
+
+        brandIndex--;
+
+    } else {
+
+        brandIndex = maxIndex;
+
+    }
+
+    updateBrandSlider();
+
+});
+
+
+/* =========================================
+   AUTO SLIDE
+========================================= */
+
+let brandAutoSlide = setInterval(function () {
+
+    const visibleSlides = getBrandVisibleSlides();
+
+    const maxIndex = brandSlides.length - visibleSlides;
+
+    if (brandIndex < maxIndex) {
+
+        brandIndex++;
+
+    } else {
+
+        brandIndex = 0;
+
+    }
+
+    updateBrandSlider();
+
+}, 4000);
+
+
+/* =========================================
+   RESIZE
+========================================= */
+
+window.addEventListener("resize", function () {
+
+    updateBrandSlider();
+
+});
+
+
+/* =========================================
+   INITIAL
+========================================= */
+
+updateBrandSlider();
+
+
+// TOP BRAND CAROUSEL END
+
+
+
+// SHOP BY CATEGORY 
+
+/* =========================================
+   SHOP BY CATEGORY CAROUSEL
+========================================= */
+
+const categoryTrack = document.getElementById("categoryTrack");
+
+const categoryPrev = document.querySelector(".category-prev");
+const categoryNext = document.querySelector(".category-next");
+
+const categoryItems = document.querySelectorAll(".category-item");
+
+
+let categoryPosition = 0;
+
+
+/* =========================================
+   GET VISIBLE ITEMS
+========================================= */
+
+function getCategoryVisibleItems() {
+
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth <= 767) {
+        return 2;
+    }
+
+    if (screenWidth <= 1199) {
+        return 4;
+    }
+
+    return 6;
+}
+
+
+/* =========================================
+   MOVE CAROUSEL
+========================================= */
+
+function moveCategoryCarousel() {
+
+    const visibleItems = getCategoryVisibleItems();
+
+    const totalItems = categoryItems.length;
+
+    const maxPosition = totalItems - visibleItems;
+
+    if (categoryPosition > maxPosition) {
+        categoryPosition = maxPosition;
+    }
+
+    if (categoryPosition < 0) {
+        categoryPosition = 0;
+    }
+
+
+    const itemWidth = categoryItems[0].getBoundingClientRect().width;
+
+    const trackStyle = window.getComputedStyle(categoryTrack);
+
+    const gap = parseFloat(trackStyle.gap) || 0;
+
+
+    const moveAmount = itemWidth + gap;
+
+
+    categoryTrack.style.transform =
+        `translateX(-${categoryPosition * moveAmount}px)`;
+
+
+    updateCategoryButtons(maxPosition);
+}
+
+
+/* =========================================
+   NEXT
+========================================= */
+
+categoryNext.addEventListener("click", function () {
+
+    const visibleItems = getCategoryVisibleItems();
+
+    const maxPosition = categoryItems.length - visibleItems;
+
+
+    if (categoryPosition < maxPosition) {
+
+        categoryPosition++;
+
+        moveCategoryCarousel();
+    }
+});
+
+
+/* =========================================
+   PREVIOUS
+========================================= */
+
+categoryPrev.addEventListener("click", function () {
+
+    if (categoryPosition > 0) {
+
+        categoryPosition--;
+
+        moveCategoryCarousel();
+    }
+});
+
+
+/* =========================================
+   BUTTON STATE
+========================================= */
+
+function updateCategoryButtons(maxPosition) {
+
+    categoryPrev.disabled = categoryPosition === 0;
+
+    categoryNext.disabled = categoryPosition >= maxPosition;
+}
+
+
+/* =========================================
+   RESPONSIVE RESET
+========================================= */
+
+window.addEventListener("resize", function () {
+
+    categoryPosition = 0;
+
+    moveCategoryCarousel();
+});
+
+
+/* =========================================
+   AUTO SLIDE
+========================================= */
+
+let categoryAutoSlide = setInterval(function () {
+
+    const visibleItems = getCategoryVisibleItems();
+
+    const maxPosition = categoryItems.length - visibleItems;
+
+
+    if (categoryPosition < maxPosition) {
+
+        categoryPosition++;
+
+    } else {
+
+        categoryPosition = 0;
+
+    }
+
+
+    moveCategoryCarousel();
+
+}, 4000);
+
+
+/* =========================================
+   PAUSE ON HOVER
+========================================= */
+
+const categoryWrapper =
+    document.querySelector(".category-carousel-wrapper");
+
+
+categoryWrapper.addEventListener("mouseenter", function () {
+
+    clearInterval(categoryAutoSlide);
+
+});
+
+
+categoryWrapper.addEventListener("mouseleave", function () {
+
+    categoryAutoSlide = setInterval(function () {
+
+        const visibleItems = getCategoryVisibleItems();
+
+        const maxPosition = categoryItems.length - visibleItems;
+
+
+        if (categoryPosition < maxPosition) {
+
+            categoryPosition++;
+
+        } else {
+
+            categoryPosition = 0;
+
+        }
+
+
+        moveCategoryCarousel();
+
+    }, 4000);
+
+});
+
+
+/* =========================================
+   INITIAL LOAD
+========================================= */
+
+moveCategoryCarousel();
+
+// SHOP BY CATEGORY END
+
 
 
 

@@ -437,11 +437,12 @@ body {
     flex: 1;
     min-width: 0;
     height: 48px;
-    padding: 0 14px;
+    padding: 14px 14px;
     border: 1px solid #ddd;
     outline: none;
     border-radius: 8px;
 }
+
 
 .search-box input:focus {
     border-color: #111;
@@ -455,6 +456,7 @@ body {
     border-radius: 8px;
     cursor: pointer;
 }
+
 
 
 /* =========================================
@@ -652,7 +654,6 @@ body {
 
     
 
-    
     .logo-icon {
         transform: scale(0.75);
     }
@@ -663,6 +664,7 @@ body {
     }
 
 }
+
 
 /* NAVBAR END */
 
@@ -3814,6 +3816,1257 @@ i{
 
 
 
+/* TOP BRAND CAROUSEL START */
+/* =========================================
+   TOP BRAND CAROUSEL
+========================================= */
+
+.brand-carousel-section {
+    width: 100%;
+    padding: 20px 50px 30px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.brand-carousel-heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.brand-carousel-heading h2 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #20242a;
+}
+
+
+/* =========================================
+   CAROUSEL WRAPPER
+========================================= */
+
+.brand-carousel-wrapper {
+    width: 100%;
+    max-width: 2560px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+/* =========================================
+   VIEW WINDOW
+========================================= */
+
+.brand-carousel-window {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   TRACK
+========================================= */
+
+.brand-carousel-track {
+    width: 100%;
+    display: flex;
+    transition: transform 0.7s ease;
+    will-change: transform;
+}
+
+
+/* =========================================
+   SLIDE
+========================================= */
+
+.brand-slide {
+    flex: 0 0 33.333333%;
+    width: 33.333333%;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   IMAGE BOX
+========================================= */
+
+.brand-image-box {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: #f5f5f5;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.brand-image-box img {
+    width: 100%;
+    height: 560px;
+    display: block;
+    object-fit: cover;
+
+    transform: scale(1);
+    transition:
+        transform 0.6s ease;
+}
+
+
+/* =========================================
+   IMAGE HOVER ZOOM
+========================================= */
+
+.brand-image-box:hover img {
+    transform: scale(1.09);
+}
+
+
+/* =========================================
+   MOTA BORDER ANIMATION
+========================================= */
+
+.brand-hover-border {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+}
+
+
+/* TOP BORDER */
+.brand-hover-border::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 5px;
+    background: #ffffff;
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: transform 0.45s ease;
+}
+
+
+/* BOTTOM BORDER */
+.brand-hover-border::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: calc(100% - 20px);
+    height: 5px;
+    background: #ffffff;
+
+    transform: scaleX(0);
+    transform-origin: right;
+
+    transition: transform 0.45s ease;
+}
+
+
+/* LEFT + RIGHT BORDER */
+.brand-image-box {
+    border: 5px solid transparent;
+}
+
+.brand-image-box::before,
+.brand-image-box::after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+
+    width: 5px;
+    height: calc(100% - 20px);
+
+    background: #ffffff;
+
+    top: 10px;
+
+    transform: scaleY(0);
+    transition: transform 0.45s ease;
+}
+
+
+/* LEFT */
+.brand-image-box::before {
+    left: 10px;
+    transform-origin: bottom;
+}
+
+
+/* RIGHT */
+.brand-image-box::after {
+    right: 10px;
+    transform-origin: top;
+}
+
+
+/* =========================================
+   BORDER HOVER
+========================================= */
+
+.brand-image-box:hover .brand-hover-border::before {
+    transform: scaleX(1);
+}
+
+.brand-image-box:hover .brand-hover-border::after {
+    transform: scaleX(1);
+}
+
+.brand-image-box:hover::before,
+.brand-image-box:hover::after {
+    transform: scaleY(1);
+}
+
+
+/* =========================================
+   BRAND TITLE
+========================================= */
+
+.brand-slide h3 {
+    margin: 8px 0 0;
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    color: #111111;
+}
+
+
+/* =========================================
+   ARROWS
+========================================= */
+
+.brand-arrow {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #111111;
+    font-size: 25px;
+    line-height: 48px;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.18);
+    transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* .brand-arrow:hover {
+    background: #111111;
+    color: #ffffff;
+    transform: translateY(-50%) scale(1.08);
+} */
+
+
+.brand-arrow-left {
+    left: 3px;
+}
+
+
+.brand-arrow-right {
+    right: 3px;
+}
+
+
+/* =========================================
+   TABLET
+   768px - 1199px
+   2 IMAGES
+========================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .brand-carousel-section {
+        padding: 18px 30px 30px;
+    }
+
+    .brand-carousel-heading {
+        margin-bottom: 30px;
+    }
+
+    .brand-carousel-heading h2 {
+        font-size: 40px;
+    }
+
+    .brand-slide {
+        flex: 0 0 50%;
+        width: 50%;
+        padding: 0 9px;
+    }
+
+    .brand-image-box img {
+        height: 480px;
+    }
+
+    .brand-slide h3 {
+        font-size: 17px;
+    }
+
+    .brand-arrow {
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        font-size: 22px;
+    }
+
+}
+
+
+/* =========================================
+   PHONE
+   320px - 767px
+   1 IMAGE
+========================================= */
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .brand-carousel-section {
+        padding: 15px 18px 28px;
+    }
+
+    .brand-carousel-heading {
+        margin-bottom: 25px;
+    }
+
+    .brand-carousel-heading h2 {
+        font-size: 29px;
+    }
+
+    .brand-slide {
+        flex: 0 0 100%;
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .brand-image-box img {
+        height: 430px;
+    }
+
+    .brand-slide h3 {
+        margin-top: 7px;
+        font-size: 16px;
+    }
+
+    .brand-arrow {
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 19px;
+    }
+
+    .brand-arrow-left {
+        left: -2px;
+    }
+
+    .brand-arrow-right {
+        right: -2px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONE
+   320px - 400px
+========================================= */
+
+@media (min-width: 320px) and (max-width: 400px) {
+
+    .brand-carousel-section {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .brand-carousel-heading h2 {
+        font-size: 26px;
+    }
+
+    .brand-image-box img {
+        height: 380px;
+    }
+
+    .brand-arrow {
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        font-size: 17px;
+    }
+
+}
+
+
+/* =========================================
+   LARGE LAPTOP
+   1600px+
+========================================= */
+
+@media (min-width: 1600px) {
+
+    .brand-carousel-section {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .brand-carousel-heading h2 {
+        font-size: 54px;
+    }
+
+    .brand-image-box img {
+        height: 620px;
+    }
+
+    .brand-slide {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+}
+
+/* TOP BRAND CAROUSEL END */
+
+
+
+
+
+/* SHOP BY CATEGORY START */
+   
+/* =========================================
+   SHOP BY CATEGORY - SMALLER VERSION
+========================================= */
+
+.category-carousel-section {
+    width: 100%;
+    padding: 18px 20px 30px;
+    background: #fff;
+    overflow: hidden;
+}
+
+
+/* HEADING */
+
+.category-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.category-heading h2 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #111;
+}
+
+.category-heading p {
+    margin: 7px 0 0;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #777;
+}
+
+
+/* WRAPPER */
+
+.category-carousel-wrapper {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+/* CAROUSEL */
+
+.category-carousel {
+    width: calc(100% - 72px);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* TRACK */
+
+.category-track {
+    display: flex;
+    gap: 38px;
+    transition: transform 0.55s ease;
+    will-change: transform;
+}
+
+
+/* CATEGORY */
+
+.category-item {
+    flex: 0 0 calc((100% - 190px) / 6);
+    min-width: 0;
+    text-align: center;
+}
+
+
+/* IMAGE */
+
+.category-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 0.5px solid;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #eee;
+    cursor: pointer;
+}
+
+
+/* IMAGE */
+
+.category-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+    transition:
+        transform 0.45s ease,
+        filter 0.45s ease;
+}
+
+
+/* HOVER ZOOM + DARK */
+
+.category-image:hover img {
+    transform: scale(1.12);
+    filter: brightness(0.78);
+}
+
+
+/* TITLE */
+
+.category-item h3 {
+    margin: 9px 0 0;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+
+/* ARROWS */
+
+.category-arrow {
+    width: 34px;
+    height: 34px;
+
+    border: 1px solid #ddd;
+    border-radius: 50%;
+
+    background: #fff;
+    color: #111;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25px);
+
+    z-index: 5;
+    cursor: pointer;
+
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.10);
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.category-arrow i {
+    font-size: 11px;
+}
+
+.category-prev {
+    left: 2px;
+}
+
+.category-next {
+    right: 2px;
+}
+
+.category-arrow:hover {
+    /* background: #ffcc00; */
+    transform: translateY(-25px) scale(1.05);
+}
+
+.category-arrow:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+
+/* =========================================
+   320px - 479px
+   2 IMAGES
+========================================= */
+
+@media (min-width: 320px) and (max-width: 479px) {
+
+    .category-carousel-section {
+        padding: 15px 7px 25px;
+    }
+
+    .category-heading {
+        margin-bottom: 20px;
+    }
+
+    .category-heading h2 {
+        font-size: 22px;
+    }
+
+    .category-heading p {
+        font-size: 11px;
+    }
+
+    .category-carousel {
+        width: calc(100% - 54px);
+    }
+
+    .category-track {
+        gap: 18px;
+    }
+
+    .category-item {
+        flex: 0 0 calc((100% - 18px) / 2);
+    }
+
+    .category-image {
+        border-width: 2px;
+    }
+
+    .category-item h3 {
+        margin-top: 8px;
+        font-size: 13px;
+    }
+
+    .category-arrow {
+        width: 28px;
+        height: 28px;
+    }
+
+    .category-arrow i {
+        font-size: 9px;
+    }
+
+    .category-prev {
+        left: 1px;
+    }
+
+    .category-next {
+        right: 1px;
+    }
+}
+
+
+/* =========================================
+   480px - 767px
+   2 IMAGES
+========================================= */
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+    .category-carousel-section {
+        padding: 17px 12px 27px;
+    }
+
+    .category-heading {
+        margin-bottom: 22px;
+    }
+
+    .category-heading h2 {
+        font-size: 24px;
+    }
+
+    .category-heading p {
+        font-size: 12px;
+    }
+
+    .category-carousel {
+        width: calc(100% - 60px);
+    }
+
+    .category-track {
+        gap: 24px;
+    }
+
+    .category-item {
+        flex: 0 0 calc((100% - 24px) / 2);
+    }
+
+    .category-image {
+        border-width: 2px;
+    }
+
+    .category-item h3 {
+        margin-top: 8px;
+        font-size: 14px;
+    }
+
+    .category-arrow {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+/* =========================================
+   768px - 1199px
+   TABLET - 4 IMAGES
+========================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .category-carousel-section {
+        padding: 20px 18px 30px;
+    }
+
+    .category-heading {
+        margin-bottom: 24px;
+    }
+
+    .category-heading h2 {
+        font-size: 27px;
+    }
+
+    .category-heading p {
+        font-size: 12px;
+    }
+
+    .category-carousel {
+        width: calc(100% - 70px);
+    }
+
+    .category-track {
+        gap: 30px;
+    }
+
+    .category-item {
+        flex: 0 0 calc((100% - 90px) / 4);
+    }
+
+    .category-image {
+        border-width: 2px;
+    }
+
+    .category-item h3 {
+        margin-top: 8px;
+        font-size: 15px;
+    }
+
+    .category-arrow {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+
+/* =========================================
+   1200px - 1599px
+   6 IMAGES
+========================================= */
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+    .category-carousel-wrapper {
+        max-width: 1120px;
+    }
+
+    .category-carousel {
+        width: calc(100% - 72px);
+    }
+
+    .category-track {
+        gap: 35px;
+    }
+
+    .category-item {
+        flex: 0 0 calc((100% - 175px) / 6);
+    }
+
+    .category-image {
+        border-width: 3px;
+    }
+
+    .category-item h3 {
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================
+   1600px - 2560px
+   6 IMAGES
+========================================= */
+
+@media (min-width: 1600px) and (max-width: 2560px) {
+
+    .category-carousel-wrapper {
+        max-width: 1250px;
+    }
+
+    .category-carousel {
+        width: calc(100% - 76px);
+    }
+
+    .category-track {
+        gap: 42px;
+    }
+
+    .category-item {
+        flex: 0 0 calc((100% - 210px) / 6);
+    }
+
+    .category-image {
+        border-width: 3px;
+    }
+
+    .category-item h3 {
+        font-size: 17px;
+    }
+
+    .category-arrow {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* SHOP BY CATEGORY END */
+
+
+
+
+/* OUR BRAND START */
+ /* =========================================
+   OUR BRANDS SECTION
+========================================= */
+
+.our-brands-section {
+    width: 100%;
+    padding: 20px 0 35px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.our-brands-heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.our-brands-heading h2 {
+    margin: 0;
+    padding: 0;
+
+    color: #111111;
+
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: 500;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================
+   SLIDER OUTER AREA
+
+   IMPORTANT:
+   Carousel is NOT full screen.
+========================================= */
+
+.brands-slider {
+    width: 90%;
+    max-width: 1800px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   MOVING TRACK
+========================================= */
+
+.brands-track {
+    width: max-content;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    animation: brandsSlide 55s linear infinite;
+
+    will-change: transform;
+}
+
+
+/* =========================================
+   BRAND BOX
+========================================= */
+
+.brand-box {
+    flex: 0 0 207px;
+    width: 207px;
+    height: 230px;
+    border: 1px solid #dedede;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+
+/* =========================================
+   BRAND HOVER BORDER
+========================================= */
+
+.brand-box:hover {
+    border: 1px solid #000000;
+}
+
+
+/* =========================================
+   BRAND LOGO
+========================================= */
+
+.brand-box img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* =========================================
+   HOVER PAUSE
+========================================= */
+
+.brands-slider:hover .brands-track {
+    animation-play-state: paused;
+}
+
+
+/* =========================================
+   CONTINUOUS SLIDE
+========================================= */
+
+@keyframes brandsSlide {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50% - 10px));
+    }
+
+}
+
+
+/* =========================================
+   320px - 479px
+   PHONE = 2 BRANDS
+========================================= */
+
+@media (min-width: 320px) and (max-width: 479px) {
+
+    .our-brands-section {
+        padding: 15px 0 25px;
+    }
+
+
+    .our-brands-heading {
+        margin-bottom: 24px;
+    }
+
+
+    .our-brands-heading h2 {
+        font-size: 24px;
+    }
+
+
+    .brands-slider {
+        width: 92%;
+        max-width: none;
+        margin: 0 auto;
+    }
+
+
+    .brands-track {
+        gap: 12px;
+        animation-duration: 32s;
+    }
+
+
+    .brand-box {
+        width: calc((92vw - 12px) / 2);
+        flex: 0 0 calc((92vw - 12px) / 2);
+
+        height: 78px;
+    }
+
+
+    .brand-box img {
+        width: 75%;
+        height: 65%;
+    }
+
+}
+
+
+/* =========================================
+   480px - 767px
+   PHONE = 2 BRANDS
+========================================= */
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+    .our-brands-section {
+        padding: 18px 0 28px;
+    }
+
+
+    .our-brands-heading {
+        margin-bottom: 27px;
+    }
+
+
+    .our-brands-heading h2 {
+        font-size: 28px;
+    }
+
+
+    .brands-slider {
+        width: 92%;
+        max-width: none;
+        margin: 0 auto;
+    }
+
+
+    .brands-track {
+        gap: 14px;
+        animation-duration: 36s;
+    }
+
+
+    .brand-box {
+        width: calc((92vw - 14px) / 2);
+        flex: 0 0 calc((92vw - 14px) / 2);
+
+        height: 88px;
+    }
+
+
+    .brand-box img {
+        width: 75%;
+        height: 68%;
+    }
+
+}
+
+
+/* =========================================
+   768px - 1199px
+   TABLET = 4 BRANDS
+========================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .our-brands-section {
+        padding: 20px 0 30px;
+    }
+
+
+    .our-brands-heading {
+        margin-bottom: 32px;
+    }
+
+
+    .our-brands-heading h2 {
+        font-size: 32px;
+    }
+
+
+    .brands-slider {
+        width: 92%;
+        max-width: none;
+        margin: 0 auto;
+    }
+
+
+    .brands-track {
+        gap: 18px;
+        animation-duration: 42s;
+    }
+
+
+    .brand-box {
+        width: calc((92vw - 54px) / 4);
+        flex: 0 0 calc((92vw - 54px) / 4);
+
+        height: 100px;
+    }
+
+
+    .brand-box img {
+        width: 75%;
+        height: 68%;
+    }
+
+}
+
+
+/* =========================================
+   1200px - 1599px
+   DESKTOP = 8 BRANDS
+========================================= */
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+    .our-brands-section {
+        padding: 20px 0 32px;
+    }
+
+
+    .our-brands-heading {
+        margin-bottom: 42px;
+    }
+
+
+    .our-brands-heading h2 {
+        font-size: 38px;
+    }
+
+
+    .brands-slider {
+        width: 90%;
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+
+
+    .brands-track {
+        gap: 18px;
+        animation-duration: 48s;
+    }
+
+
+    .brand-box {
+        width: calc((90vw - 126px) / 8);
+        flex: 0 0 calc((90vw - 126px) / 8);
+
+        height: 108px;
+    }
+
+
+    .brand-box img {
+        width: 77%;
+        height: 70%;
+    }
+
+}
+
+
+/* =========================================
+   1600px - 2560px
+   LARGE SCREEN = 8 BRANDS
+========================================= */
+
+@media (min-width: 1600px) and (max-width: 2560px) {
+
+    .our-brands-section {
+        padding: 22px 0 35px;
+    }
+
+
+    .our-brands-heading {
+        margin-bottom: 45px;
+    }
+
+
+    .our-brands-heading h2 {
+        font-size: 42px;
+    }
+
+
+    .brands-slider {
+        width: 90%;
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+
+
+    .brands-track {
+        gap: 20px;
+        animation-duration: 55s;
+    }
+
+
+    .brand-box {
+        width: 207px;
+        flex: 0 0 207px;
+
+        height: 113px;
+    }
+
+
+    .brand-box img {
+        width: 77%;
+        height: 70%;
+    }
+
+}
+/* OUR BRAND END */
+
+
 
 
 /* Scroll Reveal Animation */
@@ -3830,6 +5083,8 @@ i{
 }
 
 /* SCROLL REVEAL ANIMATION END */
+
+
 
 
 
