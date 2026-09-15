@@ -2035,10 +2035,445 @@ moveCategoryCarousel();
 // SHOP BY CATEGORY END
 
 
+/* =========================================
+   TITAN VIDEO CAROUSEL JS
+========================================= */
+
+const titanTrack = document.querySelector(".titan-video-track");
+const titanCards = document.querySelectorAll(".titan-video-card");
+
+const titanPrev = document.querySelector(".titan-video-prev");
+const titanNext = document.querySelector(".titan-video-next");
+
+let titanCurrentIndex = 0;
+
+
+/* =========================================
+   GET VISIBLE CARDS
+========================================= */
+
+function getTitanVisibleCards() {
+
+    if (window.innerWidth < 768) {
+        return 1;
+    }
+
+    if (window.innerWidth < 1200) {
+        return 3;
+    }
+
+    return 6;
+}
+
+
+/* =========================================
+   UPDATE SLIDER
+========================================= */
+
+function updateTitanSlider() {
+
+    const visibleCards = getTitanVisibleCards();
+
+    const maxIndex = titanCards.length - visibleCards;
+
+    if (titanCurrentIndex > maxIndex) {
+        titanCurrentIndex = maxIndex;
+    }
+
+    if (titanCurrentIndex < 0) {
+        titanCurrentIndex = 0;
+    }
+
+    const cardWidth = titanCards[0].offsetWidth;
+
+    const gap = parseFloat(
+        getComputedStyle(titanTrack).gap
+    );
+
+    const moveAmount = (cardWidth + gap) * titanCurrentIndex;
+
+    titanTrack.style.transform =
+        `translateX(-${moveAmount}px)`;
+}
+
+
+/* =========================================
+   NEXT BUTTON
+========================================= */
+
+titanNext.addEventListener("click", function () {
+
+    const visibleCards = getTitanVisibleCards();
+    const maxIndex = titanCards.length - visibleCards;
+
+    if (titanCurrentIndex < maxIndex) {
+
+        titanCurrentIndex++;
+
+        updateTitanSlider();
+    }
+
+});
+
+
+/* =========================================
+   PREVIOUS BUTTON
+========================================= */
+
+titanPrev.addEventListener("click", function () {
+
+    if (titanCurrentIndex > 0) {
+
+        titanCurrentIndex--;
+
+        updateTitanSlider();
+    }
+
+});
+
+
+/* =========================================
+   RESIZE
+========================================= */
+
+window.addEventListener("resize", function () {
+
+    updateTitanSlider();
+
+});
+
+
+/* =========================================
+   VIDEO PLAY
+========================================= */
+
+titanCards.forEach(function (card) {
+
+    const video = card.querySelector("video");
+
+    video.play().catch(function () {
+        // Browser autoplay restriction
+    });
+
+
+    /* Hover par video pause */
+    card.addEventListener("mouseenter", function () {
+
+        video.pause();
+
+    });
+
+
+    /* Mouse hataane par video play */
+    card.addEventListener("mouseleave", function () {
+
+        video.play().catch(function () {});
+
+    });
+
+});
+
+
+/* =========================================
+   INITIAL POSITION
+========================================= */
+
+updateTitanSlider();
+
+
+
+/* EXPERIENCE THE WORLD OF TITAN START */
+
+function updateTitanSlider() {
+
+    const visibleCards = getTitanVisibleCards();
+
+    const viewportWidth =
+        titanTrack.parentElement.offsetWidth;
+
+    const cardWidth =
+        titanCards[0].offsetWidth;
+
+    const gap =
+        parseFloat(getComputedStyle(titanTrack).gap);
+
+
+    /* =====================================
+       PHONE
+       CENTER CARD + SIDE PREVIEW
+    ===================================== */
+
+    if (window.innerWidth < 768) {
+
+        const centerOffset =
+            (viewportWidth - cardWidth) / 2;
+
+        const moveAmount =
+            centerOffset -
+            (titanCurrentIndex * (cardWidth + gap));
+
+        titanTrack.style.transform =
+            `translateX(${moveAmount}px)`;
+
+        return;
+    }
+
+
+    /* =====================================
+       TABLET + DESKTOP
+    ===================================== */
+
+    const maxIndex =
+        titanCards.length - visibleCards;
+
+    if (titanCurrentIndex > maxIndex) {
+        titanCurrentIndex = maxIndex;
+    }
+
+    if (titanCurrentIndex < 0) {
+        titanCurrentIndex = 0;
+    }
+
+    const moveAmount =
+        (cardWidth + gap) * titanCurrentIndex;
+
+    titanTrack.style.transform =
+        `translateX(-${moveAmount}px)`;
+}
+
+
+/* EXPERIENCE THE WORLD OF TITAN END */
 
 
 
 
+// FAQ SECTION START
+
+/* =========================================
+   FAQ ACCORDION
+========================================= */
+
+const faqQuestions = document.querySelectorAll(".faq-question");
+
+faqQuestions.forEach(function (question) {
+
+    question.addEventListener("click", function () {
+
+        const faqItem = this.closest(".faq-item");
+
+        /*
+           Sirf clicked FAQ ko toggle karega.
+           Baaki FAQ close nahi honge.
+           Isliye saare FAQ ek saath open
+           kiye ja sakte hain.
+        */
+
+        faqItem.classList.toggle("active");
+
+    });
+
+});
 
 
+
+// FAQ SECTION END
+
+
+// CUSTOMER SAY START
+
+/* =========================================
+   CUSTOMER SAY SLIDER
+   ========================================= */
+
+const sansoSlider = document.querySelector(".sanso-customer-slider");
+const sansoTrack = document.querySelector(".sanso-customer-track");
+const sansoCards = document.querySelectorAll(".sanso-customer-card");
+const sansoDotsBox = document.querySelector(".sanso-customer-dots");
+
+let sansoCurrentSlide = 0;
+
+
+/* GET NUMBER OF CARDS */
+
+function sansoGetCardsPerView() {
+
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth < 768) {
+        return 1;
+    }
+
+    if (screenWidth < 1200) {
+        return 2;
+    }
+
+    return 3;
+}
+
+
+/* CREATE DOTS */
+
+function sansoCreateDots() {
+
+    sansoDotsBox.innerHTML = "";
+
+    const cardsPerView = sansoGetCardsPerView();
+
+    const totalSlides = Math.ceil(
+        sansoCards.length / cardsPerView
+    );
+
+    for (let i = 0; i < totalSlides; i++) {
+
+        const dot = document.createElement("button");
+
+        dot.classList.add("sanso-customer-dot");
+
+        dot.setAttribute(
+            "aria-label",
+            "Customer slide " + (i + 1)
+        );
+
+        dot.addEventListener("click", function () {
+
+            sansoCurrentSlide = i;
+
+            sansoMoveSlider();
+
+        });
+
+        sansoDotsBox.appendChild(dot);
+    }
+
+    if (sansoCurrentSlide >= totalSlides) {
+        sansoCurrentSlide = totalSlides - 1;
+    }
+
+    sansoMoveSlider();
+}
+
+
+/* MOVE SLIDER */
+
+function sansoMoveSlider() {
+
+    const cardsPerView = sansoGetCardsPerView();
+
+    const totalSlides = Math.ceil(
+        sansoCards.length / cardsPerView
+    );
+
+    if (sansoCurrentSlide >= totalSlides) {
+        sansoCurrentSlide = totalSlides - 1;
+    }
+
+    if (sansoCurrentSlide < 0) {
+        sansoCurrentSlide = 0;
+    }
+
+    const sliderWidth = sansoSlider.clientWidth;
+
+    const moveAmount =
+        sansoCurrentSlide * sliderWidth;
+
+    sansoTrack.style.transform =
+        "translateX(-" + moveAmount + "px)";
+
+
+    /* ACTIVE DOT */
+
+    const allDots =
+        document.querySelectorAll(".sanso-customer-dot");
+
+    allDots.forEach(function (dot, index) {
+
+        dot.classList.toggle(
+            "active",
+            index === sansoCurrentSlide
+        );
+
+    });
+}
+
+
+/* INITIAL */
+
+sansoCreateDots();
+
+
+/* RESIZE */
+
+window.addEventListener("resize", function () {
+
+    sansoCreateDots();
+
+});
+
+
+/* =========================================
+   OPTIONAL AUTO SLIDE
+   4 SECOND
+   ========================================= */
+
+let sansoAutoSlide = setInterval(function () {
+
+    const cardsPerView = sansoGetCardsPerView();
+
+    const totalSlides = Math.ceil(
+        sansoCards.length / cardsPerView
+    );
+
+    if (sansoCurrentSlide < totalSlides - 1) {
+
+        sansoCurrentSlide++;
+
+    } else {
+
+        sansoCurrentSlide = 0;
+
+    }
+
+    sansoMoveSlider();
+
+}, 4000);
+
+
+/* PAUSE ON MOUSE HOVER */
+
+sansoSlider.addEventListener("mouseenter", function () {
+
+    clearInterval(sansoAutoSlide);
+
+});
+
+
+/* START AGAIN */
+
+sansoSlider.addEventListener("mouseleave", function () {
+
+    sansoAutoSlide = setInterval(function () {
+
+        const cardsPerView = sansoGetCardsPerView();
+
+        const totalSlides = Math.ceil(
+            sansoCards.length / cardsPerView
+        );
+
+        if (sansoCurrentSlide < totalSlides - 1) {
+
+            sansoCurrentSlide++;
+
+        } else {
+
+            sansoCurrentSlide = 0;
+
+        }
+
+        sansoMoveSlider();
+
+    }, 4000);
+
+});
+
+// CUSTOMER SAY END
 
