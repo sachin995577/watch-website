@@ -13,12 +13,29 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     color: #111;
     background: #fff;
     overflow-x: hidden;
 }
 
+/* Headings (Hero title, section headers) */
+h1, h2, h3, .logo-text {
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: -0.02em;
+}
+
+/* Paragraphs, descriptions, navigation links */
+body, p, a, button {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+/* Pro tip for subheadings/navigation labels */
+.nav-links, .section-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 0.15em; /* Gives an elevated luxury feel */
+}
 
 /* =========================================
    NAVBAR
@@ -110,9 +127,9 @@ body {
 }
 
 .logo-text {
-    font-family: Georgia, "Times New Roman", serif;
+    /* font-family: Georgia, "Times New Roman", serif; */
     font-size: clamp(24px, 2vw, 31px);
-    font-weight: 400;
+    /* font-weight: 400; */
     letter-spacing: 0.3px;
 }
 
@@ -134,7 +151,7 @@ body {
     color: #111;
     text-decoration: none;
     font-size: 14px;
-    font-weight: 500;
+    /* font-weight: 500; */
     letter-spacing: 0.2px;
     padding: 28px 0;
 }
@@ -316,7 +333,7 @@ body {
     color: #111;
     text-decoration: none;
     font-size: 21px;
-    font-weight: 500;
+    /* font-weight: 500; */
 }
 
 .mobile-menu a::after {
@@ -403,9 +420,10 @@ body {
 }
 
 .popup-header h3 {
-    font-family: Georgia, "Times New Roman", serif;
+    /* font-family: Georgia, "Times New Roman", serif; */
+     /* font-weight: 400; */
     font-size: 22px;
-    font-weight: 400;
+   
 }
 
 .popup-close {
@@ -537,7 +555,7 @@ body {
 }
 
 .demo-content h1 {
-    font-family: Georgia, serif;
+    /* font-family: Georgia, serif; */
     font-size: clamp(40px, 7vw, 100px);
 }
 
@@ -763,6 +781,7 @@ body {
     margin: 0 auto;
     padding: 0;
     text-align: center;
+   
 }
 
 .our-features-heading h2 {
@@ -770,7 +789,7 @@ body {
     padding: 0;
     font-size: 32px;
     line-height: 1.2;
-    font-weight: 700;
+    /* font-weight: 700; */
     letter-spacing: 1px;
     color: #111;
 }
@@ -893,7 +912,7 @@ body {
 
     .our-features-heading h2 {
         font-size: 22px;
-        margin-top: -30px;
+        /* margin-top: -30px; */
     }
 
     .our-features-heading span {
@@ -926,14 +945,10 @@ body {
 
 .banner-subtitle {
     display: inline-block;
-
     font-size: clamp(12px, 1vw, 18px);
-    font-weight: 600;
-
+    /* font-weight: 600; */
     letter-spacing: 3px;
-
     margin-bottom: 15px;
-
     color: #ffcc00;
 }
 
@@ -942,12 +957,9 @@ body {
 
 .banner-content h1 {
     font-size: clamp(36px, 4.5vw, 82px);
-
     line-height: 1.1;
-    font-weight: 700;
-
+    /* font-weight: 700; */
     max-width: 750px;
-
     margin-bottom: clamp(15px, 1.5vw, 25px);
 }
 
@@ -956,13 +968,9 @@ body {
 
 .banner-content p {
     max-width: 600px;
-
     font-size: clamp(14px, 1.2vw, 21px);
-
     line-height: 1.7;
-
     margin-bottom: clamp(20px, 2vw, 35px);
-
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -987,7 +995,7 @@ body {
     text-decoration: none;
 
     font-size: clamp(13px, 1vw, 17px);
-    font-weight: 600;
+    /* font-weight: 600; */
 
     border: 2px solid #ffcc00;
 
@@ -1350,7 +1358,7 @@ body {
 
 .featured-heading h2 {
     font-size: 28px;
-    font-weight: 600;
+    /* font-weight: 600; */
     letter-spacing: 2px;
     color: #111;
     margin: 0;
@@ -1441,9 +1449,10 @@ i{
 .feature-item h3 {
     margin: 0 0 12px;
     color: #ffffff;
-    font-family: Georgia, serif;
+    /* font-family: Georgia, serif;
+    font-weight: 600; */
     font-size: clamp(15px, 1.4vw, 20px);
-    font-weight: 600;
+    
 }
 
 
@@ -1617,7 +1626,7 @@ i{
     margin: 0;
     color: #30343a;
     font-size: clamp(30px, 3vw, 42px);
-    font-weight: 500;
+    /* font-weight: 500; */
     line-height: 1.2;
 }
 
@@ -1678,7 +1687,7 @@ i{
     margin: 0 0 7px;
     color: #eeeeee;
     font-size: clamp(16px, 1.2vw, 19px);
-    font-weight: 600;
+    /* font-weight: 600; */
     line-height: 1.4;
 }
 
@@ -2007,48 +2016,24 @@ i{
 
 /* NEW ARRIVALS */
 
-
-.new-arrivals-section h2 {
-    font-size: 30px;
-}
-@media (min-width: 320px) and (max-width: 400px) {
-    .new-arrivals-section h2 {
-    font-size: 22px;
-}
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-    .new-arrivals-section h2 {
-    font-size: 30px;
-}
-}
-
-@media (min-width: 1200px) and (max-width: 1599px) {
-    .new-arrivals-section h2 {
-    font-size: 34px;
-}
-}
-@media (min-width: 1600px) and (max-width: 2660px) {
-    .new-arrivals-section h2 {
-    font-size: 38px;
-    letter-spacing: 1.5px;
-}
-}
 .new-arrivals-section {
     width: 100%;
-    /* background: #f5f5f5; */
     padding: 25px 0 40px;
     overflow: hidden;
     margin-top: 20px;
 }
 
+.new-arrivals-section h2 {
+    font-size: 30px;
+}
+
 .new-arrivals-heading {
     position: relative;
     text-align: center;
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 48px;
     letter-spacing: 6px;
-    color: #1f2933;
-    margin: 0;
+    color: #30343b;
+    margin: 0 0 60px;
     padding-bottom: 18px;
 }
 
@@ -2060,22 +2045,7 @@ i{
     background: #ffcc00;
     bottom: 0;
     left: 50%;
-    /* transform: translateX(-50%); */
 }
-
-
-.new-arrivals-heading {
-    text-align: center;
-    font-size: 48px;
-    font-weight: 500;
-    color: #30343b;
-    margin: 0 0 60px;
-}
-
-
-/* ================================
-   CAROUSEL
-================================ */
 
 .product-carousel-wrapper {
     width: 100%;
@@ -2083,23 +2053,16 @@ i{
     margin-top: 27px;
 }
 
-
 .product-carousel-viewport {
     width: 100%;
     overflow: hidden;
 }
-
 
 .product-carousel-track {
     display: flex;
     transition: transform 0.7s ease;
     will-change: transform;
 }
-
-
-/* ================================
-   PRODUCT CARD
-================================ */
 
 .product-card {
     flex: 0 0 25%;
@@ -2108,11 +2071,6 @@ i{
     box-sizing: border-box;
 }
 
-
-/* ================================
-   IMAGE
-================================ */
-
 .product-image {
     width: 100%;
     height: 500px;
@@ -2120,7 +2078,6 @@ i{
     overflow: hidden;
     background: #ddd;
 }
-
 
 .product-image img {
     width: 100%;
@@ -2131,29 +2088,19 @@ i{
                 transform 0.5s ease;
 }
 
-
-/* HOVER IMAGE */
-
 .hover-image {
     position: absolute;
     inset: 0;
     opacity: 0;
 }
 
-
 .product-image:hover .main-image {
     opacity: 0;
 }
 
-
 .product-image:hover .hover-image {
     opacity: 1;
 }
-
-
-/* ================================
-   SALE BADGE
-================================ */
 
 .product-badge {
     position: absolute;
@@ -2168,13 +2115,7 @@ i{
     border-radius: 30px;
 
     font-size: 14px;
-    font-weight: 600;
 }
-
-
-/* ================================
-   BAG BUTTON
-================================ */
 
 .product-bag {
     position: absolute;
@@ -2189,7 +2130,7 @@ i{
     border: none;
 
     background: #ffffff;
-    color: #000;
+    color: #000000;
 
     cursor: pointer;
 
@@ -2202,38 +2143,24 @@ i{
     transition: 0.3s ease;
 }
 
-
 .product-bag:hover {
     background: #000000;
     color: #ffffff;
-    transform: translateY(-2px);
 }
-
-
-/* ================================
-   PRODUCT TEXT
-================================ */
 
 .product-card h3 {
     font-size: 19px;
-    font-weight: 400;
     line-height: 1.6;
-
     margin: 17px 0 2px;
-
     color: #343a40;
 }
-
 
 .product-subtitle {
     font-size: 18px;
     line-height: 1.6;
-
     margin: 0 0 22px;
-
     color: #343a40;
 }
-
 
 .product-bottom {
     display: flex;
@@ -2241,59 +2168,63 @@ i{
     gap: 12px;
 }
 
-
 .product-price {
     font-size: 19px;
-    font-weight: 700;
-    color: black;
-    /* margin-top: -8px; */
-
+    color: #000000;
+    margin-top: -15px;
 }
-
 
 .product-stars {
     color: #ffb800;
     font-size: 25px;
     letter-spacing: 2px;
     white-space: nowrap;
-     /* margin-top: -6px; */
 }
 
 
 /* ================================
-   ARROWS
+   CAROUSEL ARROWS
 ================================ */
 
 .product-arrow {
     position: absolute;
-    top: 200px;
-    z-index: 10;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 50;
+
     width: 58px;
     height: 58px;
+
     border: none;
     border-radius: 50%;
+
     background: #ffffff;
-    color: #222;
+    color: #222222;
+
     cursor: pointer;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.12);
-    transition: 0.3s ease;
-}
 
+    font-size: 20px;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+
+    transition: background 0.3s ease,
+                color 0.3s ease;
+}
 
 .product-arrow:hover {
-    background: #000;
-    color: #fff;
+    background: #000000;
+    color: #ffffff;
 }
-
 
 .product-prev {
     left: 15px;
 }
-
 
 .product-next {
     right: 15px;
@@ -2301,57 +2232,52 @@ i{
 
 
 /* =====================================
-   MOBILE
-   320px TO 767px
+   320px - 767px
+   PHONE - 1 PRODUCT
 ===================================== */
 
-@media (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
 
     .new-arrivals-section {
         padding: 30px 0 35px;
     }
 
+    .new-arrivals-section h2 {
+        font-size: 22px;
+    }
 
     .new-arrivals-heading {
         font-size: 32px;
         margin-bottom: 30px;
     }
 
-
-    /* 1 IMAGE */
-
     .product-card {
         flex: 0 0 100%;
         padding: 0 12px;
     }
 
-
     .product-image {
         height: 430px;
     }
-
 
     .product-card h3 {
         font-size: 17px;
         margin-top: 14px;
     }
 
-
     .product-subtitle {
         font-size: 16px;
         margin-bottom: 14px;
     }
 
-
     .product-price {
         font-size: 17px;
+        margin-top: -6px;
     }
-
 
     .product-stars {
         font-size: 20px;
     }
-
 
     .product-badge {
         top: 15px;
@@ -2360,168 +2286,190 @@ i{
         padding: 9px 14px;
     }
 
-
     .product-bag {
         width: 44px;
         height: 44px;
+
         top: 15px;
         right: 15px;
+
         font-size: 16px;
     }
-
 
     .product-arrow {
         width: 46px;
         height: 46px;
-        top: 215px;
+
+        top: 43%;
+        transform: translateY(-50%);
+
         font-size: 16px;
     }
 
-
     .product-prev {
-        left: 18px;
+        left: 12px;
     }
-
 
     .product-next {
-        right: 18px;
+        right: 12px;
     }
-
 }
 
 
 /* =====================================
-   TABLET
-   768px TO 1199px
-   3 IMAGES
+   768px - 1199px
+   TABLET - 3 PRODUCTS
 ===================================== */
 
 @media (min-width: 768px) and (max-width: 1199px) {
+
+    .new-arrivals-section h2 {
+        font-size: 30px;
+    }
 
     .new-arrivals-heading {
         font-size: 42px;
         margin-bottom: 45px;
     }
 
-
-    /* 3 IMAGE */
-
     .product-card {
-        flex: 0 0 33.333%;
+        flex: 0 0 33.333333%;
         padding: 0 10px;
     }
-
 
     .product-image {
         height: 420px;
     }
 
-
     .product-card h3 {
         font-size: 12px;
     }
-
 
     .product-subtitle {
         font-size: 15px;
     }
 
-
     .product-price {
         font-size: 16px;
     }
-
 
     .product-stars {
         font-size: 19px;
     }
 
-
     .product-arrow {
-        top: 230px;
         width: 50px;
         height: 50px;
+
+        top: 43%;
+        transform: translateY(-50%);
     }
 
+    .product-prev {
+        left: 10px;
+    }
+
+    .product-next {
+        right: 10px;
+    }
 }
 
 
 /* =====================================
-   LAPTOP
-   1200px TO 1599px
-   4 IMAGES
+   1200px - 1599px
+   LAPTOP - 4 PRODUCTS
 ===================================== */
 
 @media (min-width: 1200px) and (max-width: 1599px) {
+
+    .new-arrivals-section h2 {
+        font-size: 34px;
+    }
 
     .product-card {
         flex: 0 0 25%;
         padding: 0 12px;
     }
 
-
     .product-image {
         height: 460px;
     }
-
 
     .product-card h3 {
         font-size: 17px;
     }
 
-
     .product-subtitle {
         font-size: 16px;
     }
 
+    .product-arrow {
+        top: 43%;
+        transform: translateY(-50%);
+    }
+
+    .product-prev {
+        left: 12px;
+    }
+
+    .product-next {
+        right: 12px;
+    }
 }
 
 
 /* =====================================
-   LARGE SCREEN
-   1600px TO 2560px
-   4 IMAGES
+   1600px - 2560px
+   LARGE SCREEN - 4 PRODUCTS
 ===================================== */
 
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 2560px) {
 
     .new-arrivals-section {
         padding-top: 30px;
     }
 
+    .new-arrivals-section h2 {
+        font-size: 38px;
+        letter-spacing: 1.5px;
+    }
 
     .new-arrivals-heading {
         font-size: 52px;
         margin-bottom: 65px;
     }
 
-
     .product-card {
         flex: 0 0 25%;
         padding: 0 16px;
     }
 
-
     .product-image {
         height: 500px;
     }
-
 
     .product-card h3 {
         font-size: 19px;
     }
 
-
     .product-subtitle {
         font-size: 18px;
     }
 
-
     .product-arrow {
         width: 60px;
         height: 60px;
+        top: 43%;
+        transform: translateY(-50%);
     }
 
+    .product-prev {
+        left: 15px;
+    }
+
+    .product-next {
+        right: 15px;
+    }
 }
 
 
@@ -2536,6 +2484,7 @@ i{
     padding: 35px 40px 25px;
     overflow: hidden;
     background: #fff;
+    
 }
 
 
@@ -2547,6 +2496,7 @@ i{
     align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 24px;
+    
 }
 
 
@@ -2563,12 +2513,12 @@ i{
     background: transparent;
     padding: 0 0 8px;
     font-size: 38px;
-    font-weight: 600;
+    /* font-weight: 600; */
     line-height: 1.1;
     color: #111;
     cursor: pointer;
     position: relative;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
 }
 
 .watch-tab::after {
@@ -2773,7 +2723,7 @@ i{
     margin: 0;
     font-size: 17px;
     line-height: 1.55;
-    font-weight: 400;
+    /* font-weight: 400; */
     color: #161616;
     min-height: 32px;
 }
@@ -2784,7 +2734,7 @@ i{
 .watch-price {
     margin-top: 7px;
     font-size: 20px;
-    font-weight: 500;
+    /* font-weight: 500; */
     color: #111;
 }
 
@@ -3072,9 +3022,9 @@ i{
     margin: 0;
     padding: 0;
     color: #111111;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     font-size: 38px;
-    font-weight: 600;
+    /* font-weight: 600; */
     line-height: 1.1;
 }
 
@@ -3105,9 +3055,9 @@ i{
     font-size: 19px;
     cursor: pointer;
     transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        opacity 0.3s ease;
+     transform 0.3s ease,
+    box-shadow 0.3s ease,
+    opacity 0.3s ease;
 }
 
 
@@ -3232,9 +3182,9 @@ i{
     z-index: 5;
     color: #222222;
     background: transparent;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     font-size: 17px;
-    font-weight: 400;
+    /* font-weight: 400; */
     line-height: 1.2;
 }
 
@@ -3297,12 +3247,10 @@ i{
 
     color: #161616;
 
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     font-size: 17px;
-    font-weight: 400;
-
+    /* font-weight: 400; */
     line-height: 1.55;
-
     min-height: 53px;
 }
 
@@ -3316,9 +3264,9 @@ i{
 
     color: #111111;
 
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     font-size: 20px;
-    font-weight: 500;
+    /* font-weight: 500; */
 
     line-height: 1.3;
 }
@@ -3350,10 +3298,9 @@ i{
 
 .reviewed-watch-old-price {
     color: #555555;
-
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     font-size: 16px;
-    font-weight: 400;
+    /* font-weight: 400; */
 
     text-decoration: line-through;
 }
@@ -3363,10 +3310,9 @@ i{
 
 .reviewed-watch-discount {
     color: #ff3030;
-
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     font-size: 17px;
-    font-weight: 400;
+    /* font-weight: 400; */
 }
 
 
@@ -3378,12 +3324,9 @@ i{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
     gap: 7px;
-
     margin-top: 7px;
-
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     font-size: 15px;
     color: #222222;
 }
@@ -3419,24 +3362,18 @@ i{
 
 .reviewed-watch-view-all {
     min-width: 193px;
-
     padding: 15px 30px;
-
     background: #000000;
     color: #ffffff;
-
     text-align: center;
     text-decoration: none;
-
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     font-size: 20px;
-    font-weight: 400;
-
+    /* font-weight: 400; */
     box-sizing: border-box;
-
     transition:
-        background 0.3s ease,
-        transform 0.3s ease;
+    background 0.3s ease,
+    transform 0.3s ease;
 }
 
 
@@ -3503,7 +3440,7 @@ i{
     }
 
     .reviewed-watch-image {
-        height: 540px;
+        height: 600px;
     }
 
     .reviewed-watch-info {
@@ -3842,9 +3779,9 @@ i{
 
 .brand-carousel-heading h2 {
     margin: 0;
-    font-family: Georgia, "Times New Roman", serif;
+    /* font-family: Georgia, "Times New Roman", serif; */
     font-size: 50px;
-    font-weight: 500;
+    /* font-weight: 500; */
     line-height: 1.1;
     color: #20242a;
 }
@@ -4044,10 +3981,9 @@ i{
 .brand-slide h3 {
     margin: 8px 0 0;
     text-align: center;
-
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 18px;
-    font-weight: 400;
+    /* font-weight: 400; */
 
     color: #111111;
 }
@@ -4279,15 +4215,15 @@ i{
 
 .category-heading h2 {
     margin: 0;
-    font-family: Georgia, serif;
+    /* font-family: Georgia, serif; */
     font-size: 30px;
-    font-weight: 600;
+    /* font-weight: 600; */
     color: #111;
 }
 
 .category-heading p {
     margin: 7px 0 0;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     font-size: 13px;
     color: #777;
 }
@@ -4372,9 +4308,9 @@ i{
 
 .category-item h3 {
     margin: 9px 0 0;
-    font-family: Georgia, serif;
+    /* font-family: Georgia, serif; */
     font-size: 16px;
-    font-weight: 600;
+    /* font-weight: 600; */
     color: #111;
     line-height: 1.2;
     white-space: nowrap;
@@ -4386,29 +4322,22 @@ i{
 .category-arrow {
     width: 34px;
     height: 34px;
-
     border: 1px solid #ddd;
     border-radius: 50%;
-
     background: #fff;
     color: #111;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: absolute;
     top: 50%;
     transform: translateY(-25px);
-
     z-index: 5;
     cursor: pointer;
-
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.10);
-
     transition:
-        background 0.3s ease,
-        transform 0.3s ease;
+    background 0.3s ease,
+    transform 0.3s ease;
 }
 
 .category-arrow i {
@@ -4700,13 +4629,10 @@ i{
 .our-brands-heading h2 {
     margin: 0;
     padding: 0;
-
     color: #111111;
-
-    font-family: Georgia, serif;
+    /* font-family: Georgia, serif; */
     font-size: 40px;
-    font-weight: 500;
-
+    /* font-weight: 500; */
     line-height: 1.2;
 }
 
@@ -4721,9 +4647,7 @@ i{
 .brands-slider {
     width: 90%;
     max-width: 1800px;
-
     margin: 0 auto;
-
     overflow: hidden;
 }
 
@@ -4734,14 +4658,10 @@ i{
 
 .brands-track {
     width: max-content;
-
     display: flex;
     align-items: center;
-
     gap: 20px;
-
     animation: brandsSlide 55s linear infinite;
-
     will-change: transform;
 }
 
@@ -5084,6 +5004,7 @@ i{
     padding: 20px 10px 35px;
     background: #ffffff;
     overflow: hidden;
+    
 }
 
 
@@ -5094,13 +5015,14 @@ i{
 .titan-video-heading {
     width: 100%;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+
 }
 
 .titan-video-heading h2 {
     margin: 0;
     font-size: 25px;
-    font-weight: 400;
+    /* font-weight: 400; */
     line-height: 1.2;
     color: #111111;
     letter-spacing: 0.3px;
@@ -5188,7 +5110,7 @@ i{
     background: rgba(20, 20, 20, 0.82);
     color: #ffffff;
     font-size: 13px;
-    font-weight: 500;
+    /* font-weight: 500; */
     z-index: 5;
 }
 
@@ -5212,7 +5134,7 @@ i{
     border-radius: 20px;
     background-color: black;
     color: #ffffff;
-    font-family: Georgia, serif;
+    /* font-family: Georgia, serif; */
     font-size: 14px;
     cursor: pointer;
     z-index: 5;
@@ -5555,7 +5477,7 @@ i{
 
     .titan-video-card {
         flex: 0 0 calc((100% - 110px) / 6);
-        height: 430px;
+        height: 562px;
         border-radius: 21px;
     }
 
@@ -5604,9 +5526,9 @@ FAQ SECTION START  */
 
 .faq-heading h2 {
     margin: 0;
-    font-family: Georgia, serif;
+    /* font-family: Georgia, serif; */
     font-size: 30px;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 1.2;
     color: #111111;
 }
@@ -5654,10 +5576,9 @@ FAQ SECTION START  */
 
 .faq-question > span:first-child {
     padding-right: 30px;
-
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     font-size: 20px;
-    font-weight: 500;
+    /* font-weight: 500; */
     line-height: 1.5;
     color: #111111;
 }
@@ -5675,9 +5596,9 @@ FAQ SECTION START  */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     font-size: 27px;
-    font-weight: 400;
+    /* font-weight: 400; */
     line-height: 1;
     color: #111111;
 }
@@ -5730,9 +5651,9 @@ FAQ SECTION START  */
     overflow: hidden;
     margin: 0;
     padding: 0 45px 0 0;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     font-size: 16px;
-    font-weight: 400;
+    /* font-weight: 400; */
     line-height: 1.7;
     color: #555555;
     transition:
@@ -5791,9 +5712,9 @@ FAQ SECTION START  */
     border: 1px solid #111111;
     background: #111111;
     color: #ffffff;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     font-size: 15px;
-    font-weight: 400;
+    /* font-weight: 400; */
     cursor: pointer;
     transition:
     background 0.3s ease,
@@ -6017,6 +5938,7 @@ FAQ SECTION START  */
     padding: 80px 5%;
     /* background: #f7f9fb; */
     overflow: hidden;
+    
 }
 
 
@@ -6032,7 +5954,7 @@ FAQ SECTION START  */
     margin: 0;
     color: #222;
     font-size: 34px;
-    font-weight: 700;
+    /* font-weight: 700; */
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -6043,7 +5965,7 @@ FAQ SECTION START  */
 .sanso-customer-slider {
     width: 100%;
      overflow-y: visible;
-     margin-top: 20px;
+     margin-top: 25px;
 }
 
 .sanso-customer-track {
@@ -6069,6 +5991,7 @@ FAQ SECTION START  */
     transform 0.35s ease,
     box-shadow 0.35s ease,
     background 0.35s ease;
+    cursor: pointer;
 }
 
 
@@ -6123,7 +6046,7 @@ FAQ SECTION START  */
     color:black;
     font-size: 48px;
     line-height: 1;
-    font-weight: 700;
+    /* font-weight: 700; */
     padding-top: 12px;
     box-sizing: border-box;
     transition: all 0.5s ease;
@@ -6158,7 +6081,7 @@ FAQ SECTION START  */
     color: #555;
     font-size: 17px;
     line-height: 1.9;
-    font-weight: 400;
+    /* font-weight: 400; */
 }
 
 
@@ -6186,15 +6109,18 @@ FAQ SECTION START  */
     flex-shrink: 0;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid #09b7ec;
+    transition: all 0.10s ease;
+    border: 1px solid black;
+    
 }
+
 
 .sanso-customer-info h3 {
     margin: 0 0 5px;
     color: black;
     font-size: 19px;
     line-height: 1.3;
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 
 .sanso-customer-info p {
@@ -6224,9 +6150,9 @@ FAQ SECTION START  */
     background: #c9d3d8;
     cursor: pointer;
     transition:
-        width 0.3s ease,
-        background 0.3s ease,
-        transform 0.3s ease;
+    width 0.3s ease,
+    background 0.3s ease,
+     transform 0.3s ease;
 
 }
 
@@ -6378,7 +6304,7 @@ FAQ SECTION START  */
 @media (min-width: 1200px) and (max-width: 1599px) {
 
     .sanso-customer-section {
-        padding: 80px 4%;
+        padding: 55px 5%;
     }
 
     .sanso-customer-card {
@@ -6400,7 +6326,7 @@ FAQ SECTION START  */
 @media (min-width: 1600px) and (max-width: 2560px) {
 
     .sanso-customer-section {
-        padding: 95px 5%;
+        padding: 55px 5%;
     }
 
     .sanso-customer-heading {
@@ -6461,7 +6387,6 @@ FAQ SECTION START  */
     width: 100%;
     max-width: 2400px;
     margin: 0 auto;
-
     display: grid;
     grid-template-columns:
         1fr
@@ -6487,13 +6412,10 @@ FAQ SECTION START  */
 .sachin-footer-column h3,
 .sachin-footer-extra h3 {
     margin: 0 0 23px;
-
     font-size: clamp(13px, 0.85vw, 18px);
     line-height: 1.3;
-
-    font-weight: 700;
+    /* font-weight: 700; */
     letter-spacing: 0.1px;
-
     color: #fff;
 }
 
@@ -6502,18 +6424,13 @@ FAQ SECTION START  */
 
 .sachin-footer-column a {
     position: relative;
-
     display: block;
     width: fit-content;
-
     margin-bottom: 17px;
-
     color: #d7d7d7;
     text-decoration: none;
-
-    font-size: clamp(12px, 0.72vw, 16px);
+    font-size: clamp(16px, 0.72vw, 16px);
     line-height: 1.5;
-
     transition:
         color 0.3s ease,
         transform 0.3s ease;
@@ -6524,16 +6441,12 @@ FAQ SECTION START  */
 
 .sachin-footer-column a::after {
     content: "";
-
     position: absolute;
     left: 0;
     bottom: -3px;
-
     width: 0;
     height: 1px;
-
     background: #fff;
-
     transition: width 0.35s ease;
 }
 
@@ -6555,7 +6468,6 @@ FAQ SECTION START  */
     display: flex;
     align-items: center;
     gap: 14px;
-
     flex-wrap: wrap;
 }
 
@@ -6563,25 +6475,19 @@ FAQ SECTION START  */
 .sachin-app-btn {
     min-width: 120px;
     height: 40px;
-
     padding: 5px 11px;
-
     display: flex;
     align-items: center;
     gap: 8px;
-
     border: 1px solid #777;
     border-radius: 6px;
-
     color: #fff;
     text-decoration: none;
-
     box-sizing: border-box;
-
     transition:
-        border-color 0.3s ease,
-        background 0.3s ease,
-        transform 0.3s ease;
+    border-color 0.3s ease,
+    background 0.3s ease,
+    transform 0.3s ease;
 }
 
 
@@ -6595,14 +6501,14 @@ FAQ SECTION START  */
     flex-direction: column;
 
     font-size: 15px;
-    font-weight: 600;
+    /* font-weight: 600; */
     line-height: 1.05;
 }
 
 
 .sachin-app-btn small {
     font-size: 7px;
-    font-weight: 400;
+    /* font-weight: 400; */
     margin-bottom: 2px;
 }
 
@@ -6610,7 +6516,7 @@ FAQ SECTION START  */
 .sachin-app-btn:hover {
     border-color: #fff;
     background: #151515;
-    transform: translateY(-2px);
+    transform: translateY(-1px);
 }
 
 
@@ -6632,21 +6538,16 @@ FAQ SECTION START  */
 .sachin-social-icons a {
     width: 32px;
     height: 32px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 50%;
-
     background: #393939;
     color: #fff;
-
     text-decoration: none;
-
     transition:
-        background 0.3s ease,
-        transform 0.3s ease;
+     background 0.3s ease,
+     transform 0.3s ease;
 }
 
 
@@ -6658,8 +6559,9 @@ FAQ SECTION START  */
 .sachin-social-icons a:hover {
     background: #fff;
     color: #000;
-
-    transform: translateY(-3px);
+    transition: all 0.10s ease;
+     
+    /* transform: translateY(-3px); */
 }
 
 
@@ -6672,13 +6574,10 @@ FAQ SECTION START  */
 
 .sachin-footer-help p {
     margin: 0 0 12px;
-
     color: #eee;
-
     font-size: clamp(12px, 0.72vw, 16px);
     line-height: 1.5;
-
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 
@@ -6691,7 +6590,6 @@ FAQ SECTION START  */
 
 .sachin-footer-help p a {
     position: relative;
-
     color: #fff;
     text-decoration: none;
 }
@@ -6699,16 +6597,12 @@ FAQ SECTION START  */
 
 .sachin-footer-help p a::after {
     content: "";
-
     position: absolute;
     left: 0;
     bottom: -2px;
-
     width: 0;
     height: 1px;
-
     background: #fff;
-
     transition: width 0.35s ease;
 }
 
@@ -6723,22 +6617,17 @@ FAQ SECTION START  */
 .sachin-whatsapp {
     width: 32px;
     height: 32px;
-
     margin-left: 5px;
-
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     border: 1px solid #555;
     border-radius: 50%;
-
     vertical-align: middle;
-
     transition:
-        background 0.3s ease,
-        color 0.3s ease,
-        transform 0.3s ease;
+     background 0.3s ease,
+     color 0.3s ease,
+     transform 0.3s ease;
 }
 
 
@@ -6760,11 +6649,8 @@ FAQ SECTION START  */
 .sachin-footer-line {
     width: 100%;
     max-width: 2400px;
-
     height: 1px;
-
     margin: 45px auto 0;
-
     background: #222;
 }
 
@@ -6773,14 +6659,10 @@ FAQ SECTION START  */
 
 .sachin-copyright {
     width: 100%;
-
     padding-top: 23px;
-
     text-align: center;
-
     color: #999;
-
-    font-size: clamp(11px, 0.7vw, 15px);
+    font-size: clamp(18px, 0.7vw, 18px);
     line-height: 1.5;
 }
 
@@ -6956,7 +6838,7 @@ FAQ SECTION START  */
 
 
     .sachin-footer-column a {
-        font-size: 11px;
+        font-size: 12px;
         margin-bottom: 13px;
     }
 
@@ -7024,6 +6906,10 @@ FAQ SECTION START  */
     }
 }
 /* FOOTER END */
+
+
+
+
 
 
 
