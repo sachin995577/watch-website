@@ -1141,12 +1141,7 @@ body, p, a, button {
     /* Dark Overlay */
 
     .banner-overlay {
-        background: linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.20) 0%,
-            rgba(0, 0, 0, 0.45) 45%,
-            rgba(0, 0, 0, 0.88) 100%
-        );
+        background: linear-gradient(180deg, rgb(0 0 0 / 40%) 0%, rgb(0 0 0 / 16%) 45%, rgb(0 0 0 / 26%) 100%);
     }
 
 
