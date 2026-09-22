@@ -83,6 +83,7 @@ body, p, a, button {
     width: max-content;
 }
 
+
 .logo-icon {
     width: 30px;
     height: 34px;
@@ -91,6 +92,24 @@ body, p, a, button {
     align-items: center;
     justify-content: center;
 }
+
+/* responisve logo */
+  
+.logo-img img{
+    height: 65px;
+    /* width: 80%; */
+    object-fit: cover;
+}
+@media (max-width: 320px) {
+    .logo-img img{
+        height: 50px;
+        /* margin-top: 8px; */
+    }
+}
+/* responisve logo end */
+
+ 
+
 
 .logo-icon::before {
     content: "";
@@ -473,6 +492,11 @@ body, p, a, button {
     padding: 0 18px;
     border-radius: 8px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+.search-box button:hover{
+     background: rgba(0, 0, 0, 0.797);
+     transition: all 0.3s ease;
 }
 
 
@@ -504,7 +528,13 @@ body, p, a, button {
     border-radius: 7px;
     cursor: pointer;
     font-size: 12px;
+    transition: all 0.3s ease;
     letter-spacing: 0.5px;
+}
+
+.popup-main-btn:hover{
+     background: rgba(0, 0, 0, 0.797);
+      transition: all 0.3s ease;
 }
 
 
@@ -1329,6 +1359,9 @@ body, p, a, button {
 
 }
 
+
+
+
 /* BANNER SLIDE END */
 
 
@@ -2080,7 +2113,7 @@ i{
     object-fit: cover;
     display: block;
     transition: opacity 0.5s ease,
-                transform 0.5s ease;
+    transform 0.5s ease;
 }
 
 .hover-image {
@@ -2102,13 +2135,10 @@ i{
     top: 20px;
     left: 20px;
     z-index: 3;
-
     background: #ffffff;
     color: #30343b;
-
     padding: 11px 18px;
     border-radius: 30px;
-
     font-size: 14px;
 }
 
@@ -2117,24 +2147,17 @@ i{
     top: 20px;
     right: 20px;
     z-index: 3;
-
     width: 50px;
     height: 50px;
-
     border-radius: 50%;
     border: none;
-
     background: #ffffff;
     color: #000000;
-
     cursor: pointer;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 18px;
-
     transition: 0.3s ease;
 }
 
@@ -2183,33 +2206,23 @@ i{
 
 .product-arrow {
     position: absolute;
-
     top: 50%;
     transform: translateY(-50%);
-
     z-index: 50;
-
     width: 58px;
     height: 58px;
-
     border: none;
     border-radius: 50%;
-
     background: #ffffff;
     color: #222222;
-
     cursor: pointer;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 20px;
-
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
-
     transition: background 0.3s ease,
-                color 0.3s ease;
+    color 0.3s ease;
 }
 
 .product-arrow:hover {
@@ -2256,7 +2269,7 @@ i{
     }
 
     .product-card h3 {
-        font-size: 17px;
+        font-size: 16px;
         margin-top: 14px;
     }
 
@@ -2284,20 +2297,16 @@ i{
     .product-bag {
         width: 44px;
         height: 44px;
-
         top: 15px;
         right: 15px;
-
         font-size: 16px;
     }
 
     .product-arrow {
         width: 46px;
         height: 46px;
-
         top: 43%;
         transform: translateY(-50%);
-
         font-size: 16px;
     }
 
@@ -2355,7 +2364,6 @@ i{
     .product-arrow {
         width: 50px;
         height: 50px;
-
         top: 43%;
         transform: translateY(-50%);
     }
@@ -2507,7 +2515,7 @@ i{
     border: none;
     background: transparent;
     padding: 0 0 8px;
-    font-size: 38px;
+    font-size: 34px;
     /* font-weight: 600; */
     line-height: 1.1;
     color: #111;
@@ -2522,7 +2530,7 @@ i{
     left: 0;
     bottom: 0;
     width: 0;
-    height: 1px;
+    height: 1.9px;
     background: #111;
     transition: width 0.3s ease;
 }
@@ -2637,7 +2645,7 @@ i{
     object-fit: cover;
     inset: 0;
     transition: opacity 0.45s ease,
-                transform 0.5s ease;
+     transform 0.5s ease;
 }
 
 
@@ -2878,7 +2886,7 @@ i{
     }
 
     .watch-product-info h3 {
-        font-size: 16px;
+        font-size: 14px;
         min-height: auto;
     }
 
@@ -2916,7 +2924,7 @@ i{
     }
 
     .watch-tab {
-        font-size: 21px;
+        font-size: 22px;
         margin-top: -30px;
     }
 
@@ -2945,7 +2953,7 @@ i{
 
 @media (max-width: 320px) {
      .watch-tab {
-        font-size: 15px;
+        font-size: 18px;
         margin-top: -40px;
      }
 }
@@ -3391,7 +3399,7 @@ i{
     }
 
     .reviewed-watch-heading h2 {
-        font-size: 38px;
+        font-size: 34px;
     }
 
     .reviewed-watch-image {
@@ -3630,7 +3638,7 @@ i{
     }
 
     .reviewed-watch-heading h2 {
-        font-size: 21px;
+        font-size: 20px;
         line-height: 1.15;
     }
 
@@ -3775,7 +3783,7 @@ i{
 .brand-carousel-heading h2 {
     margin: 0;
     /* font-family: Georgia, "Times New Roman", serif; */
-    font-size: 50px;
+    font-size: 34px;
     /* font-weight: 500; */
     line-height: 1.1;
     color: #20242a;
@@ -4137,7 +4145,7 @@ i{
     }
 
     .brand-carousel-heading h2 {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     .brand-image-box img {
@@ -4211,7 +4219,7 @@ i{
 .category-heading h2 {
     margin: 0;
     /* font-family: Georgia, serif; */
-    font-size: 30px;
+    font-size: 34px;
     /* font-weight: 600; */
     color: #111;
 }
@@ -4284,10 +4292,9 @@ i{
     height: 100%;
     display: block;
     object-fit: cover;
-
     transition:
-        transform 0.45s ease,
-        filter 0.45s ease;
+    transform 0.45s ease,
+    filter 0.45s ease;
 }
 
 
@@ -4295,7 +4302,8 @@ i{
 
 .category-image:hover img {
     transform: scale(1.12);
-    filter: brightness(0.78);
+    filter: brightness(0.50);
+    transition: all 0.3s ease;
 }
 
 
@@ -4378,7 +4386,7 @@ i{
     }
 
     .category-heading p {
-        font-size: 11px;
+        font-size: 15px;
     }
 
     .category-carousel {
@@ -4399,7 +4407,7 @@ i{
 
     .category-item h3 {
         margin-top: 8px;
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .category-arrow {
@@ -4492,7 +4500,7 @@ i{
     }
 
     .category-heading p {
-        font-size: 12px;
+        font-size: 18px;
     }
 
     .category-carousel {
@@ -4748,7 +4756,7 @@ i{
 
 
     .our-brands-heading h2 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
 
@@ -4902,7 +4910,7 @@ i{
 
 
     .our-brands-heading h2 {
-        font-size: 38px;
+        font-size: 34px;
     }
 
 
@@ -5117,7 +5125,7 @@ i{
 /* =========================================
    SHOP BUTTON
 ========================================= */
-
+/* 
 .titan-shop-btn {
     position: absolute;
     left: 50%;
@@ -5129,7 +5137,6 @@ i{
     border-radius: 20px;
     background-color: black;
     color: #ffffff;
-    /* font-family: Georgia, serif; */
     font-size: 14px;
     cursor: pointer;
     z-index: 5;
@@ -5137,13 +5144,50 @@ i{
 }
 
 .titan-shop-btn:hover {
-    background: rgba(0, 0, 0, 0.80);
-    /* transform: translateY(-2px); */
+    background: rgba(0, 0, 0, 0.797);
+    transition: all 0.3s ease;
+    
+} */
+
+.titan-shop-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    border: none;
+    outline: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 5;
+    overflow: hidden;
 }
-    /* transform: translateX(-50%) scale(1.04); */
 
+/* White background layer */
+.titan-shop-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background: white;
+   transition: height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -1;
+}
 
+/* Hover par bottom se white upar aayega */
+.titan-shop-btn:hover::before {
+    height: 100%;
+}
 
+/* Text black ho jayega */
+.titan-shop-btn:hover {
+    color: black;
+}
 
 
 /* =========================================
@@ -5716,11 +5760,9 @@ FAQ SECTION START  */
     color 0.3s ease;
 }
 
-
-/* .faq-read-more button:hover {
-    background: #ffffff;
-    color: #111111;
-} */
+.faq-read-more button:hover{
+     background: rgba(0, 0, 0, 0.797);
+}
 
 
 /* =========================================
@@ -5774,7 +5816,7 @@ FAQ SECTION START  */
     }
 
     .faq-heading h2 {
-        font-size: 30px;
+        font-size: 34px;
     }
 
     .faq-question {
@@ -6173,7 +6215,7 @@ FAQ SECTION START  */
 @media (max-width: 767px) {
 
     .sanso-customer-section {
-        padding: 55px 18px;
+        padding: 12px 18px;
     }
 
     .sanso-customer-heading {
@@ -6408,7 +6450,7 @@ FAQ SECTION START  */
 .sachin-footer-extra h3 {
     margin: 0 0 23px;
     font-size: clamp(13px, 0.85vw, 18px);
-    line-height: 1.3;
+    line-height: 3.1;
     /* font-weight: 700; */
     letter-spacing: 0.1px;
     color: #fff;
@@ -6643,10 +6685,10 @@ FAQ SECTION START  */
 
 .sachin-footer-line {
     width: 100%;
-    max-width: 2400px;
+    max-width: 2430px;
     height: 1px;
     margin: 45px auto 0;
-    background: #222;
+    background: rgba(255, 255, 255, 0.386);
 }
 
 
@@ -6802,7 +6844,7 @@ FAQ SECTION START  */
 
     .sachin-copyright {
         padding-top: 20px;
-        font-size: 11px;
+        font-size: 14px;
     }
 }
 
@@ -6828,12 +6870,12 @@ FAQ SECTION START  */
 
     .sachin-footer-column h3,
     .sachin-footer-extra h3 {
-        font-size: 12px;
+        font-size: 10px;
     }
 
 
     .sachin-footer-column a {
-        font-size: 12px;
+        font-size: 13px;
         margin-bottom: 13px;
     }
 
@@ -6909,6 +6951,7 @@ FAQ SECTION START  */
 
 
 
+
 /* Scroll Reveal Animation */
 .scroll-reveal {
     opacity: 0;
@@ -6923,6 +6966,167 @@ FAQ SECTION START  */
 }
 
 /* SCROLL REVEAL ANIMATION END */
+
+
+
+
+/* HERO / BANNER KO EXCLUDE KARO */
+.hero-slider img,
+.hero-slider picture img {
+    transform: none !important;
+    transition: none !important;
+    will-change: auto !important;
+}
+
+
+/* LOGO KO EXCLUDE KARO */
+.logo-img img {
+    transform: none !important;
+    transition: none !important;
+    will-change: auto !important;
+}
+.copyright{
+    color:white;
+    text-decoration: underline;
+}
+.sachin-copyright .copyright {
+   
+    text-decoration: none;
+}
+
+
+/* ////////////////////////////////
+/////////////////////////////// */
+
+/* FIRST PAGE IDEX.HTML WEBSITE COMPLETE */
+
+/* END FIRST PAGE  OF HOME */
+
+/* //////////////////////////////
+////////////////////////////// */
+
+  /* SECOND PAGE START */
+  
+
+
+
+
+  /* =========================================
+   SINGLE BANNER
+========================================= */
+
+.single-banner {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.single-banner picture {
+    display: block;
+    width: 100%;
+}
+
+.single-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* =========================================
+   PHONE
+   320px - 767px
+========================================= */
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .single-banner,
+    .single-banner picture {
+        width: 100%;
+    }
+
+    .single-banner img {
+        width: 100%;
+        height: 630px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+   768px - 1024px
+========================================= */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .single-banner,
+    .single-banner picture {
+        width: 100%;
+    }
+
+    .single-banner img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+
+/* =========================================
+   LAPTOP
+   1025px - 1599px
+========================================= */
+
+@media (min-width: 1025px) and (max-width: 1599px) {
+
+    .single-banner,
+    .single-banner picture {
+        width: 100%;
+    }
+
+    .single-banner img {
+        width: 100%;
+        height: 720px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+
+/* =========================================
+   LARGE SCREEN
+   1600px - 2560px
+========================================= */
+
+@media (min-width: 1600px) and (max-width: 2560px) {
+
+    .single-banner,
+    .single-banner picture {
+        width: 100%;
+    }
+
+    .single-banner img {
+        width: 100%;
+        height: 1300px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+
+
+
+
+
+
 
 
 

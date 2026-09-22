@@ -2477,5 +2477,9 @@ sansoSlider.addEventListener("mouseleave", function () {
 
 // CUSTOMER SAY END
 
+/* =========================================
+   IMAGE + VIDEO SCROLL SCALE ANIMATION
+   BANNER + LOGO EXCLUDED
+========================================= */
 
 

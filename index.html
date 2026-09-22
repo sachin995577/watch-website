@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WatchStore</title>
-     
-<!-- Font Awesome Icons -->
-<link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 
     <!-- CSS -->
     <link rel="stylesheet" href="index.css">
-   
+
 </head>
 
 <body>
 
-   
 
-  <!-- NAVBAR -->
+
+
+    <!-- NAVBAR -->
 
     <header class="navbar">
 
@@ -28,12 +29,20 @@
             <!-- LOGO -->
             <a href="#" class="logo">
 
-                <div class="logo-icon">
-                    <span>◷</span>
+                <!-- <div class="logo-icon">
+                    <span></span>
                 </div>
 
                 <span class="scroll-reveal logo-text">
-                    WatchStore
+                  <div class="logo-img">
+                     <img src="image-folder/logo-watch.png" alt="">
+                  </div>
+                </span> -->
+
+                <span class="scroll-reveal logo-text">
+                    <div class="logo-img">
+                        <img src="image-folder/sachin-logo-one.png" alt="WatchStore Logo">
+                    </div>
                 </span>
 
             </a>
@@ -42,23 +51,23 @@
             <!-- DESKTOP MENU -->
             <nav class="desktop-nav">
 
-                <a href="#" class="nav-link active">
+                <a href="index.html" class="nav-link active">
                     HOME
                 </a>
 
-                <a href="#" class="nav-link">
+                <a href="men.html" class="nav-link">
                     MEN
                 </a>
 
-                <a href="#" class="nav-link">
+                <a href="women.html" class="nav-link">
                     WOMEN
                 </a>
 
-                <a href="#" class="nav-link">
+                <a href="luxury.html" class="nav-link">
                     LUXURY
                 </a>
 
-                <a href="#" class="nav-link">
+                <a href="gifting.html" class="nav-link">
                     GIFTING
                 </a>
 
@@ -69,23 +78,13 @@
             <div class="nav-actions">
 
                 <!-- SEARCH -->
-                <button
-                    class="icon-btn"
-                    data-popup="searchPopup"
-                    aria-label="Search">
+                <button class="icon-btn" data-popup="searchPopup" aria-label="Search">
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
 
                         <circle cx="11" cy="11" r="7"></circle>
 
-                        <line
-                            x1="16.5"
-                            y1="16.5"
-                            x2="22"
-                            y2="22">
+                        <line x1="16.5" y1="16.5" x2="22" y2="22">
                         </line>
 
                     </svg>
@@ -94,18 +93,11 @@
 
 
                 <!-- CART -->
-                <button
-                    class="icon-btn cart-button"
-                    data-popup="cartPopup"
-                    aria-label="Cart">
+                <button class="icon-btn cart-button" data-popup="cartPopup" aria-label="Cart">
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
 
-                        <path
-                            d="M3 4h2l2.2 11h10.9l2-8H6">
+                        <path d="M3 4h2l2.2 11h10.9l2-8H6">
                         </path>
 
                         <circle cx="9" cy="19" r="1.5"></circle>
@@ -120,24 +112,14 @@
 
 
                 <!-- PROFILE -->
-                <button
-                    class="icon-btn"
-                    data-popup="profilePopup"
-                    aria-label="Profile">
+                <button class="icon-btn" data-popup="profilePopup" aria-label="Profile">
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
 
-                        <circle
-                            cx="12"
-                            cy="7"
-                            r="4">
+                        <circle cx="12" cy="7" r="4">
                         </circle>
 
-                        <path
-                            d="M4 21c0-4.5 3.5-7 8-7s8 2.5 8 7">
+                        <path d="M4 21c0-4.5 3.5-7 8-7s8 2.5 8 7">
                         </path>
 
                     </svg>
@@ -146,15 +128,9 @@
 
 
                 <!-- WISHLIST -->
-                <button
-                    class="icon-btn"
-                    data-popup="wishlistPopup"
-                    aria-label="Wishlist">
+                <button class="icon-btn" data-popup="wishlistPopup" aria-label="Wishlist">
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
 
                         <path
                             d="M20.8 8.7c0 5.5-8.8 10.3-8.8 10.3S3.2 14.2 3.2 8.7C3.2 5.6 5.3 3.5 8 3.5c1.6 0 3.1.8 4 2.1 0.9-1.3 2.4-2.1 4-2.1 2.7 0 4.8 2.1 4.8 5.2z">
@@ -166,10 +142,7 @@
 
 
                 <!-- HAMBURGER -->
-                <button
-                    class="hamburger"
-                    id="hamburger"
-                    aria-label="Open menu">
+                <button class="hamburger" id="hamburger" aria-label="Open menu">
 
                     <span></span>
                     <span></span>
@@ -191,7 +164,7 @@
 
         <nav>
 
-            <a  href="#">HOME</a>
+            <a href="#">HOME</a>
 
             <a href="#">MEN</a>
 
@@ -209,18 +182,14 @@
 
     <!-- ================= POPUP OVERLAY ================= -->
 
-    <div
-        class="popup-overlay"
-        id="popupOverlay">
+    <div class="popup-overlay" id="popupOverlay">
     </div>
 
 
 
     <!-- ================= SEARCH POPUP ================= -->
 
-    <div
-        class="popup"
-        id="searchPopup">
+    <div class="popup" id="searchPopup">
 
         <div class="popup-header">
 
@@ -234,9 +203,7 @@
 
         <div class="search-box">
 
-            <input
-                type="text"
-                placeholder="Search watches...">
+            <input type="text" placeholder="Search watches...">
 
             <button>
                 Search
@@ -250,9 +217,7 @@
 
     <!-- ================= CART POPUP ================= -->
 
-    <div
-        class="popup"
-        id="cartPopup">
+    <div class="popup" id="cartPopup">
 
         <div class="popup-header">
 
@@ -282,9 +247,7 @@
 
     <!-- ================= PROFILE POPUP ================= -->
 
-    <div
-        class="popup"
-        id="profilePopup">
+    <div class="popup" id="profilePopup">
 
         <div class="popup-header">
 
@@ -321,9 +284,7 @@
 
     <!-- ================= WISHLIST POPUP ================= -->
 
-    <div
-        class="popup"
-        id="wishlistPopup">
+    <div class="popup" id="wishlistPopup">
 
         <div class="popup-header">
 
@@ -359,2029 +320,1675 @@
      BANNER SLIDER START
 ========================== -->
 
-<section class="hero-slider">
+    <section class="hero-slider">
 
-    <div class="slider-wrapper">
+        <div class="slider-wrapper">
 
 
-        <!-- =========================
+            <!-- =========================
              SLIDE 1
         ========================== -->
 
-        <div class="slide active">
+            <div class="slide active">
 
-            <picture>
+                <picture>
 
-                <!-- Mobile: 767px tak -->
-    <source 
-        media="(max-width: 767px)" 
-        srcset="image-folder/first-banner.png"
-    >
+                    <!-- Mobile: 767px tak -->
+                    <source media="(max-width: 767px)" srcset="image-folder/first-banner.png">
 
-    <!-- Tablet: 768px se 1024px -->
-    <source 
-        media="(min-width: 768px) and (max-width: 1024px)" 
-        srcset="image-folder/tablet-se-badi.png"
-    >
+                    <!-- Tablet: 768px se 1024px -->
+                    <source media="(min-width: 768px) and (max-width: 1024px)" srcset="image-folder/tablet-se-badi.png">
 
-    <!-- Laptop/Desktop: Default -->
-    <img 
-        src="https://watch-portfolio-website.vercel.app/images/new-img-banner.webp"
-        alt="Luxury Watch Collection"
-    >
+                    <!-- Laptop/Desktop: Default -->
+                    <img src="https://watch-portfolio-website.vercel.app/images/new-img-banner.webp"
+                        alt="Luxury Watch Collection">
 
-            </picture>
+                </picture>
 
-            <div class="banner-overlay"></div>
+                <div class="banner-overlay"></div>
 
-            <div class="banner-content">
+                <div class="banner-content">
 
-                <span class="banner-subtitle">
-                    <!-- PREMIUM COLLECTION -->
-                </span>
+                    <span class="banner-subtitle">
+                        <!-- PREMIUM COLLECTION -->
+                    </span>
 
-                <h1>Luxury In Every Moment</h1>
+                    <h1>Luxury In Every Moment</h1>
 
-                <p>
-                  Discover exquisite timepieces crafted with precision and elegance, designed to make every moment truly unforgettable.
-                </p>
+                    <p>
+                        Discover exquisite timepieces crafted with precision and elegance, designed to make every moment
+                        truly unforgettable.
+                    </p>
 
-                <a href="#" class="banner-btn">
-                    Shop Collection
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
+                    <a href="#" class="banner-btn">
+                        Shop Collection
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
 
             </div>
 
-        </div>
 
-
-        <!-- =========================
+            <!-- =========================
              SLIDE 2
         ========================== -->
 
-        <div class="slide">
+            <div class="slide">
 
-            <picture>
+                <picture>
 
-                           <!-- Mobile: 767px tak -->
-    <source 
-        media="(max-width: 767px)" 
-        srcset="image-folder/second-banner.png"
-    >
+                    <!-- Mobile: 767px tak -->
+                    <source media="(max-width: 767px)" srcset="image-folder/second-banner.png">
 
-    <!-- Tablet: 768px se 1024px -->
-    <source 
-        media="(min-width: 768px) and (max-width: 1024px)" 
-        srcset="image-folder/tablet-se-last.png"
-    >
+                    <!-- Tablet: 768px se 1024px -->
+                    <source media="(min-width: 768px) and (max-width: 1024px)" srcset="image-folder/tablet-se-last.png">
 
-    <!-- Laptop/Desktop: Default -->
-    <img 
-        src="https://watch-portfolio-website.vercel.app/images/banner%20four.jpg"
-        alt="Luxury Watch Collection"
-    >
-            </picture>
+                    <!-- Laptop/Desktop: Default -->
+                    <img src="https://watch-portfolio-website.vercel.app/images/banner%20four.jpg"
+                        alt="Luxury Watch Collection">
+                </picture>
 
-            <div class="banner-overlay"></div>
+                <div class="banner-overlay"></div>
 
-            <div class="banner-content">
+                <div class="banner-content">
 
-                <span class="banner-subtitle">
-                    <!-- NEW ARRIVALS -->
-                </span>
+                    <span class="banner-subtitle">
+                        <!-- NEW ARRIVALS -->
+                    </span>
 
-                <h1>Elegance In Every
-                 Moment</h1>
+                    <h1>Elegance In Every
+                        Moment</h1>
 
-                <p>
-                    Explore refined timepieces crafted with precision and elegance, designed to elevate your style and make every moment memorable.
-                </p>
+                    <p>
+                        Explore refined timepieces crafted with precision and elegance, designed to elevate your style
+                        and make every moment memorable.
+                    </p>
 
-                <a href="#" class="banner-btn">
-                    Explore Now
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
+                    <a href="#" class="banner-btn">
+                        Explore Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
 
             </div>
 
-        </div>
 
-
-        <!-- =========================
+            <!-- =========================
              SLIDE 3
         ========================== -->
 
-        <div class="slide">
+            <div class="slide">
 
-            <picture>
+                <picture>
 
-              
-                <!-- Mobile: 767px tak -->
-    <source 
-        media="(max-width: 767px)" 
-        srcset="image-folder/third-banner.png"
-    >
 
-    <!-- Tablet: 768px se 1024px -->
-    <source 
-        media="(min-width: 768px) and (max-width: 1024px)" 
-        srcset="image-folder/third-tablet.png"
-    >
+                    <!-- Mobile: 767px tak -->
+                    <source media="(max-width: 767px)" srcset="image-folder/third-banner.png">
 
-    <!-- Laptop/Desktop: Default -->
-    <img 
-        src="https://watch-portfolio-website.vercel.app/images/banner%20three.jpg"
-        alt="Luxury Watch Collection"
-    >
+                    <!-- Tablet: 768px se 1024px -->
+                    <source media="(min-width: 768px) and (max-width: 1024px)" srcset="image-folder/third-tablet.png">
 
-            </picture>
+                    <!-- Laptop/Desktop: Default -->
+                    <img src="https://watch-portfolio-website.vercel.app/images/banner%20three.jpg"
+                        alt="Luxury Watch Collection">
 
-            <div class="banner-overlay"></div>
+                </picture>
 
-            <div class="banner-content">
+                <div class="banner-overlay"></div>
 
-                <span class="banner-subtitle">
-                    <!-- MODERN DESIGN -->
-                </span>
+                <div class="banner-content">
 
-                <h1>Elegance In Every Watch</h1>
+                    <span class="banner-subtitle">
+                        <!-- MODERN DESIGN -->
+                    </span>
 
-                <p>
-                    Discover stylish Sonata timepieces crafted with precision and elegance, designed to complement your lifestyle and make For Brand.
-                </p>
+                    <h1>Elegance In Every Watch</h1>
 
-                <a href="#" class="banner-btn">
-                    View Products
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
+                    <p>
+                        Discover stylish Sonata timepieces crafted with precision and elegance, designed to complement
+                        your lifestyle and make For Brand.
+                    </p>
+
+                    <a href="#" class="banner-btn">
+                        View Products
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
 
             </div>
 
-        </div>
 
-
-        <!-- =========================
+            <!-- =========================
              SLIDE 4
         ========================== -->
 
-        <div class="slide">
+            <div class="slide">
 
-            <picture>
+                <picture>
 
-                       
-                <!-- Mobile: 767px tak -->
-    <source 
-        media="(max-width: 767px)" 
-        srcset="image-folder/couple-watch.png"
-    >
 
-    <!-- Tablet: 768px se 1024px -->
-    <source 
-        media="(min-width: 768px) and (max-width: 1024px)" 
-        srcset="image-folder/couple-desktop.png"
-    >
+                    <!-- Mobile: 767px tak -->
+                    <source media="(max-width: 767px)" srcset="image-folder/couple-watch.png">
 
-    <!-- Laptop/Desktop: Default -->
-    <img 
-        src="image-folder/couple-desktop.png"
-        alt="Luxury Watch Collection"
-    >
-            </picture>
+                    <!-- Tablet: 768px se 1024px -->
+                    <source media="(min-width: 768px) and (max-width: 1024px)" srcset="image-folder/couple-desktop.png">
 
-            <div class="banner-overlay"></div>
+                    <!-- Laptop/Desktop: Default -->
+                    <img src="image-folder/couple-desktop.png" alt="Luxury Watch Collection">
+                </picture>
 
-            <div class="banner-content">
+                <div class="banner-overlay"></div>
 
-                <span class="banner-subtitle">
-                    <!-- EXCLUSIVE WATCHES -->
-                </span>
+                <div class="banner-content">
 
-                <h1>Moments Made For Two Couple</h1>
+                    <span class="banner-subtitle">
+                        <!-- EXCLUSIVE WATCHES -->
+                    </span>
 
-                <p>
-                    Celebrate timeless moments together with elegant timepieces crafted with precision and style, made to reflect your beautiful bond
-                </p>
+                    <h1>Moments Made For Two Couple</h1>
 
-                <a href="#" class="banner-btn">
-                    Discover More
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
+                    <p>
+                        Celebrate timeless moments together with elegant timepieces crafted with precision and style,
+                        made to reflect your beautiful bond
+                    </p>
+
+                    <a href="#" class="banner-btn">
+                        Discover More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
 
             </div>
 
-        </div>
 
-
-        <!-- =========================
+            <!-- =========================
              SLIDER DOTS ONLY
         ========================== -->
 
-        <div class="slider-dots">
+            <div class="slider-dots">
 
-            <button class="dot active" aria-label="Slide 1"></button>
+                <button class="dot active" aria-label="Slide 1"></button>
 
-            <button class="dot" aria-label="Slide 2"></button>
+                <button class="dot" aria-label="Slide 2"></button>
 
-            <button class="dot" aria-label="Slide 3"></button>
+                <button class="dot" aria-label="Slide 3"></button>
 
-            <button class="dot" aria-label="Slide 4"></button>
+                <button class="dot" aria-label="Slide 4"></button>
+
+            </div>
+
 
         </div>
 
+    </section>
 
-    </div>
+    <!-- END NAVBAR -->
 
-</section>
+    <section class="our-features-section scroll-reveal">
 
-<section class="our-features-section scroll-reveal">
+        <div class="our-features-heading">
+            <h2>OUR FEATURES</h2>
+            <span></span>
+        </div>
 
-    <div class="our-features-heading">
-        <h2>OUR FEATURES</h2>
-        <span></span>
-    </div>
-
-</section>
-
-
-
-<!-- CATEGORY FEATURED START -->
- 
+    </section>
 
 
 
- <section class="category-featured mt-5 scroll-reveal">
+    <!-- CATEGORY FEATURED START -->
 
-    <!-- Heading -->
-    <!-- <div class="featured-heading">
+
+
+
+    <section class="category-featured mt-5 scroll-reveal">
+
+        <!-- Heading -->
+        <!-- <div class="featured-heading">
         <h2>CATEGORY FEATURED</h2>
     </div> -->
 
 
-    <!-- Features -->
-    <div class="featured-box">
+        <!-- Features -->
+        <div class="featured-box">
 
-        <!-- Feature 1 -->
-        <div class="feature-item">
-            <div class="scroll-reveal feature-icon">
-                <i class="fa-regular fa-clock"></i>
+            <!-- Feature 1 -->
+            <div class="scroll-reveal feature-item">
+                <div class=" feature-icon">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+
+                <h3>Premium Watches</h3>
+                <p>Latest stylish collection.</p>
             </div>
 
-            <h3>Premium Watches</h3>
-            <p>Latest stylish collection.</p>
-        </div>
 
+            <!-- Feature 2 -->
+            <div class="scroll-reveal feature-item">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
 
-        <!-- Feature 2 -->
-        <div class="feature-item">
-            <div class="scroll-reveal feature-icon">
-                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Fast Delivery</h3>
+                <p>Quick shipping.</p>
             </div>
 
-            <h3>Fast Delivery</h3>
-            <p>Quick shipping.</p>
-        </div>
 
+            <!-- Feature 3 -->
+            <div class="scroll-reveal feature-item">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-shield-heart"></i>
+                </div>
 
-        <!-- Feature 3 -->
-        <div class="feature-item">
-            <div class="scroll-reveal feature-icon">
-                <i class="fa-solid fa-shield-heart"></i>
+                <h3>Secure Payment</h3>
+                <p>100% safe checkout.</p>
             </div>
 
-            <h3>Secure Payment</h3>
-            <p>100% safe checkout.</p>
-        </div>
 
+            <!-- Feature 4 -->
+            <div class="scroll-reveal feature-item">
+                <div class="scroll-reveal feature-icon">
+                    <i class="fa-solid fa-rotate-left"></i>
+                </div>
 
-        <!-- Feature 4 -->
-        <div class="feature-item">
-            <div class="scroll-reveal feature-icon">
-                <i class="fa-solid fa-rotate-left"></i>
+                <h3>Easy Return</h3>
+                <p>Hassle-free returns.</p>
             </div>
 
-            <h3>Easy Return</h3>
-            <p>Hassle-free returns.</p>
-        </div>
 
+            <!-- Feature 5 -->
+            <div class="scroll-reveal feature-item support-item">
+                <div class="scroll-reveal feature-icon">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
 
-        <!-- Feature 5 -->
-        <div class="feature-item support-item">
-            <div class="scroll-reveal feature-icon">
-                <i class="fa-solid fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Always here to help.</p>
             </div>
 
-            <h3>24/7 Support</h3>
-            <p>Always here to help.</p>
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <!-- CATEGORY FEATURED END -->
 
-<!-- CATEGORY FEATURED END -->
- 
-   
-  
 
-<!-- ================= NEW ARRIVALS START ================= -->
- 
 
 
+    <!-- ================= NEW ARRIVALS START ================= -->
 
-<section class="new-arrivals-section scroll-reveal">
 
-    <div class="our-features-heading scroll-reveal">
-        <h2>LUXURY WATCHES</h2>
-        <span></span>
-    </div>
 
-    <div class="product-carousel-wrapper">
 
-        <!-- LEFT ARROW -->
-        <button class="product-arrow product-prev">
-            <i class="fa-solid fa-chevron-left"></i>
-        </button>
+    <section class="new-arrivals-section scroll-reveal">
 
-
-        <!-- CAROUSEL VIEWPORT -->
-        <div class="product-carousel-viewport">
-
-            <!-- CAROUSEL TRACK -->
-            <div class="product-carousel-track">
-
-
-                <!-- PRODUCT 1 -->
-                <div class="product-card">
-
-                    <div class="product-image">
-
-                        <span class="product-badge">
-                            Out off stock
-                        </span>
-
-                        <button class="product-bag">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                        </button>
-                      
-                         <img
-                            class="main-image"
-                            src="https://rukminim2.flixcart.com/image/1536/1536/xif0q/watch/s/u/p/1-women-luxury-analog-snake-bracelet-watch-gold-party-wear-watch-original-imahnvdmybmbyd26.jpeg?q=90"
-                            alt="Watch">
-
-                        <img
-                            class="hover-image"
-                            src="https://rukminim2.flixcart.com/image/1536/1536/xif0q/watch/q/f/t/1-women-luxury-analog-snake-bracelet-watch-gold-party-wear-watch-original-imahnvdmz6zydwgn.jpeg?q=90"
-                            alt="Watch">
-                       
-
-                    </div>
-
-                    <h3>women-luxury-analog-snake-bracelet-watch-gold-party-wear-watch</h3>
-
-                    <p class="product-subtitle">
-                        Gold Dial with Crystal
-                    </p>
-
-                    <div class="product-bottom">
-
-                        <span class="product-price">
-                            ₹29,000.00
-                        </span>
-
-                        <span class="product-stars">
-                            <!-- ★ ★ -->
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PRODUCT 2 -->
-                <div class="product-card">
-
-                    <div class="product-image">
-
-                        <span class="product-badge">
-                            Out off stock
-                        </span>
-
-                        <button class="product-bag">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                        </button>
-
-                        <img
-                            class="main-image"
-                            src="https://www.coveted.com/_next/image?url=https%3A%2F%2Fassets.coveted.com%2Fwatches%2Fimages%2Funmapped%2Fv1%2Fgenerated%2Fu2net_final_1729243155_8a86d54bff_omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21022422003002-c1e612.png&w=750&q=60"
-                            alt="Watch">
-
-                        <img
-                            class="hover-image"
-                            src="https://www.coveted.com/_next/image?url=https%3A%2F%2Fassets.coveted.com%2Fwatches%2Fimages%2Funmapped%2Fu2net_final_1729243155_8a86d54bff_omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21022422003002-c1e612_v1_rright_zin.png&w=750&q=60"
-                            alt="Watch">
-
-                    </div>
-
-                    <h3>Omega Seamaster Diver Luxury watch men's and women luxury </h3>
-
-                    <p class="product-subtitle">
-                       Blue Dial Yellow Gold
-                    </p>
-
-                    <div class="product-bottom">
-
-                        <span class="product-price">
-                            ₹29,000.00
-                        </span>
-
-                        <span class="product-stars">
-                            <!-- ★ ★ -->
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PRODUCT 3 -->
-                <div class="product-card">
-
-                    <div class="product-image">
-
-                        <span class="product-badge">
-                            Out off stock
-                        </span>
-
-                        <button class="product-bag">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                        </button>
-
-                        <img
-                            class="main-image"
-                            src="https://in.danielwellington.com/cdn/shop/files/xiz87qlockz7p6p8oicc.jpg?v=1757580168"
-                            alt="Watch">
-
-                        <img
-                            class="hover-image"
-                            src="https://in.danielwellington.com/cdn/shop/files/cz66p1xucgdsufttjczp.png?v=1757580168"
-                            alt="Watch">
-
-                    </div>
-
-                    <h3>Titan Rose Gold Analog Watch for Women</h3>
-
-                    <p class="product-subtitle">
-                        Green Dial with Crystal
-                    </p>
-
-                    <div class="product-bottom">
-
-                        <span class="product-price">
-                            ₹29,000.00
-                        </span>
-
-                        <span class="product-stars">
-                            <!-- ★ ★ -->
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PRODUCT 4 -->
-                <div class="product-card">
-
-                    <div class="product-image">
-
-                        <span class="product-badge">
-                            Out off stock
-                        </span>
-
-                        <button class="product-bag">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                        </button>
-
-                        <img
-                            class="main-image"
-                            src="https://amsterdamvintagewatches.com/wp-content/uploads/2020/03/AVW-Cartier-Vendome-1.jpg"
-                            alt="Watch">
-
-                        <img
-                            class="hover-image"
-                            src="https://amsterdamvintagewatches.com/wp-content/uploads/2020/03/AVW-Cartier-Vendome-2-1024x1024.jpg"
-                            alt="Watch">
-
-                    </div>
-
-                    <h3>Titan Rose Gold Analog Watch for Women</h3>
-
-                    <p class="product-subtitle">
-                        Green Dial with Crystal
-                    </p>
-
-                    <div class="product-bottom">
-
-                        <span class="product-price">
-                            ₹29,000.00
-                        </span>
-
-                        <span class="product-stars">
-                            <!-- ★ ★ -->
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PRODUCT 5 -->
-                <div class="product-card">
-
-                    <div class="product-image">
-
-                        <span class="product-badge">
-                            Out off stock
-                        </span>
-
-                        <button class="product-bag">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                        </button>
-
-                        <img
-                            class="main-image"
-                            src="https://theholistik.com/cdn/shop/files/Velmore-mens-watch-black-silver-model-5.webp?v=1776773844&width=823"
-                            alt="Watch">
-
-                        <img
-                            class="hover-image"
-                            src="https://theholistik.com/cdn/shop/files/Velmore-mens-watch-black-silver-1.webp?v=1776773422&width=823"
-                            alt="Watch">
-
-                    </div>
-
-                    <h3>Velmore Watch for Men | Stylish Metal Strap | Day-Date </h3>
-
-                    <p class="product-subtitle">
-                        Roman Dial Formal & Casual
-                    </p>
-
-                    <div class="product-bottom">
-
-                        <span class="product-price">
-                            ₹29,000.00
-                        </span>
-
-                        <span class="product-stars">
-                            <!-- ★ ★ -->
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PRODUCT 6 -->
-                <div class="product-card">
-
-                    <div class="product-image">
-
-                        <span class="product-badge">
-                            Out off stock
-                        </span>
-
-                        <button class="product-bag">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                        </button>
-
-                        <img
-                            class="main-image"
-                            src="https://www.fhinds.co.uk/Assets/Images/Components/ThreeColumn/Citizen%20SS26%20Landing%20Page%20Image%203%20720x720px_2026085-081758.jpg"
-                            alt="Watch">
-
-                        <img
-                            class="hover-image"
-                            src="https://longislandwatch.com/cdn/shop/files/NJ0232-53X_0001_02__90856.1773666804.1280.1280.jpg?v=1779791693&width=800"
-                            alt="Watch">
-
-                    </div>
-
-                    <h3>Titan Rose Gold Analog Watch for Women</h3>
-
-                    <p class="product-subtitle">
-                        Green Dial with Crystal
-                    </p>
-
-                    <div class="product-bottom">
-
-                        <span class="product-price">
-                            ₹29,000.00
-                        </span>
-
-                        <span class="product-stars">
-                            <!-- ★ ★ -->
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PRODUCT 7 -->
-                <div class="product-card">
-
-                    <div class="product-image">
-
-                        <span class="product-badge">
-                            Out off stock
-                        </span>
-
-                        <button class="product-bag">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                        </button>
-
-                        <img
-                            class="main-image"
-                            src="https://www.ssongwatches.com/cdn/shop/files/Breguet-Classique-Chronograph-5237-WG_0128_Layer-86.png?v=1743659216"
-                            alt="Watch">
-
-                        <img
-                            class="hover-image"
-                            src="https://www.ssongwatches.com/cdn/shop/files/Breguet-Classique-Chronograph-5237-WG_0132_Layer-82.png?v=1743659216"
-                            alt="Watch">
-
-                    </div>
-
-                    <h3>Titan Rose Gold Analog Watch for Women</h3>
-
-                    <p class="product-subtitle">
-                        Green Dial with Crystal
-                    </p>
-
-                    <div class="product-bottom">
-
-                        <span class="product-price">
-                            ₹29,000.00
-                        </span>
-
-                        <span class="product-stars">
-                            <!-- ★ ★ -->
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PRODUCT 8 -->
-                <div class="product-card">
-
-                    <div class="product-image">
-
-                        <span class="product-badge">
-                            Out off stock
-                        </span>
-
-                        <button class="product-bag">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                        </button>
-
-                        <img
-                            class="main-image"
-                            src="https://watchesbysjx.com/wp-content/uploads/2016/07/Bell-Ross-Vintage-BR-126-Aeronavale.jpg"
-                            alt="Watch">
-
-                        <img
-                            class="hover-image"
-                            src="https://watchesbysjx.com/wp-content/uploads/2016/07/Bell-Ross-Vintage-BR-126-Aeronavale-1.jpg"
-                            alt="Watch">
-
-                    </div>
-
-                    <h3>Titan Rose Gold Analog Watch for Women</h3>
-
-                    <p class="product-subtitle">
-                        Green Dial with Crystal
-                    </p>
-
-                    <div class="product-bottom">
-
-                        <span class="product-price">
-                            ₹29,000.00
-                        </span>
-
-                        <span class="product-stars">
-                            <!-- ★ ★ -->
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PRODUCT 9 -->
-                <div class="product-card">
-
-                    <div class="product-image">
-
-                        <span class="product-badge">
-                            Out off stock
-                        </span>
-
-                        <button class="product-bag">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                        </button>
-
-                        <img
-                            class="main-image"
-                            src="image-folder/zenith-boy.png"
-                            alt="Watch">
-                        <img
-                            class="hover-image"
-                            src="image-folder/zenith-watch.png
-"
-                            alt="Watch">
-
-                    </div>
-
-                    <h3>Titan Rose Gold Analog Watch for Women</h3>
-
-                    <p class="product-subtitle">
-                        Green Dial with Crystal
-                    </p>
-
-                    <div class="product-bottom">
-
-                        <span class="product-price">
-                            ₹29,000.00
-                        </span>
-
-                        <span class="product-stars">
-                            <!-- ★ ★ -->
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PRODUCT 10 -->
-                <div class="product-card">
-
-                    <div class="product-image">
-
-                        <span class="product-badge">
-                            Out off stock
-                        </span>
-
-                        <button class="product-bag">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                        </button>
-
-                        <img
-                            class="main-image"
-                            src="https://in.danielwellington.com/cdn/shop/files/lylxyfhpcym913uhjz50.png?v=1788245592"
-                            alt="Watch">
-
-                        <img
-                            class="hover-image"
-                            src="https://in.danielwellington.com/cdn/shop/files/hc4xuapx7skj3ttczk8p.png?v=1788245588"
-                            alt="Watch">
-
-                    </div>
-
-                    <h3>Titan Rose Gold Analog Watch for Women</h3>
-
-                    <p class="product-subtitle">
-                        Green Dial with Crystal
-                    </p>
-
-                    <div class="product-bottom">
-
-                        <span class="product-price">
-                            ₹29,000.00
-                        </span>
-
-                        <span class="product-stars">
-                            <!-- ★ ★ -->
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PRODUCT 11 -->
-                <div class="product-card">
-
-                    <div class="product-image">
-
-                        <span class="product-badge">
-                            Out off stock
-                        </span>
-
-                        <button class="product-bag">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                        </button>
-
-                        <img
-                            class="main-image"
-                            src="https://www.argoswatch.in/cdn/shop/files/cys-brown.jpg?v=1771495567&width=990"
-                            alt="Watch">
-
-                        <img
-                            class="hover-image"
-                            src="https://www.argoswatch.in/cdn/shop/files/ibs-leather-ivory.jpg?v=1771495572"
-                            alt="Watch">
-
-                    </div>
-
-                    <h3>Titan Rose Gold Analog Watch for Women</h3>
-
-                    <p class="product-subtitle">
-                        Green Dial with Crystal
-                    </p>
-
-                    <div class="product-bottom">
-
-                        <span class="product-price">
-                            ₹29,000.00
-                        </span>
-
-                        <span class="product-stars">
-                            <!-- ★ ★ -->
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PRODUCT 12 -->
-                <div class="product-card">
-
-                    <div class="product-image">
-
-                        <span class="product-badge">
-                            Out off stock
-                        </span>
-
-                        <button class="product-bag">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                        </button>
-
-
-                         <img
-                            class="main-image"
-                            src="https://premiumcollections.co.in/cdn/shop/files/file_00000000cc5071fab60279c4686d7042.png?v=1778909538&width=823"
-                            alt="Watch">
-
-                        <img
-                            class="hover-image"
-                            src="https://premiumcollections.co.in/cdn/shop/files/product_bcaaf49f-bd09-4cd6-9603-d1fc78c4dda4.jpg?v=1772354526&width=823"
-                            alt="Watch">
-
-
-                    </div>
-
-                    <h3>Divastri Fashionable Gold Snake Bracelet Watch for Girls</h3>
-
-                    <p class="product-subtitle">
-                        Green Dial with Crystal
-                    </p>
-
-                    <div class="product-bottom">
-
-                        <span class="product-price">
-                            ₹29,000.00
-                        </span>
-
-                        <span class="product-stars">
-                            <!-- ★ ★ -->
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-            <!-- CAROUSEL TRACK END -->
-
+        <div class="our-features-heading scroll-reveal">
+            <h2>LUXURY WATCHES</h2>
+            <span></span>
         </div>
-        <!-- CAROUSEL VIEWPORT END -->
 
+        <div class="product-carousel-wrapper">
 
-        <!-- RIGHT ARROW -->
-        <button class="product-arrow product-next">
-            <i class="fa-solid fa-chevron-right"></i>
-        </button>
-
-    </div>
-    <!-- CAROUSEL WRAPPER END -->
-
-</section>
-
-
-<!-- NEW ARRIVALS BEST SELLER START -->
-
-
-<section class="watch-product-section">
-
-    <div class="watch-product-top">
-
-        <!-- Tabs -->
-        <div class="watch-product-tabs">
-            <button class=" scroll-reveal watch-tab active" data-tab="newArrivals">
-                New Arrivals
+            <!-- LEFT ARROW -->
+            <button class="product-arrow product-prev">
+                <i class="fa-solid fa-chevron-left"></i>
             </button>
 
-            <button class=" scroll-reveal watch-tab" data-tab="bestSeller">
-                Best Seller
-            </button>
-        </div>
 
-        <!-- Arrows -->
-        <div class="watch-slider-arrows">
-            <button class="watch-arrow watch-prev" aria-label="Previous">
-                <i class="fa-solid fa-arrow-left"></i>
-            </button>
+            <!-- CAROUSEL VIEWPORT -->
+            <div class="product-carousel-viewport">
 
-            <button class="watch-arrow watch-next" aria-label="Next">
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
-        </div>
-
-    </div>
+                <!-- CAROUSEL TRACK -->
+                <div class="product-carousel-track">
 
 
-    <!-- ================= NEW ARRIVALS ================= -->
-    <div class="watch-tab-content active" id="newArrivals">
+                    <!-- PRODUCT 1 -->
+                    <div class="product-card">
 
-        <div class="watch-slider-wrapper">
-            <div class="watch-slider-track">
+                        <div class="product-image">
 
-                <!-- Product 1 -->
-                <div class="watch-product-card">
-
-                    <div class="watch-product-image">
-
-                        <span class="watch-product-label">
-                            New
-                        </span>
-
-                        <button class="watch-wishlist">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-
-                        <img
-                            class="watch-img-main"
-                            src="https://watch-portfolio-website.vercel.app/images/product%2028.webp"
-                            alt="Timex Watch"
-                        >
-
-                        <img
-                            class="watch-img-hover"
-                            src="https://premiumcollections.co.in/cdn/shop/files/file_00000000cc5071fab60279c4686d7042.png?v=1778909538"
-                            alt="Timex Watch"
-                        >
-
-                    </div>
-
-                    <div class="watch-product-info">
-
-                        <h3>
-                            Timex Atelier Round Black Dial
-                            Automatic Men Watch
-                        </h3>
-
-                        <div class="watch-price">
-                            ₹ 119,995 <span>★★★★★</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Product 2 -->
-                <div class="watch-product-card">
-
-                    <div class="watch-product-image">
-
-                        <span class="watch-product-label">
-                            New
-                        </span>
-
-                        <button class="watch-wishlist">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-
-                        <img
-                            class="watch-img-main"
-                            src="https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw0e12cbac/product-pictures/d86b890e-c6c0-4db4-99dc-2588f58eb871_T120-210-21-051-00_shadow.png?sm=cut&sw=1000&sh=1000,gravity=center"
-                            alt="Guess Watch"
-                        >
-
-                        <img
-                            class="watch-img-hover"
-                            src="https://cdn4.ethoswatches.com/the-watch-guide/wp-content/uploads/2025/02/Tissot-Watches-In-India-2.jpg?tr=q-70"
-                            alt="Guess Watch"
-                        >
-                          
-                    </div>
-
-                    <div class="watch-product-info">
-
-                        <h3>
-                            Guess Round 44mm Black Dial
-                            Analog Men Watch
-                        </h3>
-
-                        <div class="watch-price-row">
-                            <span class="watch-price">
-                                ₹ 10,496 <span>★★</span>
+                            <span class="product-badge">
+                                SALE
                             </span>
 
-                            <span class="watch-old-price">
-                                <!-- ₹ 14,995 -->
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="image-folder/first-img.webp" alt="Watch">
+
+                            <img class="hover-image" src="image-folder/second-img.webp" alt="Watch">
+
+
+                        </div>
+
+                        <h3>women-luxury-analog-snake-bracelet-watch-gold-party-wear-watch</h3>
+
+                        <p class="product-subtitle">
+                            Gold Dial with Crystal
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹29,000.00
                             </span>
 
-                            <span class="watch-discount">
-                                <!-- 30% OFF -->
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
                             </span>
+
                         </div>
 
                     </div>
 
-                </div>
 
+                    <!-- PRODUCT 2 -->
+                    <div class="product-card">
 
-                <!-- Product 3 -->
-                <div class="watch-product-card">
+                        <div class="product-image">
 
-                    <div class="watch-product-image">
-
-                        <span class="watch-product-label">
-                            New
-                        </span>
-
-                        <button class="watch-wishlist">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-
-                        <img
-                            class="watch-img-main"
-                            src="https://5.imimg.com/data5/ANDROID/Default/2023/8/335060731/AL/GZ/OP/182970949/product-jpeg-1000x1000.jpg"
-                            alt="Guess Grey Watch"
-                        >
-
-                        <img
-                            class="watch-img-hover"
-                            src="https://5.imimg.com/data5/ANDROID/Default/2023/8/335060703/LT/AY/DL/182970949/product-jpeg-1000x1000.jpg"
-                            alt="Guess Grey Watch"
-                        >
-
-                    </div>
-
-                    <div class="watch-product-info">
-
-                        <h3>
-                            Guess Round 44mm Grey Dial
-                            Analog Men Watch
-                        </h3>
-
-                        <div class="watch-price">
-                            ₹ 19,995  <span>★★</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Product 4 -->
-                <div class="watch-product-card">
-
-                    <div class="watch-product-image">
-
-                        <span class="watch-product-label">
-                            New
-                        </span>
-
-                        <button class="watch-wishlist">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-
-                        <img
-                            class="watch-img-main"
-                            src="https://www.sonatawatches.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dwafd4366a/images/Sonata/Catalog/77147YM02_3.jpg?sw=600&sh=600"
-                            alt="Timex NASA Watch"
-                        >
-
-                        <img
-                            class="watch-img-hover"
-                            src="https://www.sonatawatches.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dwb3a2e34c/images/Sonata/Catalog/77147YM02_1.jpg?sw=600&sh=600"
-                            alt="Timex NASA Watch"
-                        >
-
-                    </div>
-
-                    <div class="watch-product-info">
-
-                        <h3>
-                            Q Timex NASA 40mm Stainless
-                            Steel Bracelet Watch
-                        </h3>
-
-                        <div class="watch-price">
-                            ₹ 20,495  <span>★★★</span>
-                        </div>
-
-                        <div class="watch-review">
-                            <span class="watch-stars">
-                               
+                            <span class="product-badge">
+                                Out off stcok
                             </span>
-                            <span></span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="image-folder/omega-watch.webp" alt="Watch">
+
+                            <img class="hover-image" src="image-folder/second-omega.webp" alt="Watch">
+
+                        </div>
+
+                        <h3>Omega Speedmaster Racing Watch
+                            Premium for Men's and women</h3>
+
+                        <p class="product-subtitle">
+                            Blue Dial Silver Gold
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹42,000.00
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
                         </div>
 
                     </div>
 
-                </div>
 
+                    <!-- PRODUCT 3 -->
+                    <div class="product-card">
 
-                <!-- Product 5 -->
-                <div class="watch-product-card">
+                        <div class="product-image">
 
-                    <div class="watch-product-image">
+                            <span class="product-badge">
+                                Sale
+                            </span>
 
-                        <span class="watch-product-label">
-                            New
-                        </span>
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
 
-                        <button class="watch-wishlist">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
+                            <img class="main-image" src="image-folder/daniel-watch.jpg" alt="Watch">
 
-                        <img
-                            class="watch-img-main"
-                            src="https://b0650f7f058d5f70d743-97d5bb3f4194bc3eff7a94253e4a4e28.ssl.cf1.rackcdn.com/108459_alt_2605.jpg"
-                            alt="Luxury Watch"
-                        >
+                            <img class="hover-image" src="image-folder/second-daniel.webp" alt="Watch">
 
-                        <img
-                            class="watch-img-hover"
-                            src="https://monochrome-watches.com/app/uploads/2025/05/Angelus-Chronographe-Telemetre-Monopusher-37mm-review-10.jpg"
-                            alt="Luxury Watch"
-                        >
-                    </div>
+                        </div>
 
-                    <div class="watch-product-info">
+                        <h3>Daniel Wellington Classic Watch for Women
+                            Elegant Rose Gold</h3>
 
-                        <h3>
-                            Classic Automatic Black Dial
-                            Men Watch
-                        </h3>
+                        <p class="product-subtitle">
+                            White Dial Rose Gold
+                        </p>
 
-                        <div class="watch-price">
-                            ₹ 24,995
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹18,500.00
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
                         </div>
 
                     </div>
 
+
+                    <!-- PRODUCT 4 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                New Arrival
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="image-folder/cartier-watch.jpg" alt="Watch">
+
+                            <img class="hover-image" src="image-folder/second-cartier.webp" alt="Watch">
+
+                        </div>
+
+                        <h3>Cartier Classic Analog Watch for Women
+                            Elegant Leather Strap
+                            Gold Case</h3>
+
+                        <p class="product-subtitle">
+                            Gold Case Pink Strap
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹39,500.00
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 5 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                Best Seller
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="image-folder/boy-watch.webp" alt="Watch">
+
+                            <img class="hover-image" src="image-folder/boy-second.webp" alt="Watch">
+
+                        </div>
+
+                        <h3>Velmore Classic Chronograph Watch for Men
+                            Premium Metal Strap</h3>
+
+                        <p class="product-subtitle">
+                            Black Dial Silver Steel
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹29,000.00
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 6 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                Exclusive
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="image-folder/citizen-watch.jpg" alt="Watch">
+
+                            <img class="hover-image" src="image-folder/citizen-watch.webp" alt="Watch">
+
+                        </div>
+
+                        <h3>Citizen Automatic Diver Watch for Men
+                            Premium Gold Bracelet</h3>
+
+                        <p class="product-subtitle">
+                            Green Dial Gold Watch
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹29,000.00
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 7 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                Just Arrived
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="image-folder/breguet-watch.webp" alt="Watch">
+
+                            <img class="hover-image" src="image-folder/double-breguet.webp" alt="Watch">
+
+                        </div>
+
+                        <h3>Chronograph Classic Watch for Men
+                            Premium Leather Strap</h3>
+
+                        <p class="product-subtitle">
+                            Silver Dial Brown Leather
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹29,000.00
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 8 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                Hot Deal
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="image-folder/rose-watch.jpg" alt="Watch">
+
+                            <img class="hover-image" src="image-folder/double-rose.jpg" alt="Watch">
+
+                        </div>
+
+                        <h3>Bell & Ross Chronograph Watch
+                            Sporty Timepiece with Automatic</h3>
+
+                        <p class="product-subtitle">
+                            Navy Blue Dial Leather Strap
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹34,500.00
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 9 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                Trending Now
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="image-folder/zenith-boy.png" alt="Watch">
+                            <img class="hover-image" src="image-folder/zenith-watch.png
+                             " alt="Watch">
+
+                        </div>
+
+                        <h3>Zenith Defy Classic Automatic Watch
+                            Refined Steel Design</h3>
+
+                        <p class="product-subtitle">
+                            Blue Dial Stainless Steel
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹36,500.00
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 10 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                Just Arrived
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="image-folder/girls-watch.webp" alt="Watch">
+
+                            <img class="hover-image" src="image-folder/second-daniel.webp" alt="Watch">
+
+                        </div>
+
+                        <h3>Elegant Classic Watch for Women
+                            Delicate Gold Case</h3>
+
+                        <p class="product-subtitle">
+                            White Dial Black Leather
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹26,500.00
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 11 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                Coming Soon
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="image-folder/argos-watch.webp" alt="Watch">
+
+                            <img class="hover-image" src="image-folder/double-argos.webp" alt="Watch">
+
+                        </div>
+
+                        <h3>Argos Automatic Classic Watch
+                            Vintage Leather Strap with Elegant Detailing</h3>
+
+                        <p class="product-subtitle">
+                            Golden Dial Brown Leather
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹27,500.00
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 12 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                old Out </span>
+
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+
+                            <img class="main-image" src="image-folder/green-rolex.webp" alt="Watch">
+
+                            <img class="hover-image" src="image-folder/double-rolex.webp" alt="Watch">
+
+
+                        </div>
+
+                        <h3>Rolex Submariner Luxury Watch
+                            Iconic Diving Style with Gold Watch</h3>
+
+                        <p class="product-subtitle">
+                            Green Dial with Crystal
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹55,000.00
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
                 </div>
+                <!-- CAROUSEL TRACK END -->
 
             </div>
+            <!-- CAROUSEL VIEWPORT END -->
+
+
+            <!-- RIGHT ARROW -->
+            <button class="product-arrow product-next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
         </div>
+        <!-- CAROUSEL WRAPPER END -->
 
-    </div>
 
+    </section>
 
-    <!-- ================= BEST SELLER ================= -->
-    <div class="watch-tab-content" id="bestSeller">
 
-        <div class="watch-slider-wrapper">
-            <div class="watch-slider-track">
+    <!-- NEW ARRIVALS BEST SELLER START -->
 
-                <!-- Product 1 -->
-                <div class="watch-product-card">
 
-                    <div class="watch-product-image">
+    <section class="watch-product-section">
 
-                        <span class="watch-product-label">
-                            Sale
-                        </span>
+        <div class="watch-product-top">
 
-                        <button class="watch-wishlist">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
+            <!-- Tabs -->
+            <div class="watch-product-tabs">
+                <button class=" scroll-reveal watch-tab active" data-tab="newArrivals">
+                    New Arrivals
+                </button>
 
-                        <img
-                            class="watch-img-main"
-                            src="https://ad.kapoorwatch.com/content/images/product/210.32.42.20.01.006-700.webp"
-                            alt="Best Seller Watch"
-                        >
-
-                        <img
-                            class="watch-img-hover"
-                            src="https://klocksalongen.com/cdn/shop/files/09C998FF-FEB9-4020-B56B-A99BC3AD7916.jpg?v=1772133593&width=5000"
-                            alt="Best Seller Watch"
-                        >
-
-                    </div>
-
-                    <div class="watch-product-info">
-
-                        <h3>
-                            Guess Round Black Dial
-                            Analog Men Watch
-                        </h3>
-
-                        <div class="watch-price-row">
-
-                            <span class="watch-price">
-                                ₹ 10,496
-                            </span>
-
-                            <span class="watch-old-price">
-                                ₹ 14,995
-                            </span>
-
-                            <span class="watch-discount">
-                                30% OFF
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Product 2 -->
-                <div class="watch-product-card">
-
-                    <div class="watch-product-image">
-
-                        <span class="watch-product-label">
-                            New
-                        </span>
-
-                        <button class="watch-wishlist">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-
-                        <img
-                            class="watch-img-main"
-                            src="https://artoftimeindia.com/cdn/shop/files/WSBB0029-1-Background-Removed_600x.png?v=1754368201"
-                            alt="Best Seller Watch"
-                        >
-
-                        <img
-                            class="watch-img-hover"
-                            src="https://watchtown.in/wp-content/uploads/2025/10/Cartier-Tourbillon-Sun-Moon-White-Dial-2-watchtown.jpg"
-                            alt="Best Seller Watch"
-                        >
-
-                    </div>
-
-                    <div class="watch-product-info">
-
-                        <h3>
-                            Guess Round Grey Dial
-                            Analog Men Watch
-                        </h3>
-
-                        <div class="watch-price">
-                            ₹ 19,995
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Product 3 -->
-                <div class="watch-product-card">
-
-                    <div class="watch-product-image">
-
-                        <span class="watch-product-label">
-                            New
-                        </span>
-
-                        <button class="watch-wishlist">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-
-                        <img
-                            class="watch-img-main"
-                            src="https://longislandwatch.com/cdn/shop/files/NJ0232-53X_0000_01__26313.1773666804.1280.1280.jpg?v=1779791693&width=800"
-                            alt="Best Seller Watch"
-                        >
-
-                        <img
-                            class="watch-img-hover"
-                            src="https://longislandwatch.com/cdn/shop/files/NJ0232-53X_0001_02__90856.1773666804.1280.1280.jpg?v=1779791693&width=800"
-                            alt="Best Seller Watch"
-                        >
-
-                    </div>
-
-                    <div class="watch-product-info">
-
-                        <h3>
-                            Q Timex Stainless Steel
-                            Bracelet Watch
-                        </h3>
-
-                        <div class="watch-price">
-                            ₹ 20,495
-                        </div>
-
-                        <div class="watch-review">
-                            <span class="watch-stars">
-                                ★★★★★
-                            </span>
-                            <span>11 reviews</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Product 4 -->
-                <div class="watch-product-card">
-
-                    <div class="watch-product-image">
-
-                        <span class="watch-product-label">
-                            Sale
-                        </span>
-
-                        <button class="watch-wishlist">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-
-                        <img
-                            class="watch-img-main"
-                            src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2026/JUNE/12/p3OCde7f_e023c43a13964acc895b7db088346264.jpg"
-                            alt="Best Seller Watch"
-                        >
-
-                        <img
-                            class="watch-img-hover"
-                            src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2026/JUNE/12/Dwnb8u8K_3d7b913444be432abd99298343081169.jpg"
-                            alt="Best Seller Watch"
-                        >
-
-                    </div>
-
-                    <div class="watch-product-info">
-
-                        <h3>
-                            Timex Automatic Black Dial
-                            Men Watch
-                        </h3>
-
-                        <div class="watch-price-row">
-
-                            <span class="watch-price">
-                                ₹ 18,995
-                            </span>
-
-                            <span class="watch-old-price">
-                                ₹ 22,995
-                            </span>
-
-                            <span class="watch-discount">
-                                20% OFF
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Product 5 -->
-                <div class="watch-product-card">
-
-                    <div class="watch-product-image">
-
-                        <span class="watch-product-label">
-                            New
-                        </span>
-
-                        <button class="watch-wishlist">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-
-                        <img
-                            class="watch-img-main"
-                            src="https://www.justwatches.com/cdn/shop/files/PSNBA0223_4.jpg?v=1734689256&width=3000"
-                            alt="Best Seller Watch"
-                        >
-
-                        <img
-                            class="watch-img-hover"
-                            src="https://www.justwatches.com/cdn/shop/files/PSNBA0223.png?v=1734689256&width=3000"
-                            alt="Best Seller Watch"
-                        >
-
-                    </div>
-
-                    <div class="watch-product-info">
-
-                        <h3>
-                            Premium Grey Dial
-                            Stainless Steel Watch
-                        </h3>
-
-                        <div class="watch-price">
-                            ₹ 21,995
-                        </div>
-
-                    </div>
-
-                </div>
-
+                <button class=" scroll-reveal watch-tab" data-tab="bestSeller">
+                    Best Seller
+                </button>
             </div>
+
+            <!-- Arrows -->
+            <div class="watch-slider-arrows">
+                <button class="watch-arrow watch-prev" aria-label="Previous">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+                <button class="watch-arrow watch-next" aria-label="Next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
         </div>
 
-    </div>
+
+        <!-- ================= NEW ARRIVALS ================= -->
+        <div class="watch-tab-content active" id="newArrivals">
+
+            <div class="watch-slider-wrapper">
+                <div class="watch-slider-track">
+
+                    <!-- Product 1 -->
+                    <div class="watch-product-card">
+
+                        <div class="watch-product-image">
+
+                            <span class="watch-product-label">
+                                New
+                            </span>
+
+                            <button class="watch-wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <img class="watch-img-main" src="image-folder/sunday-rolex.webp" alt="Timex Watch">
+
+                            <img class="watch-img-hover" src="image-folder/sunday-rolex-two.webp" alt="Timex Watch">
+
+                        </div>
+
+                        <div class="watch-product-info">
+
+                            <h3>
+                                Rolex Day-Date Presidential Luxury Watch
+                                Automatic Men’s Watch with Premium Gold
+                            </h3>
+
+                            <div class="watch-price">
+                                ₹119,995<span>★★★★★</span>
+                            </div>
+
+                        </div>
+
+                    </div>
 
 
-    <!-- View All -->
-    <div class="watch-view-all-box scroll-reveal">
-        <a href="#" class="watch-view-all">
-            View All
-        </a>
-    </div>
+                    <!-- Product 2 -->
+                    <div class="watch-product-card">
 
-</section>
+                        <div class="watch-product-image">
 
-  <!-- NEW ARRIVALS BEST SELLER END -->
+                            <span class="watch-product-label">
+                                New
+                            </span>
+
+                            <button class="watch-wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <img class="watch-img-main" src="image-folder/tissot-image.webp" alt="Guess Watch">
+
+                            <img class="watch-img-hover" src="image-folder/second-tissot.jpg" alt="Guess Watch">
+
+                        </div>
+
+                        <div class="watch-product-info">
+
+                            <h3>
+                                Guess Round 44mm Black Dial
+                                Analog Men Watch
+                            </h3>
+
+                            <div class="watch-price-row">
+                                <span class="watch-price">
+                                    ₹ 10,496 <span>★★</span>
+                                </span>
+
+                                <span class="watch-old-price">
+                                    <!-- ₹ 14,995 -->
+                                </span>
+
+                                <span class="watch-discount">
+                                    <!-- 30% OFF -->
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 3 -->
+                    <div class="watch-product-card">
+
+                        <div class="watch-product-image">
+
+                            <span class="watch-product-label">
+                                New
+                            </span>
+
+                            <button class="watch-wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <img class="watch-img-main" src="image-folder/first-versace.webp" alt="Guess Grey Watch">
+
+                            <img class="watch-img-hover" src="image-folder/second-versace.webp" alt="Guess Grey Watch">
+
+                        </div>
+
+                        <div class="watch-product-info">
+
+                            <h3>
+                                Guess Round 44mm Grey Dial
+                                Analog Men Watch
+                            </h3>
+
+                            <div class="watch-price">
+                                ₹ 19,995 <span>★★</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 4 -->
+                    <div class="watch-product-card">
+
+                        <div class="watch-product-image">
+
+                            <span class="watch-product-label">
+                                New
+                            </span>
+
+                            <button class="watch-wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <img class="watch-img-main" src="image-folder/sonata-image.webp" alt="Timex NASA Watch">
+
+                            <img class="watch-img-hover" src="image-folder/second-sonata.webp" alt="Timex NASA Watch">
+
+                        </div>
+
+                        <div class="watch-product-info">
+
+                            <h3>
+                                Q Timex NASA 40mm Stainless
+                                Steel Bracelet Watch
+                            </h3>
+
+                            <div class="watch-price">
+                                ₹ 20,495 <span>★★★</span>
+                            </div>
+
+                            <div class="watch-review">
+                                <span class="watch-stars">
+
+                                </span>
+                                <span></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 5 -->
+                    <div class="watch-product-card">
+
+                        <div class="watch-product-image">
+
+                            <span class="watch-product-label">
+                                New
+                            </span>
+
+                            <button class="watch-wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <img class="watch-img-main" src="image-folder/angelus.jpg" alt="Luxury Watch">
+
+                            <img class="watch-img-hover" src="image-folder/hand-angelus.jpg" alt="Luxury Watch">
+                        </div>
+
+                        <div class="watch-product-info">
+
+                            <h3>
+                                Classic Automatic Black Dial
+                                Men Watch
+                            </h3>
+
+                            <div class="watch-price">
+                                ₹ 24,995
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- ================= BEST SELLER ================= -->
+        <div class="watch-tab-content" id="bestSeller">
+
+            <div class="watch-slider-wrapper">
+                <div class="watch-slider-track">
+
+                    <!-- Product 1 -->
+                    <div class="watch-product-card">
+
+                        <div class="watch-product-image">
+
+                            <span class="watch-product-label">
+                                Sale
+                            </span>
+
+                            <button class="watch-wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <img class="watch-img-main" src="image-folder/omega-watch.webp" alt="Best Seller Watch">
+
+                            <img class="watch-img-hover" src="image-folder/second-omega.webp" alt="Best Seller Watch">
+
+                        </div>
+
+                        <div class="watch-product-info">
+
+                            <h3>
+                                Guess Round Black Dial
+                                Analog Men Watch
+                            </h3>
+
+                            <div class="watch-price-row">
+
+                                <span class="watch-price">
+                                    ₹ 10,496
+                                </span>
+
+                                <span class="watch-old-price">
+                                    ₹ 14,995
+                                </span>
+
+                                <span class="watch-discount">
+                                    30% OFF
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 2 -->
+                    <div class="watch-product-card">
+
+                        <div class="watch-product-image">
+
+                            <span class="watch-product-label">
+                                New
+                            </span>
+
+                            <button class="watch-wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <img class="watch-img-main" src="image-folder/cartier-double.webp" alt="Best Seller Watch">
+
+                            <img class="watch-img-hover" src="image-folder/cartiier-third.jpg" alt="Best Seller Watch">
+
+                        </div>
+
+                        <div class="watch-product-info">
+
+                            <h3>
+                                Guess Round Grey Dial
+                                Analog Men Watch
+                            </h3>
+
+                            <div class="watch-price">
+                                ₹ 19,995
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 3 -->
+                    <div class="watch-product-card">
+
+                        <div class="watch-product-image">
+
+                            <span class="watch-product-label">
+                                New
+                            </span>
+
+                            <button class="watch-wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <img class="watch-img-main" src="image-folder/citizen-one.webp" alt="Best Seller Watch">
+
+                            <img class="watch-img-hover" src="image-folder/citizen-second.webp" alt="Best Seller Watch">
+
+                        </div>
+
+                        <div class="watch-product-info">
+
+                            <h3>
+                                Q Timex Stainless Steel
+                                Bracelet Watch
+                            </h3>
+
+                            <div class="watch-price">
+                                ₹ 20,495
+                            </div>
+
+                            <div class="watch-review">
+                                <span class="watch-stars">
+                                    ★★★★★
+                                </span>
+                                <span>11 reviews</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 4 -->
+                    <div class="watch-product-card">
+
+                        <div class="watch-product-image">
+
+                            <span class="watch-product-label">
+                                Sale
+                            </span>
+
+                            <button class="watch-wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <img class="watch-img-main" src="image-folder/dressbery.jpg" alt="Best Seller Watch">
+
+                            <img class="watch-img-hover" src="image-folder/dressbery-second.jpg"
+                                alt="Best Seller Watch">
+
+                        </div>
+
+                        <div class="watch-product-info">
+
+                            <h3>
+                                Timex Automatic Black Dial
+                                Men Watch
+                            </h3>
+
+                            <div class="watch-price-row">
+
+                                <span class="watch-price">
+                                    ₹ 18,995
+                                </span>
+
+                                <span class="watch-old-price">
+                                    ₹ 22,995
+                                </span>
+
+                                <span class="watch-discount">
+                                    20% OFF
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 5 -->
+                    <div class="watch-product-card">
+
+                        <div class="watch-product-image">
+
+                            <span class="watch-product-label">
+                                New
+                            </span>
+
+                            <button class="watch-wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <img class="watch-img-main" src="image-folder/watch-boy.jpg" alt="Best Seller Watch">
+
+                            <img class="watch-img-hover" src="image-folder/second-watch.webp" alt="Best Seller Watch">
+
+                        </div>
+
+                        <div class="watch-product-info">
+
+                            <h3>
+                                Premium Grey Dial
+                                Stainless Steel Watch
+                            </h3>
+
+                            <div class="watch-price">
+                                ₹ 21,995
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- View All -->
+        <div class="watch-view-all-box scroll-reveal">
+            <a href="#" class="watch-view-all">
+                View All
+            </a>
+        </div>
+
+    </section>
+
+    <!-- NEW ARRIVALS BEST SELLER END -->
 
 
 
 
-  <!-- =========================================
+    <!-- =========================================
      MOST REVIEWED AND LIKED START
 ========================================= -->
 
-<section class="reviewed-watch-section">
+    <section class="reviewed-watch-section">
 
-    <!-- TOP AREA -->
-    <div class="reviewed-watch-top">
+        <!-- TOP AREA -->
+        <div class="reviewed-watch-top">
 
-        <!-- HEADING -->
-        <div class="reviewed-watch-heading">
-            <h2 class="scroll-reveal">Most Reviewed and Liked</h2>
-        </div>
+            <!-- HEADING -->
+            <div class="reviewed-watch-heading">
+                <h2 class="scroll-reveal">Most Reviewed and Liked</h2>
+            </div>
 
-        <!-- ARROWS -->
-        <div class="reviewed-watch-arrows">
+            <!-- ARROWS -->
+            <div class="reviewed-watch-arrows">
 
-            <button
-                type="button"
-                class="reviewed-watch-arrow reviewed-watch-prev"
-                aria-label="Previous">
-                <i class="fa-solid fa-arrow-left"></i>
-            </button>
+                <button type="button" class="reviewed-watch-arrow reviewed-watch-prev" aria-label="Previous">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
 
-            <button
-                type="button"
-                class="reviewed-watch-arrow reviewed-watch-next"
-                aria-label="Next">
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
+                <button type="button" class="reviewed-watch-arrow reviewed-watch-next" aria-label="Next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
 
         </div>
-
-    </div>
-
-
-    <!-- SLIDER -->
-    <div class="reviewed-watch-wrapper">
-
-        <div class="reviewed-watch-track">
-
-
-            <!-- =====================================
-                 PRODUCT 1
-            ====================================== -->
-
-            <div class="reviewed-watch-card">
-
-                <div class="reviewed-watch-image">
-
-                    <span class="reviewed-watch-label">
-                        Bestseller
-                    </span>
-
-                    <button
-                        type="button"
-                        class="reviewed-watch-wishlist"
-                        aria-label="Add to wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-
-                    <!-- MAIN IMAGE -->
-                    <img
-                        class="reviewed-watch-img-main"
-                        src="https://img01.ztat.net/article/spp-media-p1/637dafe14fea4fdab5a5a58e7e0e0c18/5a66c56eb67c41bfb24406c0090d8983.jpg?imwidth=1800&filter=packshot"
-                        alt="Luxury black watch"
-                    >
-
-
-                    <!-- HOVER IMAGE -->
-                    <img
-                        class="reviewed-watch-img-hover"
-                        src="https://img01.ztat.net/article/spp-media-p1/5886b66b8fba4c7c87d23ea4f2dc7d17/95fcfeb45ddb449f82fe8c24c06890b2.jpg?imwidth=1800"
-                        alt="Luxury black watch alternate view"
-                    >
-
-                </div>
-
-
-                <div class="reviewed-watch-info">
-
-                    <h3>
-                        Guess Phoenix Black Tonneau Dial
-                        Multi-function Men Watch
-                    </h3>
-
-                    <div class="reviewed-watch-price">
-                        ₹ 18,995
-                    </div>
-
-                    <div class="reviewed-watch-review">
-
-                        <span class="reviewed-watch-stars">
-                            ★★★★☆
-                        </span>
-
-                        <span class="reviewed-watch-review-count">
-                            14 reviews
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =====================================
-                 PRODUCT 2
-            ====================================== -->
-
-            <div class="reviewed-watch-card">
-
-                <div class="reviewed-watch-image">
-
-                    <span class="reviewed-watch-label">
-                        Sale
-                    </span>
-
-                    <button
-                        type="button"
-                        class="reviewed-watch-wishlist"
-                        aria-label="Add to wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-
-                    <img
-                        class="reviewed-watch-img-main"
-                        src="https://watchesbysjx.com/wp-content/uploads/2017/08/Longines-Avigation-BigEye-chronograph-01.jpg"
-                        alt="Black round dial watch"
-                    >
-
-                    <img
-                        class="reviewed-watch-img-hover"
-                        src="https://watchesbysjx.com/wp-content/uploads/2017/08/Longines-Avigation-BigEye-chronograph-03.jpg"
-                        alt="Black round dial watch alternate view"
-                    >
-
-                </div>
-
-
-                <div class="reviewed-watch-info">
-
-                    <h3>
-                        Plein Sport Sport Tiger Black
-                        Round Dial Quartz Analog Women Watch
-                    </h3>
-
-                    <div class="reviewed-watch-price-row">
-
-                        <span class="reviewed-watch-price">
-                            ₹ 11,997
-                        </span>
-
-                        <span class="reviewed-watch-old-price">
-                            ₹ 19,995
-                        </span>
-
-                        <span class="reviewed-watch-discount">
-                            40% OFF
-                        </span>
-
-                    </div>
-
-
-                    <div class="reviewed-watch-review">
-
-                        <span class="reviewed-watch-stars">
-                            ★★★★★
-                        </span>
-
-                        <span class="reviewed-watch-review-count">
-                            10 reviews
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =====================================
-                 PRODUCT 3
-            ====================================== -->
-
-            <div class="reviewed-watch-card">
-
-                <div class="reviewed-watch-image">
-
-                    <span class="reviewed-watch-label">
-                        Sale
-                    </span>
-
-                    <button
-                        type="button"
-                        class="reviewed-watch-wishlist"
-                        aria-label="Add to wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-
-                    <img
-                        class="reviewed-watch-img-main"
-                        src="https://monochrome-watches.com/app/uploads/2026/08/2026-Daniel-Roth-Extra-Plat-Rose-Gold-Gilt-review-7-2048x2048.jpg"
-                        alt="Blue dial Timex watch"
-                    >
-
-                    <img
-                        class="reviewed-watch-img-hover"
-                        src="https://monochrome-watches.com/app/uploads/2026/08/2026-Daniel-Roth-Extra-Plat-Rose-Gold-Gilt-review-5-2048x2048.jpg"
-                        alt="Blue dial Timex watch alternate view"
-                    >
-
-                </div>
-
-
-                <div class="reviewed-watch-info">
-
-                    <h3>
-                        Timex Round 21mm Blue Dial
-                        Analog Men Watch - TWEG21201
-                    </h3>
-
-
-                    <div class="reviewed-watch-price-row">
-
-                        <span class="reviewed-watch-price">
-                            ₹ 7,197
-                        </span>
-
-                        <span class="reviewed-watch-old-price">
-                            ₹ 11,995
-                        </span>
-
-                        <span class="reviewed-watch-discount">
-                            40% OFF
-                        </span>
-
-                    </div>
-
-
-                    <div class="reviewed-watch-review">
-
-                        <span class="reviewed-watch-stars">
-                            ★★★★★
-                        </span>
-
-                        <span class="reviewed-watch-review-count">
-                            21 reviews
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =====================================
-                 PRODUCT 4
-            ====================================== -->
-
-            <div class="reviewed-watch-card">
-
-                <div class="reviewed-watch-image">
-
-                    <span class="reviewed-watch-label">
-                        Sale
-                    </span>
-
-                    <button
-                        type="button"
-                        class="reviewed-watch-wishlist"
-                        aria-label="Add to wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-
-                    <img
-                        class="reviewed-watch-img-main"
-                        src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-AI468959961001_lifestyle?$rl_1x1_zoom$"
-                        alt="Grey round dial watch"
-                    >
-
-                    <img
-                        class="reviewed-watch-img-hover"
-                        src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-AI468959961001_alternate2?$rl_4x5_zoom$"
-                        alt="Grey round dial watch alternate view"
-                    >
-
-                </div>
-
-
-                <div class="reviewed-watch-info">
-
-                    <h3>
-                        United Colors Of Benetton Grey
-                        Round Dial Quartz Analog Men Watch
-                    </h3>
-
-
-                    <div class="reviewed-watch-price-row">
-
-                        <span class="reviewed-watch-price">
-                            ₹ 997
-                        </span>
-
-                        <span class="reviewed-watch-old-price">
-                            ₹ 1,995
-                        </span>
-
-                        <span class="reviewed-watch-discount">
-                            50% OFF
-                        </span>
-
-                    </div>
-
-
-                    <div class="reviewed-watch-review">
-
-                        <span class="reviewed-watch-stars">
-                            ★★★★★
-                        </span>
-
-                        <span class="reviewed-watch-review-count">
-                            15 reviews
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =====================================
-                 PRODUCT 5
-            ====================================== -->
-
-            <div class="reviewed-watch-card">
-
-                <div class="reviewed-watch-image">
-
-                    <span class="reviewed-watch-label">
-                        Bestseller
-                    </span>
-
-                    <button
-                        type="button"
-                        class="reviewed-watch-wishlist"
-                        aria-label="Add to wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-
-                    <img
-                        class="reviewed-watch-img-main"
-                        src="https://orient-watch.com/en/orientstar/collection/contemporary/m34_f8_date/RE-BX0004L/product_en_file/file/RE-BX0004L_01.webp"
-                        alt="Mido automatic watch"
-                    >
-
-                    <img
-                        class="reviewed-watch-img-hover"
-                        src="https://orient-watch.com/en/orientstar/collection/contemporary/m34_f8_date/RE-BX0004L/product_en_file/file/RE-BX0004L_03.webp"
-                        alt="Mido automatic watch alternate view"
-                    >
-
-                </div>
-
-
-                <div class="reviewed-watch-info">
-
-                    <h3>
-                        Mido Multifort Automatic
-                        Stainless Steel Men Watch
-                    </h3>
-
-
-                    <div class="reviewed-watch-price">
-                        ₹ 24,995
-                    </div>
-
-
-                    <div class="reviewed-watch-review">
-
-                        <span class="reviewed-watch-stars">
-                            ★★★★★
-                        </span>
-
-                        <span class="reviewed-watch-review-count">
-                            18 reviews
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-
-
-    <!-- VIEW ALL -->
-    <div class="scroll-reveal reviewed-watch-view-box">
-
-        <a
-            href="most-reviewed.html"
-            class="reviewed-watch-view-all">
-            View All
-        </a>
-
-    </div>
-
-</section>
-
-<!-- =========================================
-     MOST REVIEWED AND LIKED END
-========================================= -->
-
- 
-  <!-- ================================
-     TOP BRAND CAROUSEL START
-================================ -->
-
-<section class="brand-carousel-section">
-
-    <div class="brand-carousel-heading">
-        <h2 class="scroll-reveal">TOP BRAND</h2>
-    </div>
-
-
-    <div class="brand-carousel-wrapper">
-
-        <!-- LEFT BUTTON -->
-        <button class="brand-arrow brand-arrow-left" id="brandPrev">
-            &#10094;
-        </button>
 
 
         <!-- SLIDER -->
-        <div class="brand-carousel-window">
+        <div class="reviewed-watch-wrapper">
 
-            <div class="brand-carousel-track" id="brandTrack">
+            <div class="reviewed-watch-track">
 
 
-                <!-- IMAGE 1 -->
-                <div class=" brand-slide">
-                    <div class="brand-image-box">
+                <!-- =====================================
+                 PRODUCT 1
+            ====================================== -->
 
-                        <img src="https://www.coveted.com/_next/image?url=https%3A%2F%2Fassets.coveted.com%2Fwatches%2Fimages%2Funmapped%2Ffinal_1724991348_c779fdb209_m228238-0069_v1_rleft_zin.png&w=3840&q=60"
-                             alt="Classic Rolex">
+                <div class="reviewed-watch-card">
 
-                        <span class="brand-hover-border"></span>
+                    <div class="reviewed-watch-image">
+
+                        <span class="reviewed-watch-label">
+                            Bestseller
+                        </span>
+
+                        <button type="button" class="reviewed-watch-wishlist" aria-label="Add to wishlist">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+
+                        <!-- MAIN IMAGE -->
+                        <img class="reviewed-watch-img-main" src="image-folder/guess-first.webp"
+                            alt="Luxury black watch">
+
+
+                        <!-- HOVER IMAGE -->
+                        <img class="reviewed-watch-img-hover" src="image-folder/guess-second.webp"
+                            alt="Luxury black watch alternate view">
 
                     </div>
 
-                    <h3>Classic Rolex</h3>
+
+                    <div class="reviewed-watch-info">
+
+                        <h3>
+                            Guess Phoenix Black Tonneau Dial
+                            Multi-function Men Watch
+                        </h3>
+
+                        <div class="reviewed-watch-price">
+                            ₹ 18,995
+                        </div>
+
+                        <div class="reviewed-watch-review">
+
+                            <span class="reviewed-watch-stars">
+                                ★★★★☆
+                            </span>
+
+                            <span class="reviewed-watch-review-count">
+                                14 reviews
+                            </span>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
 
-                <!-- IMAGE 2 -->
-                <div class="brand-slide">
-                    <div class=" scroll-reveal brand-image-box">
 
-                        <img src="https://assets.myntassets.com/assets/images/30690078/2024/9/13/2e2aa5d6-8967-452f-9eda-46b803b785421726209473638-Sonata-Men-Dial--Stainless-Steel-Bracelet-Style-Straps-Analo-15.jpg"
-                             alt="Titan Stellar">
+                <!-- =====================================
+                 PRODUCT 2
+            ====================================== -->
 
-                        <span class="brand-hover-border"></span>
+                <div class="reviewed-watch-card">
+
+                    <div class="reviewed-watch-image">
+
+                        <span class="reviewed-watch-label">
+                           Trending
+                        </span>
+
+                        <button type="button" class="reviewed-watch-wishlist" aria-label="Add to wishlist">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+
+                        <img class="reviewed-watch-img-main" src="image-folder/longines-watch.jpg"
+                            alt="Black round dial watch">
+
+                        <img class="reviewed-watch-img-hover" src="image-folder/longines-dark.jpg"
+                            alt="Black round dial watch alternate view">
 
                     </div>
 
-                    <h3>Titan Stellar</h3>
+
+                    <div class="reviewed-watch-info">
+
+                        <h3>
+                            Plein Sport Sport Tiger Black
+                            Round Dial Quartz Analog Women Watch
+                        </h3>
+
+                        <div class="reviewed-watch-price-row">
+
+                            <span class="reviewed-watch-price">
+                                ₹ 11,997
+                            </span>
+
+                            <span class="reviewed-watch-old-price">
+                                ₹ 19,995
+                            </span>
+
+                            <span class="reviewed-watch-discount">
+                                40% OFF
+                            </span>
+
+                        </div>
+
+
+                        <div class="reviewed-watch-review">
+
+                            <span class="reviewed-watch-stars">
+                                ★★★★★
+                            </span>
+
+                            <span class="reviewed-watch-review-count">
+                                10 reviews
+                            </span>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
 
-                <!-- IMAGE 3 -->
-                <div class="brand-slide">
-                    <div class="brand-image-box">
 
-                        <img src="https://assets.myntassets.com/h_1440,q_75,w_1080/v1/assets/images/2026/JUNE/17/3KmcM3YV_f08317fb2d58431cae42898628ccfb86.jpg"
-                             alt="Timex Classic">
+                <!-- =====================================
+                 PRODUCT 3
+            ====================================== -->
 
-                        <span class="brand-hover-border"></span>
+                <div class="reviewed-watch-card">
+
+                    <div class="reviewed-watch-image">
+
+                        <span class="reviewed-watch-label">
+                            Top Rated
+                        </span>
+
+                        <button type="button" class="reviewed-watch-wishlist" aria-label="Add to wishlist">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+
+                        <img class="reviewed-watch-img-main" src="image-folder/daniel-dark.webp"
+                            alt="Blue dial Timex watch">
+
+                        <img class="reviewed-watch-img-hover" src="image-folder/daniel-roth.webp"
+                            alt="Blue dial Timex watch alternate view">
 
                     </div>
 
-                    <h3>Timex Classic</h3>
+
+                    <div class="reviewed-watch-info">
+
+                        <h3>
+                            Timex Round 21mm Blue Dial
+                            Analog Men Watch - TWEG21201
+                        </h3>
+
+
+                        <div class="reviewed-watch-price-row">
+
+                            <span class="reviewed-watch-price">
+                                ₹ 7,197
+                            </span>
+
+                            <span class="reviewed-watch-old-price">
+                                ₹ 11,995
+                            </span>
+
+                            <span class="reviewed-watch-discount">
+                                40% OFF
+                            </span>
+
+                        </div>
+
+
+                        <div class="reviewed-watch-review">
+
+                            <span class="reviewed-watch-stars">
+                                ★★★★★
+                            </span>
+
+                            <span class="reviewed-watch-review-count">
+                                21 reviews
+                            </span>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
 
-                <!-- IMAGE 4 -->
-                <div class="brand-slide">
-                    <div class="brand-image-box">
 
-                        <img src="https://5.imimg.com/data5/ANDROID/Default/2023/7/324149825/QM/ZI/YG/155957321/product-jpeg.jpg"
-                             alt="Rolex Collection">
+                <!-- =====================================
+                 PRODUCT 4
+            ====================================== -->
 
-                        <span class="brand-hover-border"></span>
+                <div class="reviewed-watch-card">
+
+                    <div class="reviewed-watch-image">
+
+                        <span class="reviewed-watch-label">
+                            New Collection
+                        </span>
+
+                        <button type="button" class="reviewed-watch-wishlist" aria-label="Add to wishlist">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+
+                        <img class="reviewed-watch-img-main" src="image-folder/ralph-lauren.avif"
+                            alt="Grey round dial watch">
+
+                        <img class="reviewed-watch-img-hover" src="image-folder/second-raulph.avif"
+                            alt="Grey round dial watch alternate view">
 
                     </div>
 
-                    <h3>Rolex Collection</h3>
+
+                    <div class="reviewed-watch-info">
+
+                        <h3>
+                            United Colors Of Benetton Grey
+                            Round Dial Quartz Analog Men Watch
+                        </h3>
+
+
+                        <div class="reviewed-watch-price-row">
+
+                            <span class="reviewed-watch-price">
+                                ₹ 997
+                            </span>
+
+                            <span class="reviewed-watch-old-price">
+                                ₹ 1,995
+                            </span>
+
+                            <span class="reviewed-watch-discount">
+                                50% OFF
+                            </span>
+
+                        </div>
+
+
+                        <div class="reviewed-watch-review">
+
+                            <span class="reviewed-watch-stars">
+                                ★★★★★
+                            </span>
+
+                            <span class="reviewed-watch-review-count">
+                                15 reviews
+                            </span>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
 
-                <!-- IMAGE 5 -->
-                <div class="brand-slide">
-                    <div class="brand-image-box">
 
-                        <img src="https://hips.hearstapps.com/hmg-prod/images/89c27b31-990e-4d53-9dbd-4a4000681b3b.jpg?crop=0.5625xw:1xh;center,top&resize=640:*"
-                             alt="Titan Collection">
+                <!-- =====================================
+                 PRODUCT 5
+            ====================================== -->
 
-                        <span class="brand-hover-border"></span>
+                <div class="reviewed-watch-card">
+
+                    <div class="reviewed-watch-image">
+
+                        <span class="reviewed-watch-label">
+                            Special Price
+                        </span>
+
+                        <button type="button" class="reviewed-watch-wishlist" aria-label="Add to wishlist">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+
+                        <img class="reviewed-watch-img-main" src="image-folder/orient-star.webp"
+                            alt="Mido automatic watch">
+
+                        <img class="reviewed-watch-img-hover" src="image-folder/white-orient.webp"
+                            alt="Mido automatic watch alternate view">
 
                     </div>
 
-                    <h3>Titan Collection</h3>
-                </div>
+
+                    <div class="reviewed-watch-info">
+
+                        <h3>
+                            Mido Multifort Automatic
+                            Stainless Steel Men Watch
+                        </h3>
 
 
-                <!-- IMAGE 6 -->
-                <div class="brand-slide">
-                    <div class="brand-image-box">
+                        <div class="reviewed-watch-price">
+                            ₹ 24,995
+                        </div>
 
-                        <img src="https://cdn.shopify.com/s/files/1/0584/6987/5863/files/3_2_3602e9da-427c-4dc8-bd69-688c56fd275f_1024x1024.jpg?v=1744472737"
-                             alt="Timex Collection">
 
-                        <span class="brand-hover-border"></span>
+                        <div class="reviewed-watch-review">
+
+                            <span class="reviewed-watch-stars">
+                                ★★★★★
+                            </span>
+
+                            <span class="reviewed-watch-review-count">
+                                18 reviews
+                            </span>
+
+                        </div>
 
                     </div>
 
-                    <h3>Timex Collection</h3>
                 </div>
 
 
@@ -2390,16 +1997,147 @@
         </div>
 
 
-        <!-- RIGHT BUTTON -->
-        <button class="brand-arrow brand-arrow-right" id="brandNext">
-            &#10095;
-        </button>
 
-    </div>
+        <!-- VIEW ALL -->
+        <div class="scroll-reveal reviewed-watch-view-box">
 
-</section>
+            <a href="most-reviewed.html" class="reviewed-watch-view-all">
+                View All
+            </a>
 
-<!-- ================================
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     MOST REVIEWED AND LIKED END
+========================================= -->
+
+
+    <!-- ================================
+     TOP BRAND CAROUSEL START
+================================ -->
+
+    <section class="brand-carousel-section">
+
+        <div class="brand-carousel-heading">
+            <h2 class="scroll-reveal">TOP BRAND</h2>
+        </div>
+
+
+        <div class="brand-carousel-wrapper">
+
+            <!-- LEFT BUTTON -->
+            <button class="brand-arrow brand-arrow-left" id="brandPrev">
+                &#10094;
+            </button>
+
+
+            <!-- SLIDER -->
+            <div class="brand-carousel-window">
+
+                <div class="brand-carousel-track" id="brandTrack">
+
+
+                    <!-- IMAGE 1 -->
+                    <div class=" brand-slide">
+                        <div class="brand-image-box">
+
+                            <img src="image-folder/rolex-day.webp" alt="Classic Rolex">
+
+                            <span class="brand-hover-border"></span>
+
+                        </div>
+
+                        <h3>Classic Rolex</h3>
+                    </div>
+
+
+                    <!-- IMAGE 2 -->
+                    <div class="brand-slide">
+                        <div class=" scroll-reveal brand-image-box">
+
+                            <img src="image-folder/sonata-steel.jpg" alt="Titan Stellar">
+
+                            <span class="brand-hover-border"></span>
+
+                        </div>
+
+                        <h3>Titan Stellar</h3>
+                    </div>
+
+
+                    <!-- IMAGE 3 -->
+                    <div class="brand-slide">
+                        <div class="brand-image-box">
+
+                            <img src="image-folder/timex.jpg" alt="Timex Classic">
+
+                            <span class="brand-hover-border"></span>
+
+                        </div>
+
+                        <h3>Timex Classic</h3>
+                    </div>
+
+
+                    <!-- IMAGE 4 -->
+                    <div class="brand-slide">
+                        <div class="brand-image-box">
+
+                            <img src="image-folder/versace-watch.jpg" alt="Rolex Collection">
+
+                            <span class="brand-hover-border"></span>
+
+                        </div>
+
+                        <h3>Rolex Collection</h3>
+                    </div>
+
+
+                    <!-- IMAGE 5 -->
+                    <div class="brand-slide">
+                        <div class="brand-image-box">
+
+                            <img src="image-folder/seiko-watch.avif" alt="Titan Collection">
+
+                            <span class="brand-hover-border"></span>
+
+                        </div>
+
+                        <h3>Titan Collection</h3>
+                    </div>
+
+
+                    <!-- IMAGE 6 -->
+                    <div class="brand-slide">
+                        <div class="brand-image-box">
+
+                            <img src="image-folder/black-watch.webp" alt="Timex Collection">
+
+                            <span class="brand-hover-border"></span>
+
+                        </div>
+
+                        <h3>Timex Collection</h3>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT BUTTON -->
+            <button class="brand-arrow brand-arrow-right" id="brandNext">
+                &#10095;
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================================
      TOP BRAND CAROUSEL END
 ================================ -->
 
@@ -2407,1038 +2145,1039 @@
 
 
 
-  <!-- SHOP BY CATEGORY START -->
+    <!-- SHOP BY CATEGORY START -->
 
-<section class="category-carousel-section">
+    <section class="category-carousel-section">
 
-    <div class="category-heading">
-        <h2 class="scroll-reveal">Shop By Category</h2>
-        <p class="scroll-reveal">Discover the perfect watch for every style and occasion.</p>
-    </div>
-
-
-    <div class="category-carousel-wrapper">
-
-        <!-- LEFT ARROW -->
-        <button class="category-arrow category-prev" aria-label="Previous">
-            <i class="fa-solid fa-chevron-left"></i>
-        </button>
+        <div class="category-heading">
+            <h2 class="scroll-reveal">SHOP BY CATEGORY</h2>
+            <p class="scroll-reveal">Discover the perfect watch for every style and occasion.</p>
+        </div>
 
 
-        <!-- CAROUSEL -->
-        <div class="category-carousel">
+        <div class="category-carousel-wrapper">
 
-            <div class="category-track" id="categoryTrack">
+            <!-- LEFT ARROW -->
+            <button class="category-arrow category-prev" aria-label="Previous">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
 
-                <!-- 1 -->
-                <div class="category-item">
-                    <div class="category-image">
-                        <img src="https://in.danielwellington.com/cdn/shop/files/mnocq6peodbygv6jco9k.jpg?v=1750227249&width=1500" alt="Men Watches">
+
+            <!-- CAROUSEL -->
+            <div class="category-carousel">
+
+                <div class="category-track" id="categoryTrack">
+
+                    <!-- 1 -->
+                    <div class="category-item">
+                        <div class="category-image">
+                            <img src="image-folder/men-image.webp" alt="Men Watches">
+                        </div>
+                        <h3>Men</h3>
                     </div>
-                    <h3>Men</h3>
-                </div>
 
 
-                <!-- 2 -->
-                <div class="category-item">
-                    <div class="category-image">
-                        <img src="https://media.bulgari.com/image/upload/c_fill,h_1090,w_818/q_auto/f_auto/v1/plp/serpenti/JW-25_MI_Serpenti_Tbg_Endorsed01_1080x1350_ipofwi.jpg" alt="Women Watches">
+                    <!-- 2 -->
+                    <div class="category-item">
+                        <div class="category-image">
+                            <img src="image-folder/women-image.avif" alt="Women Watches">
+                        </div>
+                        <h3>Women</h3>
                     </div>
-                    <h3>Women</h3>
-                </div>
 
 
-                <!-- 3 -->
-                <div class="category-item">
-                    <div class="category-image">
-                        <img src="https://shop.timexindia.com/cdn/shop/articles/Couple_Watches__The_Best_Branded_Sets_to_Match_Your_Style_for_Any_Occasion.jpg?v=1740126348" alt="Couple Watches">
+                    <!-- 3 -->
+                    <div class="category-item">
+                        <div class="category-image">
+                            <img src="image-folder/couple.webp" alt="Couple Watches">
+                        </div>
+                        <h3>Couple</h3>
                     </div>
-                    <h3>Couple</h3>
-                </div>
 
 
-                <!-- 4 -->
-                <div class="category-item">
-                    <div class="category-image">
-                        <img src="https://funkytradition.com/cdn/shop/files/0_2019-New-SANDA-739-Sports-Men-s-Watches-Top-Brand-Luxury-Military-Quartz-Watch-Men-Waterproof_1_61741f83-e6d1-4d07-812d-5fa512f4e269.jpg?v=1723521676&width=787" alt="Sport Watches">
+                    <!-- 4 -->
+                    <div class="category-item">
+                        <div class="category-image">
+                            <img src="image-folder/resist-watch.jpg" alt="Sport Watches">
+                        </div>
+                        <h3>Sport</h3>
                     </div>
-                    <h3>Sport</h3>
-                </div>
 
 
-                <!-- 5 -->
-                <div class="category-item">
-                    <div class="category-image">
-                        <img src="https://images.samsung.com/is/image/samsung/assets/us/explore/mobile/buying-guide/what-does-a-smartwatch-do/01_HeroKV_MO.jpg?$720_N_JPG$" alt="Smart Watches">
+                    <!-- 5 -->
+                    <div class="category-item">
+                        <div class="category-image">
+                            <img src="image-folder/touch-watch.avif" alt="Smart Watches">
+                        </div>
+                        <h3>Smart Watch</h3>
                     </div>
-                    <h3>Smart Watch</h3>
-                </div>
 
 
-                <!-- 6 -->
-                <div class="category-item">
-                    <div class="category-image">
-                        <img src="https://watchworld.in/cdn/shop/files/f80bdc_b1f7f05e7a42426b9e94bb4bb32cae60_mv2.webp?v=1744454566&width=533" alt="Luxury Watches">
+                    <!-- 6 -->
+                    <div class="category-item">
+                        <div class="category-image">
+                            <img src="image-folder/rolex-leaf.webp" alt="Luxury Watches">
+                        </div>
+                        <h3>Luxury</h3>
                     </div>
-                    <h3>Luxury</h3>
-                </div>
 
 
-                <!-- 7 -->
-                <div class="category-item">
-                    <div class="category-image">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoSJ_8XdkPTWG1Zo_733OV61_ZMJJqMTp2mcAKs3Hl8EOHPOkmEtqummCV&s=10" alt="Classic Watches">
+                    <!-- 7 -->
+                    <div class="category-item">
+                        <div class="category-image">
+                            <img src="image-folder/hand-watch.jpg" alt="Classic Watches">
+                        </div>
+                        <h3>Classic</h3>
                     </div>
-                    <h3>Classic</h3>
-                </div>
 
 
-                <!-- 8 -->
-                <div class="category-item">
-                    <div class="category-image">
-                        <img src="https://www.carlington.in/cdn/shop/files/1_bbb191d5-7a3a-4ff7-9510-11a4ad0f5760.jpg?v=1779527632&width=2048" alt="Chronograph Watches">
+                    <!-- 8 -->
+                    <div class="category-item">
+                        <div class="category-image">
+                            <img src="image-folder/carlington.webp" alt="Chronograph Watches">
+                        </div>
+                        <h3>Chronograph</h3>
                     </div>
-                    <h3>Chronograph</h3>
-                </div>
 
 
-                <!-- 9 -->
-                <div class="category-item">
-                    <div class="category-image">
-                        <img src="https://5.imimg.com/data5/SELLER/Default/2026/5/605929784/OS/EN/ZA/94302016/e.jpg" alt="Premium Watches">
+                    <!-- 9 -->
+                    <div class="category-item">
+                        <div class="category-image">
+                            <img src="image-folder/premium.jpg" alt="Premium Watches">
+                        </div>
+                        <h3>Premium</h3>
                     </div>
-                    <h3>Premium</h3>
+
                 </div>
 
             </div>
 
+
+            <!-- RIGHT ARROW -->
+            <button class="category-arrow category-next" aria-label="Next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
         </div>
 
-
-        <!-- RIGHT ARROW -->
-        <button class="category-arrow category-next" aria-label="Next">
-            <i class="fa-solid fa-chevron-right"></i>
-        </button>
-
-    </div>
-
-</section>
+    </section>
 
 
 
-<!-- SHOP BY CATEGORY END -->
+    <!-- SHOP BY CATEGORY END -->
 
 
 
 
-  <!-- OUR BRAND START -->
-     <!-- =========================================
+    <!-- OUR BRAND START -->
+    <!-- =========================================
      OUR BRANDS
 ========================================= -->
 
-<section class="our-brands-section">
+    <section class="our-brands-section">
 
-    <div class="our-brands-heading">
-        <h2 class="scroll-reveal">Our Brands</h2>
-    </div>
-
-
-    <div class="brands-slider">
-
-        <div class="brands-track">
-
-            <!-- 1 -->
-            <div class="brand-box">
-                <img src="https://watch-portfolio-website.vercel.app/images/product%2065.png" alt="Titan">
-            </div>
-
-            <!-- 2 -->
-            <div class="brand-box">
-                <img src="https://watch-portfolio-website.vercel.app/images/product%2066.webp" alt="Sonata">
-            </div>
-
-            <!-- 3 -->
-            <div class="brand-box">
-                <img src="https://watch-portfolio-website.vercel.app/images/product%2067.webp" alt="Rolex">
-            </div>
-
-            <!-- 4 -->
-            <div class="brand-box">
-                <img src="https://watch-portfolio-website.vercel.app/images/product%2068.png" alt="Guess">
-            </div>
-
-            <!-- 5 -->
-            <div class="brand-box">
-                <img src="https://watch-portfolio-website.vercel.app/images/product%2069.png" alt="Zenith">
-            </div>
-
-            <!-- 6 -->
-            <div class="brand-box">
-                <img src="https://watch-portfolio-website.vercel.app/images/product%2070.png" alt="Versace">
-            </div>
-
-            <!-- 7 -->
-            <div class="brand-box">
-                <img src="https://watch-portfolio-website.vercel.app/images/product%2071.png" alt="Seiko">
-            </div>
-
-            <!-- 8 -->
-            <div class="brand-box">
-                <img src="https://watch-portfolio-website.vercel.app/images/product%2072.jpg" alt="Timeless">
-            </div>
-
-            <!-- 9 -->
-            <div class="brand-box">
-                <img src="https://content.thewosgroup.com/mayors/brands/omega/about-omega-logo.png" alt="Fossil">
-            </div>
-
-            <!-- 10 -->
-            <div class="brand-box">
-                <img src="https://logos-world.net/wp-content/uploads/2020/11/Hublot-Logo.png" alt="Casio">
-            </div>
-
-
-            <!-- DUPLICATE FOR SEAMLESS LOOP -->
-
-            <div class="brand-box">
-                <img src="https://watch-portfolio-website.vercel.app/images/product%2065.png" alt="Titan">
-            </div>
-
-            <div class="brand-box">
-                <img src="https://watch-portfolio-website.vercel.app/images/product%2066.webp" alt="Sonata">
-            </div>
-
-            <div class="brand-box">
-                <img src="https://watch-portfolio-website.vercel.app/images/product%2067.webp" alt="Rolex">
-            </div>
-
-            <div class="brand-box">
-                <img src="https://watch-portfolio-website.vercel.app/images/product%2068.png" alt="Guess">
-            </div>
-
-            <div class="brand-box">
-                <img src="https://watch-portfolio-website.vercel.app/images/product%2069.png" alt="Zenith">
-            </div>
-
-            <div class="brand-box">
-                <img src="https://watch-portfolio-website.vercel.app/images/product%2070.png" alt="Versace">
-            </div>
-
-            <div class="brand-box">
-                <img src="https://watch-portfolio-website.vercel.app/images/product%2071.png" alt="Seiko">
-            </div>
-
-            <div class="brand-box">
-                <img src="https://watch-portfolio-website.vercel.app/images/product%2072.jpg" alt="Timeless">
-            </div>
-
-            <div class="brand-box">
-                <img src="https://content.thewosgroup.com/mayors/brands/omega/about-omega-logo.png" alt="Fossil">
-            </div>
-
-            <div class="brand-box">
-                <img src="https://logos-world.net/wp-content/uploads/2020/11/Hublot-Logo.png" alt="Casio">
-            </div>
-
+        <div class="our-brands-heading">
+            <h2 class="scroll-reveal">Our Brands</h2>
         </div>
 
-    </div>
 
-</section>
+        <div class="brands-slider">
 
+            <div class="brands-track">
 
+                <!-- 1 -->
+                <div class="brand-box">
+                    <img src="image-folder/titan-img.png" alt="Titan">
+                </div>
 
-   <!-- OUR BRAND END -->
+                <!-- 2 -->
+                <div class="brand-box">
+                    <img src="image-folder/sonata-brand.webp" alt="Sonata">
+                </div>
 
+                <!-- 3 -->
+                <div class="brand-box">
+                    <img src="image-folder/rolex-one.webp" alt="Rolex">
+                </div>
 
+                <!-- 4 -->
+                <div class="brand-box">
+                    <img src="image-folder/guess-img.png" alt="Guess">
+                </div>
 
-   <!-- EXPERIENCE THE WORLD OF TITAN START -->
+                <!-- 5 -->
+                <div class="brand-box">
+                    <img src="image-folder/zenith-img.png" alt="Zenith">
+                </div>
 
+                <!-- 6 -->
+                <div class="brand-box">
+                    <img src="image-folder/versace-img.png" alt="Versace">
+                </div>
 
-   <section class="titan-video-section">
+                <!-- 7 -->
+                <div class="brand-box">
+                    <img src="image-folder/seikko-img.png" alt="Seiko">
+                </div>
 
-    <div class="titan-video-heading">
-        <h2 class="scroll-reveal">EXPERIENCE THE WORLD OF TITAN</h2>
-    </div>
+                <!-- 8 -->
 
-    <div class="titan-video-wrapper">
+                <!-- <div class="brand-box">
+                    <img src="https://www.helioswatchstore.com/on/demandware.static/-/Library-Sites-HeliosSharedLibrary/default/dwecbefab1/images/homepage/brandLogos/anneklein-logo_1.jpg" alt="Timeless">
+                </div> -->
 
-        <!-- LEFT ARROW -->
-        <button class="titan-video-arrow titan-video-prev" aria-label="Previous">
-            <i class="fa-solid fa-chevron-left"></i>
-        </button>
+                <!-- 9 -->
+                <div class="brand-box">
+                    <img src="image-folder/omega-second.png" alt="Fossil">
+                </div>
 
-        <!-- VIDEO CAROUSEL -->
-        <div class="titan-video-viewport">
-
-            <div class="titan-video-track">
-
-                <!-- VIDEO 1 -->
-                <div class="titan-video-card">
-
-                    <video muted loop playsinline preload="metadata">
-                        <source src="https://client-static.saleassist.ai/9d83ba1b-506d-4229-b8ec-62c6d838e5a6/68a7f26d-ad72-424f-8a6a-72f2ab60fd15.mp4" type="video/mp4">
-                    </video>
-
-                    <div class="titan-view-count">
-                        <i class="fa-solid fa-eye"></i>
-                        <span>9.3K</span>
-                    </div>
-
-                    <button class="titan-shop-btn">
-                        Shop Now
-                    </button>
-
+                <!-- 10 -->
+                <div class="brand-box">
+                    <img src="image-folder/hublot-img.png" alt="Casio">
                 </div>
 
 
-                <!-- VIDEO 2 -->
-                <div class="titan-video-card">
+                <!-- DUPLICATE FOR SEAMLESS LOOP -->
 
-                    <video muted loop playsinline preload="metadata">
-                        <source src="https://client-static.saleassist.ai/9d83ba1b-506d-4229-b8ec-62c6d838e5a6/4a06d680-f497-4e45-9941-4fbdfae8410f.mp4" type="video/mp4">
-                    </video>
-
-                    <div class="titan-view-count">
-                        <i class="fa-solid fa-eye"></i>
-                        <span>6K</span>
-                    </div>
-
-                    <button class="titan-shop-btn">
-                        Shop Now
-                    </button>
-
+                <div class="brand-box">
+                    <img src="image-folder/titan-img.png" alt="Titan">
                 </div>
 
-
-                <!-- VIDEO 3 -->
-                <div class="titan-video-card">
-
-                    <video muted loop playsinline preload="metadata">
-                        <source src="https://client-static.saleassist.ai/9d83ba1b-506d-4229-b8ec-62c6d838e5a6/d94a622c-867a-44b3-a344-4bfcf034e980.mp4" type="video/mp4">
-                    </video>
-
-                    <div class="titan-view-count">
-                        <i class="fa-solid fa-eye"></i>
-                        <span>7.9K</span>
-                    </div>
-
-                    <button class="titan-shop-btn">
-                        Shop Now
-                    </button>
-
+                <div class="brand-box">
+                    <img src="image-folder/sonata-img.webp" alt="Sonata">
                 </div>
 
-
-                <!-- VIDEO 4 -->
-                <div class="titan-video-card">
-
-                    <video muted loop playsinline preload="metadata">
-                        <source src="https://client-static.saleassist.ai/9d83ba1b-506d-4229-b8ec-62c6d838e5a6/66385850-0b07-41d3-8493-8d9bca15f598.mp4" type="video/mp4">
-                    </video>
-
-                    <div class="titan-view-count">
-                        <i class="fa-solid fa-eye"></i>
-                        <span>4.9K</span>
-                    </div>
-
-                    <button class="titan-shop-btn">
-                        Shop Now
-                    </button>
-
+                <div class="brand-box">
+                    <img src="image-folder/rolex-award.webp" alt="Rolex">
                 </div>
 
-
-                <!-- VIDEO 5 -->
-                <div class="titan-video-card">
-
-                    <video muted loop playsinline preload="metadata">
-                        <source src="https://client-static.saleassist.ai/9d83ba1b-506d-4229-b8ec-62c6d838e5a6/0e7f4808-90b4-436b-935d-408f02145c7a.mp4" type="video/mp4">
-                    </video>
-
-                    <div class="titan-view-count">
-                        <i class="fa-solid fa-eye"></i>
-                        <span>5.1K</span>
-                    </div>
-
-                    <button class="titan-shop-btn">
-                        Shop Now
-                    </button>
-
+                <div class="brand-box">
+                    <img src="image-folder/guess-brand.png" alt="Guess">
                 </div>
 
-
-                <!-- VIDEO 6 -->
-                <div class="titan-video-card">
-
-                    <video muted loop playsinline preload="metadata">
-                        <source src="https://client-static.saleassist.ai/9d83ba1b-506d-4229-b8ec-62c6d838e5a6/f8e17fd1-5b5f-4d8e-8179-3d7d17bff9d7.mp4" type="video/mp4">
-                    </video>
-
-                    <div class="titan-view-count">
-                        <i class="fa-solid fa-eye"></i>
-                        <span>4.1K</span>
-                    </div>
-
-                    <button class="titan-shop-btn">
-                        Shop Now
-                    </button>
-
+                <div class="brand-box">
+                    <img src="image-folder/zenith-brand.png" alt="Zenith">
                 </div>
 
-
-                <!-- VIDEO 7 -->
-                <div class="titan-video-card">
-
-                    <video muted loop playsinline preload="metadata">
-                        <source src="https://client-static.saleassist.ai/9d83ba1b-506d-4229-b8ec-62c6d838e5a6/942545e9-7a57-4682-87f2-2255ec2bf799.mp4" type="video/mp4">
-                    </video>
-
-                    <div class="titan-view-count">
-                        <i class="fa-solid fa-eye"></i>
-                        <span>8.2K</span>
-                    </div>
-
-                    <button class="titan-shop-btn">
-                        Shop Now
-                    </button>
-
+                <div class="brand-box">
+                    <img src="image-folder/versace-imgg.png" alt="Versace">
                 </div>
 
+                <div class="brand-box">
+                    <img src="image-folder/seiko-brand.png" alt="Seiko">
+                </div>
 
-                <!-- VIDEO 8 -->
-                <div class="titan-video-card">
+                <!-- <div class="brand-box">
+                    <img src="https://www.helioswatchstore.com/on/demandware.static/-/Library-Sites-HeliosSharedLibrary/default/dwecbefab1/images/homepage/brandLogos/anneklein-logo_1.jpg" alt="Timeless">
+                </div> -->
 
-                    <video muted loop playsinline preload="metadata">
-                        <source src="https://client-static.saleassist.ai/9d83ba1b-506d-4229-b8ec-62c6d838e5a6/779bd17a-5658-448f-a806-7d86d5a3a854.mp4" type="video/mp4">
-                    </video>
+                <div class="brand-box">
+                    <img src="image-folder/omega-second.png" alt="Fossil">
+                </div>
 
-                    <div class="titan-view-count">
-                        <i class="fa-solid fa-eye"></i>
-                        <span>3.8K</span>
-                    </div>
-
-                    <button class="titan-shop-btn">
-                        Shop Now
-                    </button>
-
+                <div class="brand-box">
+                    <img src="image-folder/hublot-brand.png" alt="Casio">
                 </div>
 
             </div>
 
         </div>
 
-        <!-- RIGHT ARROW -->
-        <button class="titan-video-arrow titan-video-next" aria-label="Next">
-            <i class="fa-solid fa-chevron-right"></i>
-        </button>
-
-    </div>
-
-</section>
+    </section>
 
 
 
-<!-- EXPERIENCE THE WORLD OF END -->
+    <!-- OUR BRAND END -->
 
 
 
-<!-- FAQ SECTION -->
-<section class="faq-main-section">
+    <!-- EXPERIENCE THE WORLD OF TITAN START -->
 
-    <div class="faq-heading">
-        <h2 class="scroll-reveal">FAQ'S</h2>
-    </div>
 
-    <div class="faq-list">
+    <section class="titan-video-section">
 
-        <!-- FAQ 1 -->
-        <div class="faq-item">
+        <div class="titan-video-heading">
+            <h2 class="scroll-reveal">EXPERIENCE THE WORLD OF TITAN</h2>
+        </div>
 
-            <button class="scroll-reveal. faq-question" type="button">
-                <span class="scroll-reveal">What is your return policy?</span>
+        <div class="titan-video-wrapper">
 
-                <span class="faq-icon">
-                    <span class="faq-plus">+</span>
-                    <span class="faq-minus">−</span>
-                </span>
+            <!-- LEFT ARROW -->
+            <button class="titan-video-arrow titan-video-prev" aria-label="Previous">
+                <i class="fa-solid fa-chevron-left"></i>
             </button>
 
-            <div class="faq-answer">
-                <p>
-                    We offer a simple and convenient return policy.
-                    If you are not satisfied with your purchase, you can
-                    request a return within 7 days of receiving your watch,
-                    provided the product is unused and in its original
-                    condition with all packaging and accessories.
-                </p>
+            <!-- VIDEO CAROUSEL -->
+            <div class="titan-video-viewport">
+
+                <div class="titan-video-track">
+
+                    <!-- VIDEO 1 -->
+                    <div class="titan-video-card">
+
+                        <video muted loop playsinline preload="metadata">
+                            <source src="image-folder/first-video.mp4" type="video/mp4">
+                        </video>
+
+                        <div class="titan-view-count">
+                            <i class="fa-solid fa-eye"></i>
+                            <span>9.3K</span>
+                        </div>
+
+                        <button class="titan-shop-btn">
+                            Shop Now
+                        </button>
+
+                    </div>
+
+
+                    <!-- VIDEO 2 -->
+                    <div class="titan-video-card">
+
+                        <video muted loop playsinline preload="metadata">
+                            <source src="image-folder/second-video.mp4" type="video/mp4">
+                        </video>
+
+                        <div class="titan-view-count">
+                            <i class="fa-solid fa-eye"></i>
+                            <span>6K</span>
+                        </div>
+
+                        <button class="titan-shop-btn">
+                            Shop Now
+                        </button>
+
+                    </div>
+
+
+                    <!-- VIDEO 3 -->
+                    <div class="titan-video-card">
+
+                        <video muted loop playsinline preload="metadata">
+                            <source src="image-folder/third-video.mp4" type="video/mp4">
+                        </video>
+
+                        <div class="titan-view-count">
+                            <i class="fa-solid fa-eye"></i>
+                            <span>7.9K</span>
+                        </div>
+
+                        <button class="titan-shop-btn">
+                            Shop Now
+                        </button>
+
+                    </div>
+
+
+                    <!-- VIDEO 4 -->
+                    <div class="titan-video-card">
+
+                        <video muted loop playsinline preload="metadata">
+                            <source src="image-folder/four-video.mp4" type="video/mp4">
+                        </video>
+
+                        <div class="titan-view-count">
+                            <i class="fa-solid fa-eye"></i>
+                            <span>4.9K</span>
+                        </div>
+
+                        <button class="titan-shop-btn">
+                            Shop Now
+                        </button>
+
+                    </div>
+
+
+                    <!-- VIDEO 5 -->
+                    <div class="titan-video-card">
+
+                        <video muted loop playsinline preload="metadata">
+                            <source src="image-folder/five-video.mp4" type="video/mp4">
+                        </video>
+
+                        <div class="titan-view-count">
+                            <i class="fa-solid fa-eye"></i>
+                            <span>5.1K</span>
+                        </div>
+
+                        <button class="titan-shop-btn">
+                            Shop Now
+                        </button>
+
+                    </div>
+
+
+                    <!-- VIDEO 6 -->
+                    <div class="titan-video-card">
+
+                        <video muted loop playsinline preload="metadata">
+                            <source src="image-folder/six-video.mp4" type="video/mp4">
+                        </video>
+
+                        <div class="titan-view-count">
+                            <i class="fa-solid fa-eye"></i>
+                            <span>4.1K</span>
+                        </div>
+
+                        <button class="titan-shop-btn">
+                            Shop Now
+                        </button>
+
+                    </div>
+
+
+                    <!-- VIDEO 7 -->
+                    <div class="titan-video-card">
+
+                        <video muted loop playsinline preload="metadata">
+                            <source src="image-folder/seven-video.mp4" type="video/mp4">
+                        </video>
+
+                        <div class="titan-view-count">
+                            <i class="fa-solid fa-eye"></i>
+                            <span>8.2K</span>
+                        </div>
+
+                        <button class="titan-shop-btn">
+                            Shop Now
+                        </button>
+
+                    </div>
+
+
+                    <!-- VIDEO 8 -->
+                    <div class="titan-video-card">
+
+                        <video muted loop playsinline preload="metadata">
+                            <source src="image-folder/eight-video.mp4" type="video/mp4">
+                        </video>
+
+                        <div class="titan-view-count">
+                            <i class="fa-solid fa-eye"></i>
+                            <span>3.8K</span>
+                        </div>
+
+                        <button class="titan-shop-btn">
+                            Shop Now
+                        </button>
+
+                    </div>
+
+                </div>
+
             </div>
 
-        </div>
-
-
-        <!-- FAQ 2 -->
-        <div class="faq-item">
-
-            <button class="faq-question" type="button">
-                <span class="scroll-reveal">Do you provide warranty on watches?</span>
-
-                <span class="faq-icon">
-                    <span class="faq-plus">+</span>
-                    <span class="faq-minus">−</span>
-                </span>
+            <!-- RIGHT ARROW -->
+            <button class="titan-video-arrow titan-video-next" aria-label="Next">
+                <i class="fa-solid fa-chevron-right"></i>
             </button>
 
-            <div class="faq-answer">
-                <p>
-                    Yes, our watches come with a manufacturer's warranty.
-                    The warranty covers manufacturing defects and other
-                    issues mentioned in the warranty terms. Warranty
-                    duration may vary depending on the watch brand and model.
-                </p>
-            </div>
-
         </div>
 
+    </section>
 
-        <!-- FAQ 3 -->
-        <div class="faq-item">
 
-            <button class="faq-question" type="button">
-                <span class="scroll-reveal">How long does delivery take?</span>
 
-                <span class="faq-icon">
-                    <span class="faq-plus">+</span>
-                    <span class="faq-minus">−</span>
-                </span>
-            </button>
+    <!-- EXPERIENCE THE WORLD OF END -->
 
-            <div class="faq-answer">
-                <p>
-                    Orders are generally delivered within 3 to 7 working
-                    days depending on your location. Once your order has
-                    been shipped, you will receive tracking details so
-                    you can easily track your package.
-                </p>
-            </div>
 
+
+    <!-- FAQ SECTION -->
+    <section class="faq-main-section">
+
+        <div class="faq-heading">
+            <h2 class="scroll-reveal">FAQ'S</h2>
         </div>
 
-    </div>
+        <div class="faq-list">
 
+            <!-- FAQ 1 -->
+            <div class="faq-item">
 
-    <!-- READ MORE -->
-    <div class=" scroll-reveal faq-read-more">
-        <button type="button">Read more</button>
-    </div>
+                <button class="scroll-reveal. faq-question" type="button">
+                    <span class="scroll-reveal">What is your return policy?</span>
 
-</section>
-
-<!-- FAQ SECTION END -->
-
-
-    
-<!-- CUSTOMER  SAY START -->
-<!-- CUSTOMER SAY SECTION -->
-<section class="sanso-customer-section">
-
-     <div class="our-features-heading scroll-reveal">
-        <h2>CUSTOMER SAY</h2>
-        <span></span>
-    </div>
-
-
-    <div class="sanso-customer-slider">
-
-        <div class="sanso-customer-track">
-
-            <!-- BOX 1 -->
-            <div class="sanso-customer-card">
-
-                <div class="scroll-reveal sanso-customer-top">
-                    <div class="sanso-quote-icon">“</div>
-
-                    <div class="scroll-reveal sanso-rating">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                    </div>
-                </div>
-
-                <p class=" scroll-reveal sanso-customer-text">
-                    "Finding a reliable Cisco Premier Partner with
-                    genuine hardware supply in Delhi was tough until
-                    we partnered with SanSo. Their 24/7 SLA response
-                    and technical guidance are unmatched in the region."
-                </p>
-
-                <div class="sanso-customer-line"></div>
-
-                <div class="sanso-customer-info">
-                    <img class="scroll-reveal" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtqo6wtaCosDAx3UVCHGXWoHrs5I2DrfIbZTFrbS9v15kIotDcNbPbPjpl&s=10" alt="Rajesh Oberoi">
-
-                    <div>
-                        <h3 class="scroll-reveal">Khushi kashyap</h3>
-                        <p class="scroll-reveal">Head of IT Infrastructure, Zenith Logistics</p>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- BOX 2 -->
-            <div class="sanso-customer-card">
-
-                <div class=" scroll-reveal sanso-customer-top">
-                    <div class="sanso-quote-icon">“</div>
-
-                    <div class="scroll-reveal sanso-rating">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                    </div>
-                </div>
-
-                <p class="scroll-reveal sanso-customer-text">
-                    "They set up our enterprise Wi-Fi 6 architecture
-                    across 5 campus buildings seamlessly. Our daily
-                    user density easily exceeds 3,000 devices with
-                    zero dropouts or bottleneck issues."
-                </p>
-
-                <div class="sanso-customer-line"></div>
-
-                <div class="sanso-customer-info">
-                    <img class="scroll-reveal" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgdtOi32KwXTjitdgSnzzE7S59AgZq59b7FE-hnEnsLs7Xtl8R4TWhe5qO&s=10" alt="Meera Sen">
-
-                    <div>
-                        <h3 class="scroll-reveal">Aditya ranjan</h3>
-                        <p class="scroll-reveal">Director of Operations, Apex University</p>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- BOX 3 -->
-            <div class="sanso-customer-card">
-
-                <div class="scroll-reveal sanso-customer-top">
-                    <div class="sanso-quote-icon">“</div>
-
-                    <div class="scroll-reveal sanso-rating">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                    </div>
-                </div>
-
-                <p class="scroll-reveal sanso-customer-text">
-                    "SanSo Networks modernized our entire branch
-                    infrastructure with Cisco SD-WAN. Network latency
-                    dropped by 45%, and their zero-downtime deployment
-                    saved our critical operations during peak migration."
-                </p>
-
-                <div class="sanso-customer-line"></div>
-
-                <div class="sanso-customer-info">
-                    <img class="scroll-reveal" src="https://bhaktidarshan.com/uploads/bio/sauravjoshi-1.jpg" alt="Arun Malhotra">
-
-                    <div>
-                        <h3 class="scroll-reveal">Sourav Joshi</h3>
-                        <p class="scroll-reveal">Chief Technology Officer, FinTech Corp</p>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- BOX 4 -->
-            <div class="sanso-customer-card">
-
-                <div class="scroll-reveal sanso-customer-top">
-                    <div class="sanso-quote-icon">“</div>
-
-                    <div class="scroll-reveal sanso-rating">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                    </div>
-                </div>
-
-                <p class="scroll-reveal sanso-customer-text">
-                    "The SanSo team delivered a highly secure network
-                    solution for our growing business. Their support
-                    team was professional, quick and extremely helpful."
-                </p>
-
-                <div class="sanso-customer-line"></div>
-
-                <div class="sanso-customer-info">
-                    <img class="scroll-reveal" src="https://images.deccanchronicle.com/08afb0492412cf17b69d4f4d1e3c8e70ebdd8128-tc-img-preview.jpg" alt="Amit Sharma">
-
-                    <div>
-                        <h3 class="scroll-reveal">Anushka sheety</h3>
-                        <p class="scroll-reveal">IT Manager, Global Solutions</p>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- BOX 5 -->
-            <div class="sanso-customer-card">
-
-                <div class="scroll-reveal sanso-customer-top">
-                    <div class="sanso-quote-icon">“</div>
-
-                    <div class="scroll-reveal sanso-rating">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                    </div>
-                </div>
-
-                <p class="scroll-reveal sanso-customer-text">
-                    "Our complete office networking infrastructure
-                    was upgraded without disturbing our daily work.
-                    SanSo provided excellent planning and execution."
-                </p>
-
-                <div class="sanso-customer-line"></div>
-
-                <div class="sanso-customer-info">
-                    <img class="scroll-reveal" src="https://media.licdn.com/dms/image/v2/D5603AQGIGrbDXEM-PA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721991907434?e=2147483647&v=beta&t=y0fAm0xtHAf91NE3_WY4Wxto_1eKtZkIKhE_jc6ow4c" alt="Priya Kapoor">
-
-                    <div>
-                        <h3 class="scroll-reveal">Priya Kapoor</h3>
-                        <p class="scroll-reveal">Operations Head, TechVision Pvt. Ltd.</p>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- BOX 6 -->
-            <div class="sanso-customer-card">
-
-                <div class="scroll-reveal sanso-customer-top">
-                    <div class="sanso-quote-icon">“</div>
-
-                    <div class="scroll-reveal sanso-rating">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                    </div>
-                </div>
-
-                <p class="scroll-reveal sanso-customer-text">
-                    "Their networking experts understood our
-                    requirements perfectly and delivered a reliable
-                    infrastructure that performs smoothly every day."
-                </p>
-
-                <div class="sanso-customer-line"></div>
-
-                <div class="sanso-customer-info">
-                    <img class="scroll-reveal" src="https://static.toiimg.com/thumb/msid-91171050,imgsize-139646,width-400,resizemode-4/91171050.jpg" alt="Vikram Singh">
-
-                    <div>
-                        <h3 class="scroll-reveal">Vikram Singh</h3>
-                        <p class="scroll-reveal">Network Administrator, Smart Industries</p>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- BOX 7 -->
-            <div class="sanso-customer-card">
-
-                <div class="scroll-reveal sanso-customer-top">
-                    <div class="sanso-quote-icon">“</div>
-
-                    <div class="scroll-reveal sanso-rating">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                    </div>
-                </div>
-
-                <p class="scroll-reveal sanso-customer-text">
-                    "From consultation to installation, everything
-                    was handled professionally. We now have a much
-                    faster and more stable network environment."
-                </p>
-
-                <div class="sanso-customer-line"></div>
-
-                <div class="sanso-customer-info">
-                    <img class="scroll-reveal" src="https://shantibschool.edu.in/storage/faculaties/November2022/zzXWuxaNLCexdMJNwHV6.jpg" alt="Neha Verma">
-
-                    <div>
-                        <h3 class="scroll-reveal">Neha Verma</h3>
-                        <p class="scroll-reveal">Technology Lead, Bright Enterprises</p>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- BOX 8 -->
-            <div class="sanso-customer-card">
-
-                <div class="scroll-reveal sanso-customer-top">
-                    <div class="sanso-quote-icon">“</div>
-
-                    <div class="scroll-reveal sanso-rating">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                    </div>
-                </div>
-
-                <p class="scroll-reveal sanso-customer-text">
-                    "We were impressed by their technical knowledge
-                    and response time. The entire networking project
-                    was completed exactly according to our requirements."
-                </p>
-
-                <div class="sanso-customer-line"></div>
-
-                <div class="sanso-customer-info">
-                    <img class="scroll-reveal" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYF_yiezUvyyaPxHpTfMlEQIqbIub695IreFP2AAMCBoDgrJfzu60fIbM7&s=10" alt="Rohit Mehta">
-
-                    <div>
-                        <h3 class="scroll-reveal">Rohit Mehta</h3>
-                        <p class="scroll-reveal">IT Director, Enterprise Group</p>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- BOX 9 -->
-            <div class="sanso-customer-card">
-
-                <div class="scroll-reveal sanso-customer-top">
-                    <div class="sanso-quote-icon">“</div>
-
-                    <div class="scroll-reveal sanso-rating">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                    </div>
-                </div>
-
-                <p class="scroll-reveal sanso-customer-text">
-                    "SanSo gave us the confidence to expand our
-                    network infrastructure. Their solution is stable,
-                    scalable and backed by excellent technical support."
-                </p>
-
-                <div class="sanso-customer-line"></div>
-
-                <div class="sanso-customer-info">
-                    <img class="scroll-reveal" src="https://m.media-amazon.com/images/M/MV5BMDRhZmMzODctZTFiNS00OTAxLWJkNTItODVjOGE0OGVmODgwXkEyXkFqcGc@._V1_.jpg" alt="Karan Malhotra">
-
-                    <div>
-                        <h3 class="scroll-reveal">Karanvir Malhotra</h3>
-                        <p class="scroll-reveal">Chief Information Officer, NextGen Corp</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- DOTS -->
-    <div class="sanso-customer-dots"></div>
-
-</section>
-<!-- CUSTOMER SAY END -->
-
-
-
-
-
-
-<!-- FOOTER START -->
-<!-- ===================== FOOTER START ===================== -->
-
-<footer class="sachin-footer">
-
-    <div class="sachin-footer-container">
-
-        <!-- COLUMN 1 -->
-        <div class="sachin-footer-column">
-            <h3 class="scroll-reveal">COLLECTIONS</h3>
-
-            <a class="scroll-reveal" href="#">Diver's</a>
-            <a class="scroll-reveal"  href="#">Titan Automatics</a>
-            <a class="scroll-reveal"  href="#">Police Batman</a>
-            <a class="scroll-reveal"  href="#">Stellar</a>
-            <a class="scroll-reveal"  href="#">Raga Power Pearls</a>
-            <a class="scroll-reveal"  href="#">Nebula Jewels</a>
-            <a class="scroll-reveal"  href="#">Grandmaster</a>
-            <a class="scroll-reveal"  href="#">Maritime</a>
-        </div>
-
-
-        <!-- COLUMN 2 -->
-        <div class="sachin-footer-column">
-            <h3 class="scroll-reveal">CUSTOMER SERVICE</h3>
-
-            <a class="scroll-reveal" href="#">Payment Options</a>
-            <a class="scroll-reveal" href="#">Track Order</a>
-            <a class="scroll-reveal" href="#">Encircle Program</a>
-            <a class="scroll-reveal" href="#">Find Titan World Stores</a>
-            <a class="scroll-reveal" href="#">E Warranty Registration</a>
-            <a class="scroll-reveal" href="#">Cookie Policy</a>
-            <a class="scroll-reveal" href="#">Exercise Your Rights</a>
-        </div>
-
-
-        <!-- COLUMN 3 -->
-        <div class="sachin-footer-column">
-            <h3 class="scroll-reveal">CONTACT US</h3>
-
-            <a class="scroll-reveal" href="tel:18002660123">1800-266-0123</a>
-            <a class="scroll-reveal" href="mailto:customercare@titan.co.in">
-                customercare@titan.co.in
-            </a>
-            <a class="scroll-reveal" href="#">Help &amp; Contact</a>
-            <a class="scroll-reveal" href="#">FAQs</a>
-        </div>
-
-
-        <!-- COLUMN 4 -->
-        <div class="sachin-footer-column">
-            <h3 class="scroll-reveal">ABOUT TITAN</h3>
-
-            <a class="scroll-reveal" href="#">Brand Protection</a>
-            <a class="scroll-reveal" href="#">Corporate</a>
-            <a class="scroll-reveal" href="#">Careers</a>
-            <a class="scroll-reveal" href="#">Blog</a>
-            <a class="scroll-reveal" href="#">Styled By Watch</a>
-        </div>
-
-
-        <!-- COLUMN 5 -->
-        <div class="sachin-footer-extra">
-
-            <h3 class="scroll-reveal">Download Watch World App</h3>
-
-            <div class="sachin-app-buttons">
-
-                <a href="#" class="sachin-app-btn">
-                    <i class="fa-brands fa-apple"></i>
-
-                    <span>
-                        <small>Download on the</small>
-                        App Store
+                    <span class="faq-icon">
+                        <span class="faq-plus">+</span>
+                        <span class="faq-minus">−</span>
                     </span>
-                </a>
+                </button>
 
-
-                <a href="#" class="sachin-app-btn">
-                    <i class="fa-brands fa-google-play"></i>
-
-                    <span>
-                        <small>GET IT ON</small>
-                        Google Play
-                    </span>
-                </a>
-
-            </div>
-
-
-            <!-- SOCIAL -->
-            <h3 class="scroll-reveal sachin-social-title">Follow Us With</h3>
-
-            <div class="scroll-reveal sachin-social-icons">
-
-                <a href="#" aria-label="Facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-
-                <a href="#" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a href="#" aria-label="X">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-
-                <a href="#" aria-label="YouTube">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
+                <div class="faq-answer">
+                    <p>
+                        We offer a simple and convenient return policy.
+                        If you are not satisfied with your purchase, you can
+                        request a return within 7 days of receiving your watch,
+                        provided the product is unused and in its original
+                        condition with all packaging and accessories.
+                    </p>
+                </div>
 
             </div>
 
 
-            <!-- HELP -->
-            <div class="sachin-footer-help">
+            <!-- FAQ 2 -->
+            <div class="faq-item">
 
-                <p class="scroll-reveal">
-                    Want Help?
-                    <a href="#">Click Here</a>
-                    To Chat With Us
-                    <span class="sachin-whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i>
+                <button class="faq-question" type="button">
+                    <span class="scroll-reveal">Do you provide warranty on watches?</span>
+
+                    <span class="faq-icon">
+                        <span class="faq-plus">+</span>
+                        <span class="faq-minus">−</span>
                     </span>
-                </p>
+                </button>
 
-                <p class="scroll-reveal">
-                    Operating Hours: 10:00AM To 7:30PM
-                </p>
+                <div class="faq-answer">
+                    <p>
+                        Yes, our watches come with a manufacturer's warranty.
+                        The warranty covers manufacturing defects and other
+                        issues mentioned in the warranty terms. Warranty
+                        duration may vary depending on the watch brand and model.
+                    </p>
+                </div>
 
-                <p class="scroll-reveal">
-                    Monday To Saturday
-                </p>
+            </div>
+
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+
+                <button class="faq-question" type="button">
+                    <span class="scroll-reveal">How long does delivery take?</span>
+
+                    <span class="faq-icon">
+                        <span class="faq-plus">+</span>
+                        <span class="faq-minus">−</span>
+                    </span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Orders are generally delivered within 3 to 7 working
+                        days depending on your location. Once your order has
+                        been shipped, you will receive tracking details so
+                        you can easily track your package.
+                    </p>
+                </div>
 
             </div>
 
         </div>
 
-    </div>
+
+        <!-- READ MORE -->
+        <div class=" scroll-reveal faq-read-more">
+            <button type="button">Read more</button>
+        </div>
+
+    </section>
+
+    <!-- FAQ SECTION END -->
 
 
-    <!-- FOOTER LINE -->
-    <div class="sachin-footer-line"></div>
+
+    <!-- CUSTOMER  SAY START -->
+    <!-- CUSTOMER SAY SECTION -->
+    <section class="sanso-customer-section">
+
+        <div class="our-features-heading scroll-reveal">
+            <h2>CUSTOMER SAY</h2>
+            <span></span>
+        </div>
 
 
-    <!-- COPYRIGHT -->
-    <div class="scroll-reveal sachin-copyright">
-        © 2026 Sachin Singh Rajput. All Rights Reserved.
-    </div>
+        <div class="sanso-customer-slider">
 
-</footer>
+            <div class="sanso-customer-track">
 
-<!-- ===================== FOOTER END ===================== -->
-<!-- FOOTER END -->
+                <!-- BOX 1 -->
+                <div class="sanso-customer-card">
+
+                    <div class="scroll-reveal sanso-customer-top">
+                        <div class="sanso-quote-icon">“</div>
+
+                        <div class="scroll-reveal sanso-rating">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                    </div>
+
+                    <p class=" scroll-reveal sanso-customer-text">
+                        "Finding a reliable Cisco Premier Partner with
+                        genuine hardware supply in Delhi was tough until
+                        we partnered with SanSo. Their 24/7 SLA response
+                        and technical guidance are unmatched in the region."
+                    </p>
+
+                    <div class="sanso-customer-line"></div>
+
+                    <div class="sanso-customer-info">
+                        <img class="scroll-reveal" src="image-folder/khushi-image.jpg" alt="Rajesh Oberoi">
+
+                        <div>
+                            <h3 class="scroll-reveal">Khushi kashyap</h3>
+                            <p class="scroll-reveal">Head of IT Infrastructure, Zenith Logistics</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- BOX 2 -->
+                <div class="sanso-customer-card">
+
+                    <div class=" scroll-reveal sanso-customer-top">
+                        <div class="sanso-quote-icon">“</div>
+
+                        <div class="scroll-reveal sanso-rating">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                    </div>
+
+                    <p class="scroll-reveal sanso-customer-text">
+                        "They set up our enterprise Wi-Fi 6 architecture
+                        across 5 campus buildings seamlessly. Our daily
+                        user density easily exceeds 3,000 devices with
+                        zero dropouts or bottleneck issues."
+                    </p>
+
+                    <div class="sanso-customer-line"></div>
+
+                    <div class="sanso-customer-info">
+                        <img class="scroll-reveal" src="image-folder/aditya-img.jpg" alt="Meera Sen">
+
+                        <div>
+                            <h3 class="scroll-reveal">Aditya ranjan</h3>
+                            <p class="scroll-reveal">Director of Operations, Apex University</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- BOX 3 -->
+                <div class="sanso-customer-card">
+
+                    <div class="scroll-reveal sanso-customer-top">
+                        <div class="sanso-quote-icon">“</div>
+
+                        <div class="scroll-reveal sanso-rating">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                    </div>
+
+                    <p class="scroll-reveal sanso-customer-text">
+                        "SanSo Networks modernized our entire branch
+                        infrastructure with Cisco SD-WAN. Network latency
+                        dropped by 45%, and their zero-downtime deployment
+                        saved our critical operations during peak migration."
+                    </p>
+
+                    <div class="sanso-customer-line"></div>
+
+                    <div class="sanso-customer-info">
+                        <img class="scroll-reveal" src="image-folder/sourav-img.jpg" alt="Arun Malhotra">
+
+                        <div>
+                            <h3 class="scroll-reveal">Sourav Joshi</h3>
+                            <p class="scroll-reveal">Chief Technology Officer, FinTech Corp</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- BOX 4 -->
+                <div class="sanso-customer-card">
+
+                    <div class="scroll-reveal sanso-customer-top">
+                        <div class="sanso-quote-icon">“</div>
+
+                        <div class="scroll-reveal sanso-rating">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                    </div>
+
+                    <p class="scroll-reveal sanso-customer-text">
+                        "The SanSo team delivered a highly secure network
+                        solution for our growing business. Their support
+                        team was professional, quick and extremely helpful."
+                    </p>
+
+                    <div class="sanso-customer-line"></div>
+
+                    <div class="sanso-customer-info">
+                        <img class="scroll-reveal" src="image-folder/anushka-img.jpg" alt="Amit Sharma">
+
+                        <div>
+                            <h3 class="scroll-reveal">Anushka sheety</h3>
+                            <p class="scroll-reveal">IT Manager, Global Solutions</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- BOX 5 -->
+                <div class="sanso-customer-card">
+
+                    <div class="scroll-reveal sanso-customer-top">
+                        <div class="sanso-quote-icon">“</div>
+
+                        <div class="scroll-reveal sanso-rating">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                    </div>
+
+                    <p class="scroll-reveal sanso-customer-text">
+                        "Our complete office networking infrastructure
+                        was upgraded without disturbing our daily work.
+                        SanSo provided excellent planning and execution."
+                    </p>
+
+                    <div class="sanso-customer-line"></div>
+
+                    <div class="sanso-customer-info">
+                        <img class="scroll-reveal" src="image-folder/cute-girls.jpg" alt="Priya Kapoor">
+
+                        <div>
+                            <h3 class="scroll-reveal">Priya Kapoor</h3>
+                            <p class="scroll-reveal">Operations Head, TechVision Pvt. Ltd.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- BOX 6 -->
+                <div class="sanso-customer-card">
+
+                    <div class="scroll-reveal sanso-customer-top">
+                        <div class="sanso-quote-icon">“</div>
+
+                        <div class="scroll-reveal sanso-rating">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                    </div>
+
+                    <p class="scroll-reveal sanso-customer-text">
+                        "Their networking experts understood our
+                        requirements perfectly and delivered a reliable
+                        infrastructure that performs smoothly every day."
+                    </p>
+
+                    <div class="sanso-customer-line"></div>
+
+                    <div class="sanso-customer-info">
+                        <img class="scroll-reveal" src="image-folder/boy-img.avif" alt="Vikram Singh">
+
+                        <div>
+                            <h3 class="scroll-reveal">Vikram Singh</h3>
+                            <p class="scroll-reveal">Network Administrator, Smart Industries</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- BOX 7 -->
+                <div class="sanso-customer-card">
+
+                    <div class="scroll-reveal sanso-customer-top">
+                        <div class="sanso-quote-icon">“</div>
+
+                        <div class="scroll-reveal sanso-rating">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                    </div>
+
+                    <p class="scroll-reveal sanso-customer-text">
+                        "From consultation to installation, everything
+                        was handled professionally. We now have a much
+                        faster and more stable network environment."
+                    </p>
+
+                    <div class="sanso-customer-line"></div>
+
+                    <div class="sanso-customer-info">
+                        <img class="scroll-reveal" src="image-folder/saree-ladies.jpg" alt="Neha Verma">
+
+                        <div>
+                            <h3 class="scroll-reveal">Neha Verma</h3>
+                            <p class="scroll-reveal">Technology Lead, Bright Enterprises</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- BOX 8 -->
+                <div class="sanso-customer-card">
+
+                    <div class="scroll-reveal sanso-customer-top">
+                        <div class="sanso-quote-icon">“</div>
+
+                        <div class="scroll-reveal sanso-rating">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                    </div>
+
+                    <p class="scroll-reveal sanso-customer-text">
+                        "We were impressed by their technical knowledge
+                        and response time. The entire networking project
+                        was completed exactly according to our requirements."
+                    </p>
+
+                    <div class="sanso-customer-line"></div>
+
+                    <div class="sanso-customer-info">
+                        <img class="scroll-reveal" src="image-folder/smart-boy.jpg" alt="Rohit Mehta">
+
+                        <div>
+                            <h3 class="scroll-reveal">Rohit Mehta</h3>
+                            <p class="scroll-reveal">IT Director, Enterprise Group</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- BOX 9 -->
+                <div class="sanso-customer-card">
+
+                    <div class="scroll-reveal sanso-customer-top">
+                        <div class="sanso-quote-icon">“</div>
+
+                        <div class="scroll-reveal sanso-rating">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                    </div>
+
+                    <p class="scroll-reveal sanso-customer-text">
+                        "SanSo gave us the confidence to expand our
+                        network infrastructure. Their solution is stable,
+                        scalable and backed by excellent technical support."
+                    </p>
+
+                    <div class="sanso-customer-line"></div>
+
+                    <div class="sanso-customer-info">
+                        <img class="scroll-reveal" src="image-folder/handsome-boy.jpg" alt="Karan Malhotra">
+
+                        <div>
+                            <h3 class="scroll-reveal">Karanvir Malhotra</h3>
+                            <p class="scroll-reveal">Chief Information Officer, NextGen Corp</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- DOTS -->
+        <div class="sanso-customer-dots"></div>
+
+    </section>
+    <!-- CUSTOMER SAY END -->
+
+
+
+
+
+
+    <!-- FOOTER START -->
+    <!-- ===================== FOOTER START ===================== -->
+
+    <footer class="sachin-footer">
+
+        <div class="sachin-footer-container">
+
+            <!-- COLUMN 1 -->
+            <div class="sachin-footer-column">
+                <h3 class="scroll-reveal">COLLECTIONS</h3>
+
+                <a class="scroll-reveal" href="#">Diver's</a>
+                <a class="scroll-reveal" href="#">Automatics Watch</a>
+                <a class="scroll-reveal" href="#">Police Batman</a>
+                <a class="scroll-reveal" href="#">Stellar</a>
+                <a class="scroll-reveal" href="#">Raga Power Pearls</a>
+                <a class="scroll-reveal" href="#">Nebula Jewels</a>
+                <a class="scroll-reveal" href="#">Grandmaster</a>
+                <a class="scroll-reveal" href="#">Maritime</a>
+            </div>
+
+
+            <!-- COLUMN 2 -->
+            <div class="sachin-footer-column">
+                <h3 class="scroll-reveal">CUSTOMER SERVICE</h3>
+
+                <a class="scroll-reveal" href="#">Payment Options</a>
+                <a class="scroll-reveal" href="#">Track Order</a>
+                <a class="scroll-reveal" href="#">Encircle Program</a>
+                <a class="scroll-reveal" href="#">Find Titan World Stores</a>
+                <a class="scroll-reveal" href="#">E Warranty Registration</a>
+                <a class="scroll-reveal" href="#">Cookie Policy</a>
+                <a class="scroll-reveal" href="#">Exercise Your Rights</a>
+            </div>
+
+
+            <!-- COLUMN 3 -->
+            <div class="sachin-footer-column">
+                <h3 class="scroll-reveal">CONTACT US</h3>
+
+                <a class="scroll-reveal" href="tel:18002660123">1800-266-0123</a>
+                <a class="scroll-reveal" href="mailto:customercare@titan.co.in">
+                    Watchstore.com
+                </a>
+                <a class="scroll-reveal" href="#">Help &amp; Contact</a>
+                <a class="scroll-reveal" href="#">FAQs</a>
+            </div>
+
+
+            <!-- COLUMN 4 -->
+            <div class="sachin-footer-column">
+                <h3 class="scroll-reveal">ABOUT TITAN</h3>
+
+                <a class="scroll-reveal" href="#">Brand Protection</a>
+                <a class="scroll-reveal" href="#">Corporate</a>
+                <a class="scroll-reveal" href="#">Careers</a>
+                <a class="scroll-reveal" href="#">Blog</a>
+                <a class="scroll-reveal" href="#">Styled By Watch</a>
+            </div>
+
+
+            <!-- COLUMN 5 -->
+            <div class="sachin-footer-extra">
+
+                <h3 class="scroll-reveal">Download Watch World App</h3>
+
+                <div class="sachin-app-buttons">
+
+                    <a href="#" class="sachin-app-btn">
+                        <i class="fa-brands fa-apple"></i>
+
+                        <span>
+                            <small>Download on the</small>
+                            App Store
+                        </span>
+                    </a>
+
+
+                    <a href="#" class="sachin-app-btn">
+                        <i class="fa-brands fa-google-play"></i>
+
+                        <span>
+                            <small>GET IT ON</small>
+                            Google Play
+                        </span>
+                    </a>
+
+                </div>
+
+
+                <!-- SOCIAL -->
+                <h3 class="scroll-reveal sachin-social-title">Follow Us With</h3>
+
+                <div class="scroll-reveal sachin-social-icons">
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="X">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- HELP -->
+                <div class="sachin-footer-help">
+
+                    <p class="scroll-reveal">
+                        Want Help?
+                        <a href="#">Click Here</a>
+                        To Chat With Us
+                        <span class="sachin-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </span>
+                    </p>
+
+                    <p class="scroll-reveal">
+                        Operating Hours: 10:00AM To 7:30PM
+                    </p>
+
+                    <p class="scroll-reveal">
+                        Monday To Saturday
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER LINE -->
+        <div class="sachin-footer-line"></div>
+
+
+        <!-- COPYRIGHT -->
+        <div class="scroll-reveal sachin-copyright">
+           <a class="copyright" href="https://www.instagram.com/star_sachin_rajput?stkn=MXFvcHB3MWo0ODF6Yg==">  2026 Sachin Singh Rajput watch store @gmail.com </a>
+        </div>
+
+    </footer>
+
+    <!-- ===================== FOOTER END ===================== -->
+    <!-- FOOTER END -->
 
 
 
@@ -3446,4 +3185,5 @@
     <script src="index.js"></script>
 
 </body>
+
 </html>
