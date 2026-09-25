@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchStore</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+
+
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <!-- LOGO -->
+            <a href="#" class="logo">
+
+                <!-- <div class="logo-icon">
+                    <span></span>
+                </div>
+
+                <span class="scroll-reveal logo-text">
+                  <div class="logo-img">
+                     <img src="image-folder/logo-watch.png" alt="">
+                  </div>
+                </span> -->
+
+                <span class="scroll-reveal logo-text">
+                    <div class="logo-img">
+                        <img src="image-folder/sachin-logo-one.png" alt="WatchStore Logo">
+                    </div>
+                </span>
+
+            </a>
+
+
+            <!-- DESKTOP MENU -->
+            <nav class="desktop-nav">
+
+                <a href="index.html" class="nav-link active">
+                    HOME
+                </a>
+
+                <a href="men.html" class="nav-link">
+                    MEN
+                </a>
+
+                <a href="women.html" class="nav-link">
+                    WOMEN
+                </a>
+
+                <a href="couple.html" class="nav-link">
+                    COUPLE
+                </a>
+
+                <a href="gifting.html" class="nav-link">
+                    GIFTING
+                </a>
+
+            </nav>
+
+
+            <!-- RIGHT ICONS -->
+            <div class="nav-actions">
+
+                <!-- SEARCH -->
+                <button class="icon-btn" data-popup="searchPopup" aria-label="Search">
+
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+
+                        <circle cx="11" cy="11" r="7"></circle>
+
+                        <line x1="16.5" y1="16.5" x2="22" y2="22">
+                        </line>
+
+                    </svg>
+
+                </button>
+
+
+                <!-- CART -->
+                <button class="icon-btn cart-button" data-popup="cartPopup" aria-label="Cart">
+
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+
+                        <path d="M3 4h2l2.2 11h10.9l2-8H6">
+                        </path>
+
+                        <circle cx="9" cy="19" r="1.5"></circle>
+
+                        <circle cx="17" cy="19" r="1.5"></circle>
+
+                    </svg>
+
+                    <span class="cart-count">0</span>
+
+                </button>
+
+
+                <!-- PROFILE -->
+                <button class="icon-btn" data-popup="profilePopup" aria-label="Profile">
+
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+
+                        <circle cx="12" cy="7" r="4">
+                        </circle>
+
+                        <path d="M4 21c0-4.5 3.5-7 8-7s8 2.5 8 7">
+                        </path>
+
+                    </svg>
+
+                </button>
+
+
+                <!-- WISHLIST -->
+                <button class="icon-btn" data-popup="wishlistPopup" aria-label="Wishlist">
+
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+
+                        <path
+                            d="M20.8 8.7c0 5.5-8.8 10.3-8.8 10.3S3.2 14.2 3.2 8.7C3.2 5.6 5.3 3.5 8 3.5c1.6 0 3.1.8 4 2.1 0.9-1.3 2.4-2.1 4-2.1 2.7 0 4.8 2.1 4.8 5.2z">
+                        </path>
+
+                    </svg>
+
+                </button>
+
+
+                <!-- HAMBURGER -->
+                <button class="hamburger" id="hamburger" aria-label="Open menu">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= MOBILE MENU ================= -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <nav>
+
+            <a href="index.html">HOME</a>
+
+            <a href="men.html">MEN</a>
+
+            <a href="women.html">WOMEN</a>
+
+            <a href="couple.html">COUPLE</a>
+
+            <a href="gifting.html">GIFTING</a>
+
+        </nav>
+
+    </div>
+
+
+
+    <!-- ================= POPUP OVERLAY ================= -->
+
+    <div class="popup-overlay" id="popupOverlay">
+    </div>
+
+
+
+    <!-- ================= SEARCH POPUP ================= -->
+
+    <div class="popup" id="searchPopup">
+
+        <div class="popup-header">
+
+            <h3>Search</h3>
+
+            <button class="popup-close">
+                ×
+            </button>
+
+        </div>
+
+        <div class="search-box">
+
+            <input type="text" placeholder="Search watches...">
+
+            <button>
+                Search
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= CART POPUP ================= -->
+
+    <div class="popup" id="cartPopup">
+
+        <div class="popup-header">
+
+            <h3>Your Cart</h3>
+
+            <button class="popup-close">
+                ×
+            </button>
+
+        </div>
+
+        <div class="empty-popup">
+
+            <div class="popup-big-icon">🛒</div>
+
+            <p>Your cart is empty.</p>
+
+            <button class="popup-main-btn">
+                SHOP NOW
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= PROFILE POPUP ================= -->
+
+    <div class="popup" id="profilePopup">
+
+        <div class="popup-header">
+
+            <h3>My Account</h3>
+
+            <button class="popup-close">
+                ×
+            </button>
+
+        </div>
+
+        <div class="profile-options">
+
+            <button>
+                <span>♙</span>
+                Login
+            </button>
+
+            <button>
+                <span>＋</span>
+                Create Account
+            </button>
+
+            <button>
+                <span>⌁</span>
+                My Orders
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= WISHLIST POPUP ================= -->
+
+    <div class="popup" id="wishlistPopup">
+
+        <div class="popup-header">
+
+            <h3>Wishlist</h3>
+
+            <button class="popup-close">
+                ×
+            </button>
+
+        </div>
+
+        <div class="empty-popup">
+
+            <div class="popup-big-icon">♡</div>
+
+            <p>Your wishlist is empty.</p>
+
+            <button class="popup-main-btn">
+                EXPLORE WATCHES
+            </button>
+
+        </div>
+
+    </div>
+
+    </main>
+
+
+    <!-- NAVABAR END -->
+ 
+
+    <!-- ================================
+     VIDEO BANNER
+================================ -->
+
+
+
+
+
+  
+```html
+<section class="video-banner">
+
+    <!-- ========================================
+         PHONE VIDEO
+         320px - 767px
+    ======================================== -->
+
+    <video
+        class="banner-video mobile"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="auto"
+    >
+        <source src="image-folder/final-video.mp4" type="video/mp4">
+    </video>
+
+
+    <!-- ========================================
+         TABLET VIDEO
+         768px - 1024px
+    ======================================== -->
+
+    <video
+        class="banner-video tablet"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="auto"
+    >
+        <source src="image-folder/final-video.mp4" type="video/mp4">
+    </video>
+
+
+    <!-- ========================================
+         LAPTOP VIDEO
+         1025px - 1599px
+    ======================================== -->
+
+    <video
+        class="banner-video laptop"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="auto"
+    >
+        <source src="image-folder/final-video.mp4" type="video/mp4">
+    </video>
+
+
+    <!-- ========================================
+         DESKTOP VIDEO
+         1600px - 1919px
+    ======================================== -->
+
+    <video
+        class="banner-video desktop-large"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="auto"
+    >
+        <source src="image-folder/final-video.mp4" type="video/mp4">
+    </video>
+
+
+    <!-- ========================================
+         LARGE SCREEN VIDEO
+         1920px - 2560px
+    ======================================== -->
+
+    <video
+        class="banner-video large-screen"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="auto"
+    >
+        <source src="image-folder/final-video.mp4" type="video/mp4">
+    </video>
+
+
+    <!-- ========================================
+         DARK OVERLAY
+    ======================================== -->
+
+    <div class="video-dark-overlay"></div>
+
+
+    <!-- ========================================
+         VIDEO CONTENT
+    ======================================== -->
+
+    <div class="video-banner-content">
+
+        <p class="video-welcome">
+            WELCOME TO
+        </p>
+
+        <h1>
+            WATCH STORE
+        </h1>
+
+        <p class="video-gift-title">
+            GIFT SHOP
+        </p>
+
+
+        <!-- ========================================
+             BUTTONS
+        ======================================== -->
+
+        <div class="video-banner-buttons">
+
+            <a href="#" class="video-btn video-btn-him">
+                FOR HIM
+            </a>
+
+            <a href="#" class="video-btn video-btn-her">
+                FOR HER
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <section class="new-arrivals-section scroll-reveal">
+
+        <div class="our-features-heading scroll-reveal">
+            <h2>GIFTING WATCHES</h2>
+            <span></span>
+        </div>
+
+        <div class="product-carousel-wrapper">
+
+            <!-- LEFT ARROW -->
+            <button class="product-arrow product-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+
+            <!-- CAROUSEL VIEWPORT -->
+            <div class="product-carousel-viewport">
+
+                <!-- CAROUSEL TRACK -->
+                <div class="product-carousel-track">
+
+
+                    <!-- PRODUCT 1 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                SALE
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="https://m.media-amazon.com/images/I/61m+-qPYzYL._SX679_.jpg" alt="Watch">
+
+                            <img class="hover-image" src="https://m.media-amazon.com/images/I/61k1Gx-STzL._SX679_.jpg" alt="Watch">
+
+
+                        </div>
+
+                        <h3>Timeless Romance Couple Watches Watch Couple Watch With waterproof</h3>
+
+                        <p class="product-subtitle">
+                            White Dial
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹ 1094,495
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 2 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                Out off stcok
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="https://www.krishnawatch.com/cdn/shop/files/GW0771L2_H.webp?v=1739444682" alt="Watch">
+
+                            <img class="hover-image" src="https://www.krishnawatch.com/cdn/shop/files/GW0771L2_K.webp?v=1739444682" alt="Watch">
+
+                        </div>
+
+                        <h3>GUESS 26mm White Dial Analog Women Watch
+                            Rose Gold Stainless Steel</h3>
+
+                        <p class="product-subtitle">
+                            White Dial
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹ 9,795
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 3 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                Sale
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="https://m.media-amazon.com/images/I/71ugW9CGOpL._SX679_.jpg" alt="Watch">
+
+                            <img class="hover-image" src="https://m.media-amazon.com/images/I/61W0FZyGmvL._SY741_.jpg" alt="Watch">
+
+                        </div>
+
+                        <h3>Chenxi ouple Watches Dress Wrist Watch Golden Watch Women & Girls</h3>
+
+
+                        <p class="product-subtitle">
+                            Gold dial
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹ 16,995
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 4 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                New Arrival
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="https://cdn.shopify.com/s/files/1/0787/5375/9521/files/3B._How_to_Choose_the_Right_Couple_Watches_Set.jpg?v=1781523608" alt="Watch">
+
+                            <img class="hover-image" src="https://cdn.shopify.com/s/files/1/0787/5375/9521/files/3A._What_Makes_a_Great_Wrist_Watch_for_Couple.jpg?v=1781523339" alt="Watch">
+
+                        </div>
+
+                        <h3>Sonata Quartz Analog Stainless Steel Strap Watch For Girls & Women</h3>
+
+                        <p class="product-subtitle">
+                            White dial
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹ 16,445
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 5 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                Best Seller
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="https://watchcentre.pk/wp-content/uploads/2022/03/casio-elegant-couple-wrist-watches-pakistan-768x768.jpg" alt="Watch">
+
+                            <img class="hover-image" src="https://watchcentre.pk/wp-content/uploads/2022/03/couple-wearing-anniversary-gift-watch-set-on-wrists-768x768.jpg" alt="Watch">
+
+                        </div>
+
+                        <h3>Seiko 5 Sports SKX Series Automatic Watch For Womens & mens</h3>
+
+                        <p class="product-subtitle">
+                            Green dial
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹ 29,000.00
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 6 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                Exclusive
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="https://m.media-amazon.com/images/I/71gTDJ9crSL._SX679_.jpg" alt="Watch">
+
+                            <img class="hover-image" src="https://m.media-amazon.com/images/I/71HEg4T33vL._SX679_.jpg" alt="Watch">
+
+                        </div>
+
+                        <h3>Sylvi Professional Edge Analog Watch for Men & womenns </h3>
+
+                        <p class="product-subtitle">
+                            Red Dial • Stainless Strap
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹ 2,199
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 7 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                Just Arrived
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="https://watchstoreindia.com/wp-content/uploads/2024/03/676538d7-5e77-4781-9f44-f8016f97a837-1203x1536.jpeg" alt="Watch">
+
+                            <img class="hover-image" src="https://watchstoreindia.com/wp-content/uploads/2024/03/622e202a-298b-4923-b453-02de3c4a8739-1266x1536.jpeg" alt="Watch">
+                        </div>
+
+                        <h3>Rolex Vintage Gold Textured Dial Ladies Watch For mens & womens</h3>
+
+                        <p class="product-subtitle">
+                            Gold Dial Golden Stainless
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹ 3,85,000
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 8 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                Hot Deal
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="https://www.nibosiofficial.com/cdn/shop/files/Nibosi-casal-rel-gio-relogio-feminino-rel-gios-de-quartzo-dos-homens-rel-gios-de-marca.jpg?v=1728918279&width=713" alt="Watch">
+
+
+                            <img class="hover-image" src="https://www.nibosiofficial.com/cdn/shop/files/S5b42eea1f52a4e8a88ac768c6bb9828eG.jpg?v=1719113659&width=713" alt="Watch">
+
+                        </div>
+
+                        <h3>Omega Seamaster Aqua Rose Gold Automatic Watch for womens and mens</h3>
+
+                        <p class="product-subtitle">
+                            Rose Gold Dial
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹ 6,75,000
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 9 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                Trending Now
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="https://in.danielwellington.com/cdn/shop/files/wz88d9yrxsfihthfgigh.jpg?v=1757580435" alt="Watch">
+
+                            <img class="hover-image" src="https://in.danielwellington.com/cdn/shop/files/cphglvhllnffmr4psg2m.png?v=1757580435" alt="Watch">
+
+                        </div>
+
+                        <h3>Zenith Defy Skyline 36 Diamond Blue Dial Automatic Watch mens & womens</h3>
+
+                        <p class="product-subtitle">
+                            Blue Starry Dial
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹ 11,95,000
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 10 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                Just Arrived
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="https://m.media-amazon.com/images/I/71Nle9s4-sL._SY625_.jpg" alt="Watch">
+
+                            <img class="hover-image" src="https://m.media-amazon.com/images/I/71xsGzHD5+L._SY625_.jpg" alt="Watch">
+
+                        </div>
+
+                        <h3>Versace Greca Green Dial Two-Tone Luxury Watch Green Sunray Dial</h3>
+
+
+
+                        <p class="product-subtitle">
+                            Green Sunray Dial
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹ 1,85,000
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 11 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                Coming Soon
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                            <img class="main-image" src="https://aetherixofficial.in/wp-content/uploads/2025/12/couple-watch-gold-black.png" alt="Watch">
+
+                            <img class="hover-image" src="https://aetherixofficial.in/wp-content/uploads/2025/12/naviblackandgoldcouplewatch1.png" alt="Watch">
+
+                        </div>
+
+                        <h3>Seiko Classic White Roman Dial Two-Tone Watch</h3>
+
+                        <p class="product-subtitle">
+                            White Roman Dial
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹ 18,500
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 12 -->
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                old Out </span>
+
+                            </span>
+
+                            <button class="product-bag">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+
+                            <img class="main-image" src="image-folder/women-twentythree.jpg" alt="Watch">
+
+                            <img class="hover-image" src="image-folder/women-twentyfour.jpg" alt="Watch">
+
+
+                        </div>
+
+                        <h3>GUESS Women’s Rose Gold Crystal Analog Watch womens & girls</h3>
+
+                        <p class="product-subtitle">
+                            White Dial
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                ₹ 14,995
+                            </span>
+
+                            <span class="product-stars">
+                                <!-- ★ ★ -->
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- CAROUSEL TRACK END -->
+
+            </div>
+            <!-- CAROUSEL VIEWPORT END -->
+
+
+            <!-- RIGHT ARROW -->
+            <button class="product-arrow product-next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        </div>
+        <!-- CAROUSEL WRAPPER END -->
+
+
+    </section>
+
+
+   
+
+
+    <!-- OUR BRAND START -->
+    <!-- =========================================
+     OUR BRANDS
+========================================= -->
+
+    <section class="our-brands-section">
+
+        <div class="our-brands-heading">
+            <h2 class="scroll-reveal">Our Brands</h2>
+        </div>
+
+
+        <div class="brands-slider">
+
+            <div class="brands-track">
+
+                <!-- 1 -->
+                <div class="brand-box">
+                    <img src="image-folder/titan-img.png" alt="Titan">
+                </div>
+
+                <!-- 2 -->
+                <div class="brand-box">
+                    <img src="image-folder/sonata-brand.webp" alt="Sonata">
+                </div>
+
+                <!-- 3 -->
+                <div class="brand-box">
+                    <img src="image-folder/rolex-one.webp" alt="Rolex">
+                </div>
+
+                <!-- 4 -->
+                <div class="brand-box">
+                    <img src="image-folder/guess-img.png" alt="Guess">
+                </div>
+
+                <!-- 5 -->
+                <div class="brand-box">
+                    <img src="image-folder/zenith-img.png" alt="Zenith">
+                </div>
+
+                <!-- 6 -->
+                <div class="brand-box">
+                    <img src="image-folder/versace-img.png" alt="Versace">
+                </div>
+
+                <!-- 7 -->
+                <div class="brand-box">
+                    <img src="image-folder/seikko-img.png" alt="Seiko">
+                </div>
+
+                <!-- 8 -->
+
+                <!-- <div class="brand-box">
+                    <img src="https://www.helioswatchstore.com/on/demandware.static/-/Library-Sites-HeliosSharedLibrary/default/dwecbefab1/images/homepage/brandLogos/anneklein-logo_1.jpg" alt="Timeless">
+                </div> -->
+
+                <!-- 9 -->
+                <div class="brand-box">
+                    <img src="image-folder/omega-second.png" alt="Fossil">
+                </div>
+
+                <!-- 10 -->
+                <div class="brand-box">
+                    <img src="image-folder/hublot-img.png" alt="Casio">
+                </div>
+
+
+                <!-- DUPLICATE FOR SEAMLESS LOOP -->
+
+                <div class="brand-box">
+                    <img src="image-folder/titan-img.png" alt="Titan">
+                </div>
+
+                <div class="brand-box">
+                    <img src="image-folder/sonata-img.webp" alt="Sonata">
+                </div>
+
+                <div class="brand-box">
+                    <img src="image-folder/rolex-award.webp" alt="Rolex">
+                </div>
+
+                <div class="brand-box">
+                    <img src="image-folder/guess-brand.png" alt="Guess">
+                </div>
+
+                <div class="brand-box">
+                    <img src="image-folder/zenith-brand.png" alt="Zenith">
+                </div>
+
+                <div class="brand-box">
+                    <img src="image-folder/versace-imgg.png" alt="Versace">
+                </div>
+
+                <div class="brand-box">
+                    <img src="image-folder/seiko-brand.png" alt="Seiko">
+                </div>
+
+                <!-- <div class="brand-box">
+                    <img src="https://www.helioswatchstore.com/on/demandware.static/-/Library-Sites-HeliosSharedLibrary/default/dwecbefab1/images/homepage/brandLogos/anneklein-logo_1.jpg" alt="Timeless">
+                </div> -->
+
+                <div class="brand-box">
+                    <img src="image-folder/omega-second.png" alt="Fossil">
+                </div>
+
+                <div class="brand-box">
+                    <img src="image-folder/hublot-brand.png" alt="Casio">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- OUR BRAND END -->
+
+
+
+
+
+    <!-- FOOTER START -->
+    <!-- ===================== FOOTER START ===================== -->
+
+    <footer class="sachin-footer">
+
+        <div class="sachin-footer-container">
+
+            <!-- COLUMN 1 -->
+            <div class="sachin-footer-column">
+                <h3 class="scroll-reveal">COLLECTIONS</h3>
+
+                <a class="scroll-reveal" href="#">Diver's</a>
+                <a class="scroll-reveal" href="#">Automatics Watch</a>
+                <a class="scroll-reveal" href="#">Police Batman</a>
+                <a class="scroll-reveal" href="#">Stellar</a>
+                <a class="scroll-reveal" href="#">Raga Power Pearls</a>
+                <a class="scroll-reveal" href="#">Nebula Jewels</a>
+                <a class="scroll-reveal" href="#">Grandmaster</a>
+                <a class="scroll-reveal" href="#">Maritime</a>
+            </div>
+
+
+            <!-- COLUMN 2 -->
+            <div class="sachin-footer-column">
+                <h3 class="scroll-reveal">CUSTOMER SERVICE</h3>
+
+                <a class="scroll-reveal" href="#">Payment Options</a>
+                <a class="scroll-reveal" href="#">Track Order</a>
+                <a class="scroll-reveal" href="#">Encircle Program</a>
+                <a class="scroll-reveal" href="#">Find Titan World Stores</a>
+                <a class="scroll-reveal" href="#">E Warranty Registration</a>
+                <a class="scroll-reveal" href="#">Cookie Policy</a>
+                <a class="scroll-reveal" href="#">Exercise Your Rights</a>
+            </div>
+
+
+            <!-- COLUMN 3 -->
+            <div class="sachin-footer-column">
+                <h3 class="scroll-reveal">CONTACT US</h3>
+
+                <a class="scroll-reveal" href="tel:18002660123">1800-266-0123</a>
+                <a class="scroll-reveal" href="mailto:customercare@titan.co.in">
+                    Watchstore.com
+                </a>
+                <a class="scroll-reveal" href="#">Help &amp; Contact</a>
+                <a class="scroll-reveal" href="#">FAQs</a>
+            </div>
+
+
+            <!-- COLUMN 4 -->
+            <div class="sachin-footer-column">
+                <h3 class="scroll-reveal">ABOUT TITAN</h3>
+
+                <a class="scroll-reveal" href="#">Brand Protection</a>
+                <a class="scroll-reveal" href="#">Corporate</a>
+                <a class="scroll-reveal" href="#">Careers</a>
+                <a class="scroll-reveal" href="#">Blog</a>
+                <a class="scroll-reveal" href="#">Styled By Watch</a>
+            </div>
+
+
+            <!-- COLUMN 5 -->
+            <div class="sachin-footer-extra">
+
+                <h3 class="scroll-reveal">Download Watch World App</h3>
+
+                <div class="sachin-app-buttons">
+
+                    <a href="#" class="sachin-app-btn">
+                        <i class="fa-brands fa-apple"></i>
+
+                        <span>
+                            <small>Download on the</small>
+                            App Store
+                        </span>
+                    </a>
+
+
+                    <a href="#" class="sachin-app-btn">
+                        <i class="fa-brands fa-google-play"></i>
+
+                        <span>
+                            <small>GET IT ON</small>
+                            Google Play
+                        </span>
+                    </a>
+
+                </div>
+
+
+                <!-- SOCIAL -->
+                <h3 class="scroll-reveal sachin-social-title">Follow Us With</h3>
+
+                <div class="scroll-reveal sachin-social-icons">
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="X">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- HELP -->
+                <div class="sachin-footer-help">
+
+                    <p class="scroll-reveal">
+                        Want Help?
+                        <a href="#">Click Here</a>
+                        To Chat With Us
+                        <span class="sachin-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </span>
+                    </p>
+
+                    <p class="scroll-reveal">
+                        Operating Hours: 10:00AM To 7:30PM
+                    </p>
+
+                    <p class="scroll-reveal">
+                        Monday To Saturday
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER LINE -->
+        <div class="sachin-footer-line"></div>
+
+
+        <!-- COPYRIGHT -->
+        <div class="scroll-reveal sachin-copyright">
+            <a class="copyright" href="https://www.instagram.com/star_sachin_rajput?stkn=MXFvcHB3MWo0ODF6Yg=="> 2026
+                Sachin Singh Rajput watch store @gmail.com </a>
+        </div>
+
+    </footer>
+
+    <!-- ===================== FOOTER END ===================== -->
+    <!-- FOOTER END -->
+
+
+
+    <!-- JAVASCRIPT -->
+    <script src="index.js"></script>
+
+</body>
+
+</html>

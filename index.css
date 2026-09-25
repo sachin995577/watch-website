@@ -1488,10 +1488,8 @@ i{
 
 .feature-item p {
     margin: 0;
-
     color: #dddddd;
-
-    font-size: clamp(14px, 1vw, 18px);
+    font-size: clamp(13px, 1vw, 18px);
     line-height: 1.5;
 }
 
@@ -2688,7 +2686,7 @@ i{
     top: 8px;
     left: 8px;
     z-index: 5;
-    font-size: 18px;
+    font-size: 15px;
     color: #222;
     background: transparent;
 }
@@ -6844,7 +6842,7 @@ FAQ SECTION START  */
 
     .sachin-copyright {
         padding-top: 20px;
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -7010,10 +7008,7 @@ FAQ SECTION START  */
 
 
 
-
-  /* =========================================
-   SINGLE BANNER
-========================================= */
+/* SINGLE BANNER START */
 
 .single-banner {
     width: 100%;
@@ -7114,7 +7109,7 @@ FAQ SECTION START  */
 
     .single-banner img {
         width: 100%;
-        height: 1000px;
+        height: 950px;
         object-fit: cover;
         object-position: center;
     }
@@ -7123,7 +7118,520 @@ FAQ SECTION START  */
 
 
 
+/* SINGLE BANNER END */
 
+
+
+.video-banner {
+    width: 100%;
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Optional background color to fill empty space (letterboxing) */
+}
+
+.banner-video {
+    width: 100%;
+    height: 100%;
+    display: none; /* Hide all by default */
+    object-fit: cover; /* Prevents cropping by showing the entire video frame */
+}
+
+/* Mobile: 320px - 767px */
+@media (min-width: 320px) and (max-width: 767px) {
+    .banner-video.mobile { display: block; }
+}
+
+/* Tablet: 768px - 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner-video.tablet { display: block; }
+}
+
+/* Laptop: 1025px - 1599px */
+@media (min-width: 1025px) and (max-width: 1599px) {
+    .banner-video.laptop { display: block; }
+}
+
+/* Large Screen: 1600px+ */
+@media (min-width: 1600px) {
+    .banner-video.desktop-large { display: block; }
+}
+
+
+
+/* ========================================
+   VIDEO BANNER
+======================================== */
+
+.video-banner {
+    position: relative;
+
+    width: 100%;
+    height: 720px;
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+}
+
+
+/* ========================================
+   ALL VIDEOS
+======================================== */
+
+.banner-video {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: none;
+
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+/* ========================================
+   DARK OVERLAY
+======================================== */
+
+.video-dark-overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.22);
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.video-banner-content {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    z-index: 3;
+}
+
+
+/* ========================================
+   WELCOME TO
+======================================== */
+
+.video-welcome {
+    margin: 0 0 16px;
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    line-height: 1.2;
+
+    letter-spacing: 1px;
+
+    color: #ffffff;
+}
+
+
+/* ========================================
+   WATCH STORE
+======================================== */
+
+.video-banner-content h1 {
+    margin: 0;
+
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    letter-spacing: 4px;
+
+    color: #ffffff;
+}
+
+
+/* ========================================
+   GIFT SHOP
+======================================== */
+
+.video-gift-title {
+    margin: 40px 0 60px;
+
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    letter-spacing: 15px;
+
+    color: #ffffff;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.video-banner-buttons {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 42px;
+}
+
+
+/* ========================================
+   COMMON BUTTON
+======================================== */
+
+.video-btn {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 225px;
+    height: 75px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-size: 25px;
+
+    transition: all 0.35s ease;
+}
+
+
+/* ========================================
+   FOR HIM
+======================================== */
+
+.video-btn-him {
+    background: #000000;
+
+    color: #ffffff;
+}
+
+
+/* ========================================
+   FOR HER
+======================================== */
+
+.video-btn-her {
+    background: #ffffff;
+
+    color: #000000;
+}
+
+
+/* ========================================
+   HOVER
+======================================== */
+
+.video-btn-him:hover {
+    background: #ffffff;
+
+    color: #000000;
+}
+
+
+.video-btn-her:hover {
+    background: #000000;
+
+    color: #ffffff;
+}
+
+
+/* ========================================
+   PHONE
+   320px - 767px
+======================================== */
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .video-banner {
+        height: 620px;
+    }
+
+
+    .banner-video.mobile {
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center center;
+    }
+
+
+    .video-dark-overlay {
+        background: rgba(0, 0, 0, 0.30);
+    }
+
+
+    .video-banner-content {
+        padding: 0 20px;
+    }
+
+
+    .video-welcome {
+        margin-bottom: 12px;
+
+        font-size: 18px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .video-banner-content h1 {
+        font-size: 28px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .video-gift-title {
+        margin-top: 28px;
+        margin-bottom: 40px;
+
+        font-size: 23px;
+
+        letter-spacing: 7px;
+    }
+
+
+    .video-banner-buttons {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .video-btn {
+        width: 180px;
+        height: 54px;
+
+        font-size: 18px;
+    }
+}
+
+
+/* ========================================
+   TABLET
+   768px - 1024px
+======================================== */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .video-banner {
+        height: 650px;
+    }
+
+
+    .banner-video.tablet {
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center center;
+    }
+
+
+    .video-dark-overlay {
+        background: rgba(0, 0, 0, 0.25);
+    }
+
+
+    .video-welcome {
+        margin-bottom: 14px;
+
+        font-size: 24px;
+    }
+
+
+    .video-banner-content h1 {
+        font-size: 36px;
+
+        letter-spacing: 4px;
+    }
+
+
+    .video-gift-title {
+        margin-top: 32px;
+        margin-bottom: 48px;
+
+        font-size: 31px;
+
+        letter-spacing: 11px;
+    }
+
+
+    .video-banner-buttons {
+        gap: 32px;
+    }
+
+
+    .video-btn {
+        width: 205px;
+        height: 66px;
+
+        font-size: 21px;
+    }
+}
+
+/* ========================================
+   DESKTOP
+   1600px - 1919px
+======================================== */
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+
+    .video-banner {
+        height: 720px;
+    }
+
+
+    .banner-video.desktop-large {
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center center;
+    }
+
+
+    .video-welcome {
+        font-size: 30px;
+    }
+
+
+    .video-banner-content h1 {
+        font-size: 44px;
+
+        letter-spacing: 5px;
+    }
+
+
+    .video-gift-title {
+        margin-top: 40px;
+        margin-bottom: 58px;
+
+        font-size: 39px;
+
+        letter-spacing: 15px;
+    }
+
+
+    .video-banner-buttons {
+        gap: 44px;
+    }
+
+
+    .video-btn {
+        width: 230px;
+        height: 75px;
+
+        font-size: 25px;
+    }
+}
+
+/* ========================================
+   LARGE SCREEN
+   1920px - 2560px
+======================================== */
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+
+    .video-banner {
+        height: 800px;
+    }
+
+
+    .banner-video.desktop-large {
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center center;
+    }
+
+
+    .video-welcome {
+        font-size: 34px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .video-banner-content h1 {
+        font-size: 50px;
+
+        letter-spacing: 6px;
+    }
+
+
+    .video-gift-title {
+        margin-top: 45px;
+        margin-bottom: 65px;
+
+        font-size: 45px;
+
+        letter-spacing: 18px;
+    }
+
+
+    .video-banner-buttons {
+        gap: 50px;
+    }
+
+
+    .video-btn {
+        width: 250px;
+        height: 82px;
+
+        font-size: 28px;
+    }
+}
 
 
 
